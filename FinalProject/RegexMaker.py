@@ -1,3 +1,4 @@
+# reset
 import re
 import string
 from tqdm import tqdm
@@ -58,4 +59,3 @@ class RegexMaker:
                     else:
                         self.dict_words_srt[word] = 1
             i += 1
-d=11
