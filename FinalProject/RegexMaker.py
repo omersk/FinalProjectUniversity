@@ -58,5 +58,3 @@ class RegexMaker:
                     else:
                         self.dict_words_srt[word] = 1
             i += 1
-
-
