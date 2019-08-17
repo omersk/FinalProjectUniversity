@@ -1,4 +1,3 @@
-#regex
 import re
 import string
 from tqdm import tqdm
