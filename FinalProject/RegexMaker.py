@@ -1,4 +1,3 @@
-# reset 2
 import re
 import string
 from tqdm import tqdm
@@ -17,6 +16,8 @@ class RegexMaker:
         self.arr_words_srt = []
         self.regex_srt = regex_srt
         self.f_srt = open(srt_file_path, "r+")
+        self.dict_without_punctuation_script = {}
+
     def find_matches_script(self):
         test_script = self.f_script.read()
         test_script = test_script[0:re.search(r'Advertisements', test_script).end()]
@@ -30,7 +31,9 @@ class RegexMaker:
                 self.script_talkers[i] = match.group(1)
                 line = str(re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f\x7f-\xff]', '',
                                   match.group(2).replace("\xe2\x80\x99", "'")).replace('\r', '')).strip('(').replace('\n', ' ').rstrip().lstrip()
-                line = line.translate(None, string.punctuation)
+                line_without_punc = line.translate(None, string.punctuation)
+                self.dict_without_punctuation_script[line_without_punc] = line
+                line = line_without_punc
                 self.script_words[line] = i
                 self.arr_words_script.append(line)
                 for word in line.split(" "):
@@ -49,13 +52,32 @@ class RegexMaker:
             if "Scene" not in match.group(1):
                 self.srt_time[i] = match.group(1)
                 line = str(re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f\x7f-\xff]', '',
-                                  match.group(2).replace("\xe2\x80\x99", "'")).replace('\r', '')).strip('(').replace('\n', ' ').rstrip().lstrip()
-                line = line.translate(None, string.punctuation)
-                self.srt_words[line] = i
-                self.arr_words_srt.append(line)
-                for word in line.split(" "):
-                    if word in self.dict_words_srt.keys():
-                        self.dict_words_srt[word] += 1
-                    else:
-                        self.dict_words_srt[word] = 1
+                                  match.group(2).replace("\xe2\x80\x99", "'")).replace('\r', '')).strip('(').rstrip().lstrip()
+                a = None
+                if line[0] == "-":
+                    a = line.split("\n")
+                if not a:
+                    line = line.replace('\n', ' ')#.translate(None, string.punctuation).replace('\n', ' ')
+                    self.srt_words[line] = i
+                    self.arr_words_srt.append(line)
+                    for word in line.split(" "):
+                        if word in self.dict_words_srt.keys():
+                            self.dict_words_srt[word] += 1
+                        else:
+                            self.dict_words_srt[word] = 1
+                if a:
+                    for line_enter in a:
+                        self.srt_time[i] = match.group(1)
+                        line_enter = str(re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f\x7f-\xff]', '',
+                                          line_enter.replace("\xe2\x80\x99", "'")).replace('\r', '')).strip(
+                            '(').rstrip().lstrip()
+                        line_enter = line_enter.replace('\n', ' ')#.translate(None, string.punctuation).replace('\n', ' ')
+                        self.srt_words[line_enter] = i
+                        self.arr_words_srt.append(line_enter)
+                        for word in line_enter.split(" "):
+                            if word in self.dict_words_srt.keys():
+                                self.dict_words_srt[word] += 1
+                            else:
+                                self.dict_words_srt[word] = 1
+                        i += 1
             i += 1
