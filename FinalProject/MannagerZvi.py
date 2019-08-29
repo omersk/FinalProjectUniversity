@@ -20,72 +20,98 @@ class MannagerZvi:
         self.dict_position = {}
 
     def main_action(self, url_script, url_srt, num_of_lines, output_file):
+        file_new = open("outputfilenew.txt", 'w')
         d = DropBoxDownloader.DropBoxDownloader(self.access_token)
         d.download_file(url_script, self.script_file_path)
         d.download_file(url_srt, self.srt_file_path)
         rm = RegexMaker.RegexMaker(self.script_file_path, self.regex_script, self.regex_srt, self.srt_file_path)
         rm.find_matches_script()
         rm.find_matches_srt()
+        normal_dis = scipy.stats.norm(1, 1.5).pdf
         sumScript = sum(rm.dict_words_script.values())
         sumSrt = sum(rm.dict_words_srt.values())
         arr_lines = [(0,)]
+        dict_word = {
+
+        }
+        cutoff_ratio = 0.05
+        dict_lines = {
+
+        }
+        LastResult = 0
         for lineScriptIndex in tqdm(range(len(rm.arr_words_script))):
             lineScript = rm.arr_words_script[lineScriptIndex]
-            line_matrix = numpy.zeros((len(lineScript.split(" ")), len(rm.arr_words_srt)))
-            for lineSrtIndex in range(len(rm.arr_words_srt)):
-                lineSrt = rm.arr_words_srt[lineSrtIndex]
-                for wordIndex in range(len(lineScript.split(' '))):
-                    word = lineScript.split(' ')[wordIndex]
-                    if word in lineSrt.split(' '):
-                        line_matrix[wordIndex][lineSrtIndex] = float((sumSrt-rm.dict_words_srt[word]))/float(sumSrt) * float((sumScript-rm.dict_words_script[word]))/float(sumScript)
+            for wordIndex in range(len(lineScript.split(' '))):
+                line_word_matrix = numpy.zeros((1, len(rm.arr_words_srt)))
+                word = lineScript.split(' ')[wordIndex]
+                if word in dict_word.keys():
+                    pass
+                else:
+                    for lineSrtIndex in range(len(rm.arr_words_srt)):
+                        lineSrt = rm.arr_words_srt[lineSrtIndex]
+                        if word in lineSrt.split(' '):
+                            if lineSrt and lineScript:
+                                line_word_matrix[0][lineSrtIndex] = float((sumSrt - rm.dict_words_srt[word])) / float(
+                                    sumSrt*len(lineSrt.split(' '))) * float((sumScript - rm.dict_words_script[word])) / float(sumScript*len(lineScript.split(' ')))
+                    dict_word[word] = line_word_matrix
+        for lineScriptIndex in tqdm(range(len(rm.arr_words_script))):
+            if lineScriptIndex == len(rm.arr_words_script) - 1:
+                pass
+            lineScript = rm.arr_words_script[lineScriptIndex]
+            if lineScript == "Byebye":
+                pass
+            line_matrix = dict_word[lineScript.split(' ')[0]]
+            for wordIndex in range(len(lineScript.split(' ')) - 1):
+                if wordIndex == 0:
+                    wordIndex += 1
+                word = lineScript.split(' ')[wordIndex]
+                line_matrix = numpy.row_stack((line_matrix, dict_word[word]))
             array_winners = numpy.dot(numpy.ones((1, len(lineScript.split(" ")))), line_matrix)
-            indexed = list(enumerate(array_winners[0]))
-            top_10 = sorted(indexed, key=operator.itemgetter(1))[-10:]
-            top_10 = sorted(list(reversed([i for i, v in top_10])))
-            t = []
-            distanceFromLastResult = []
-            xSorted = sorted(top_10)
-            t.append((xSorted[0],))
-            j = 0
-            for i in range(len(xSorted) - 1):
-                if xSorted[i+1] - xSorted[i] != 1 or SequenceMatcher(None, lineScript, rm.arr_words_srt[xSorted[i]]).ratio() > SequenceMatcher(None, lineScript, rm.arr_words_srt[xSorted[i]] + rm.arr_words_srt[xSorted[i+1]]).ratio():
+            if max(array_winners[0]) < cutoff_ratio:
+                array_ratios = []
+                for lineSrtIndex in range(len(rm.arr_words_srt)):
+                    lineSrt = rm.arr_words_srt[lineSrtIndex]
+                    array_ratios.append(SequenceMatcher(None, lineSrt, lineScript).ratio() * normal_dis((1.0/(1 + abs((lineSrtIndex - LastResult))))))
+                dict_lines[rm.dict_without_punctuation_script[rm.arr_words_script[lineScriptIndex]]] = rm.arr_words_srt[array_ratios.index(max(array_ratios))]
+            else:
+                indexed = list(enumerate(array_winners[0]))
+                top_10 = sorted(indexed, key=operator.itemgetter(1))[-10:]
+                top_10 = sorted(list(reversed([i for i, v in top_10])))
+                t = []
+                distanceFromLastResult = []
+                xSorted = sorted(top_10)
+                j = 0
+                ratio_str = []
+                strings = []
+                for i in range(len(xSorted) - 1):
+                    t.append((xSorted[i],))
+                    best_str = rm.arr_words_srt[xSorted[i]]
+                    ki = -1
+                    while ki + xSorted[i] in range(len(rm.arr_words_srt)) and SequenceMatcher(None, best_str,
+                                                                                              lineScript).ratio() < SequenceMatcher(
+                            None, rm.arr_words_srt[xSorted[i] + ki] + " " + best_str, lineScript).ratio():
+                        best_str = rm.arr_words_srt[xSorted[i] + ki] + " " + best_str
+                        t[j] = t[j] + (xSorted[i] + ki,)
+                        ki -= 1
                     ki = 1
-                    while xSorted[i] + ki in range(len(rm.arr_words_srt)) and SequenceMatcher(None, lineScript, rm.arr_words_srt[xSorted[i]]).ratio() < SequenceMatcher(None, lineScript, rm.arr_words_srt[xSorted[i]] + rm.arr_words_srt[xSorted[i] + ki]).ratio():
+                    while ki + xSorted[i] in range(len(rm.arr_words_srt)) and SequenceMatcher(None, best_str, lineScript).ratio() < SequenceMatcher(None, best_str + " " + rm.arr_words_srt[xSorted[i] + ki], lineScript).ratio():
+                        best_str = best_str + " " + rm.arr_words_srt[xSorted[i] + ki]
                         t[j] = t[j] + (xSorted[i] + ki,)
                         ki += 1
-                    ki = -1
-                    while t[j][0] + ki in range(len(rm.arr_words_srt)) and SequenceMatcher(None, lineScript, rm.arr_words_srt[t[j][0]]).ratio() < SequenceMatcher(None, lineScript, rm.arr_words_srt[t[j][0] + ki] + rm.arr_words_srt[t[j][0]]).ratio():
-                        t[j] = t[j] + (t[j][0] + ki,)
-                        ki += -1
-                    t.append((xSorted[i+1],))
-                    j += 1
-                else:
-                    t[j] = t[j] + (xSorted[i+1],)
-            for num in t:
-                sm = ""
-                for k in range(len(num)):
-                    sm = sm + rm.arr_words_srt[num[k]]
-                distanceFromLastResult.append(SequenceMatcher(None, sm, lineScript).ratio()/(1 + abs(num[0] - arr_lines[len(arr_lines) - 1][len(arr_lines[len(arr_lines) - 1]) - 1])))
-            arr_lines.append(t[distanceFromLastResult.index(max(distanceFromLastResult))])
-        arr_lines = arr_lines[1::]
-        dict_lines = {}
-        for index_line in range(len(arr_lines)):
-            t = arr_lines[index_line]
-            t = sorted(t)
-            for index_t in range(len(t)):
-                if rm.arr_words_script[index_line] in dict_lines.keys():
-                    dict_lines[rm.dict_without_punctuation_script[rm.arr_words_script[index_line]]] += rm.dict_without_punctuation_srt[rm.arr_words_srt[t[index_t]]]
-                else:
-                    dict_lines[rm.dict_without_punctuation_script[rm.arr_words_script[index_line]]] = rm.dict_without_punctuation_srt[rm.arr_words_srt[t[index_t]]]
+                    j = j + 1
+                    ratio_str.append(SequenceMatcher(None, best_str, lineScript).ratio())
+                    strings.append(best_str)
+                the_best_distance = 0
+                the_best_index = -1
+                for numIndex in range(len(t)):
+                    num = t[numIndex]
+                    if the_best_distance < normal_dis((1.0/(1 + abs((num[0] - LastResult)))))*ratio_str[numIndex]:
+                        the_best_distance = normal_dis((1.0/(1 + abs((num[0] - LastResult)))))*ratio_str[numIndex]
+                        the_best_index = numIndex
+                LastResult = the_best_index
+                dict_lines[rm.dict_without_punctuation_script[rm.arr_words_script[lineScriptIndex]]] = strings[the_best_index]
+            file_new.write(str(lineScriptIndex) + ". " + "\n" + rm.dict_without_punctuation_script[rm.arr_words_script[lineScriptIndex]] + " - SCRIPT" + "\n" + dict_lines[rm.dict_without_punctuation_script[rm.arr_words_script[lineScriptIndex]]] + " - SRT" + "\n")
         print dict_lines
-        #        file_1 = open(output_file, 'w')
-#        file_2 = open("outputfile2.txt", 'w')
-#        for l in tqdm(sorted(self.dict_position.keys())):
-#            file_1.write(str(self.dict_position[l]) + " : " + str((str(line_to_line[self.dict_position[l]][2]), str(line_to_line[self.dict_position[l]][1]))) + "\n")
-#        index = 0
-#        for l_d in tqdm(sorted(self.dict_position.keys())):
-#            index += 1
-#            file_2.writelines([str(index) + ". " + str(line_to_line[self.dict_position[l_d]][2]) + "\n", rm.script_talkers[rm.script_words[self.dict_position[l_d]]] + "\n", rm.dict_without_punctuation_script[str(self.dict_position[l_d])] + " - Script" + "\n", str(line_to_line[self.dict_position[l_d]][1]) + " - Srt" + "\n"])
-#
+
 d = MannagerZvi("script.txt", r"(.*):(.*)", r"\d\r\n(.*?)\r\n(.*?)\r\n\r\n", "srt.txt",constants.access_token)
 d.main_action(constants.url_script, constants.url_srt, 50, "outputfile.txt")

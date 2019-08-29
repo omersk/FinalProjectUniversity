@@ -11,6 +11,7 @@ class RegexMaker:
         self.dict_words_script = {}
         self.srt_time = {}
         self.dict_words_srt = {}
+        self.dict_position_script = {}
         self.srt_words = {}
         self.arr_words_script = []
         self.arr_words_srt = []
@@ -25,7 +26,6 @@ class RegexMaker:
 
         matches_script = re.finditer(self.regex_script, test_script, re.MULTILINE)
         i = 0
-
         # LOOP SCRIPT ---------
         for matchNum, match in tqdm(enumerate(matches_script, start=1)):
             if "Scene" not in match.group(1):
