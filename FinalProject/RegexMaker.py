@@ -17,6 +17,7 @@ class RegexMaker:
         self.regex_srt = regex_srt
         self.f_srt = open(srt_file_path, "r+")
         self.dict_without_punctuation_script = {}
+        self.dict_without_punctuation_srt = {}
 
     def find_matches_script(self):
         test_script = self.f_script.read()
@@ -58,6 +59,9 @@ class RegexMaker:
                     a = line.split("\n")
                 if not a:
                     line = line.replace('\n', ' ')#.translate(None, string.punctuation).replace('\n', ' ')
+                    line_without_punc = line.translate(None, string.punctuation)
+                    self.dict_without_punctuation_srt[line_without_punc] = line
+                    line = line_without_punc
                     self.srt_words[line] = i
                     self.arr_words_srt.append(line)
                     for word in line.split(" "):
@@ -67,11 +71,15 @@ class RegexMaker:
                             self.dict_words_srt[word] = 1
                 if a:
                     for line_enter in a:
+                        line_with_all = line_enter
                         self.srt_time[i] = match.group(1)
                         line_enter = str(re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f\x7f-\xff]', '',
                                           line_enter.replace("\xe2\x80\x99", "'")).replace('\r', '')).strip(
                             '(').rstrip().lstrip()
                         line_enter = line_enter.replace('\n', ' ')#.translate(None, string.punctuation).replace('\n', ' ')
+                        line_enter_without_punc = line_enter.translate(None, string.punctuation)
+                        self.dict_without_punctuation_srt[line_enter_without_punc] = line_with_all
+                        line_enter = line_enter_without_punc
                         self.srt_words[line_enter] = i
                         self.arr_words_srt.append(line_enter)
                         for word in line_enter.split(" "):
