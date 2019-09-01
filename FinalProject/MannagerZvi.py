@@ -30,7 +30,6 @@ class MannagerZvi:
         normal_dis = scipy.stats.norm(1, 1.5).pdf
         sumScript = sum(rm.dict_words_script.values())
         sumSrt = sum(rm.dict_words_srt.values())
-        arr_lines = [(0,)]
         dict_word = {
 
         }
@@ -38,6 +37,7 @@ class MannagerZvi:
         dict_lines = {
 
         }
+        bestTimeArr = []
         LastResult = 0
         for lineScriptIndex in tqdm(range(len(rm.arr_words_script))):
             lineScript = rm.arr_words_script[lineScriptIndex]
@@ -55,14 +55,7 @@ class MannagerZvi:
                                     sumSrt*len(lineSrt.split(' '))) * float((sumScript - rm.dict_words_script[word])) / float(sumScript*len(lineScript.split(' ')))
                     dict_word[word] = line_word_matrix
         for lineScriptIndex in tqdm(range(len(rm.arr_words_script))):
-            if lineScriptIndex == len(rm.arr_words_script) - 1:
-                pass
             lineScript = rm.arr_words_script[lineScriptIndex]
-            if lineScript == "Byebye":
-                pass
-            if "appropriate in" in lineScript:
-                pass
-
             line_matrix = dict_word[lineScript.split(' ')[0]]
             for wordIndex in range(len(lineScript.split(' ')) - 1):
                 if wordIndex == 0:
@@ -77,19 +70,21 @@ class MannagerZvi:
                     array_ratios.append(SequenceMatcher(None, lineSrt, lineScript).ratio() * normal_dis((1.0/(1 + abs((lineSrtIndex - LastResult))))))
                 dict_lines[rm.dict_without_punctuation_script[rm.arr_words_script[lineScriptIndex]]] = rm.dict_without_punctuation_srt[rm.arr_words_srt[array_ratios.index(max(array_ratios))]].rstrip().lstrip().lstrip("-")
                 LastResult = array_ratios.index(max(array_ratios))
+                bestTimeArr.append(timeUnion.timeUnion(rm.srt_time[rm.srt_words[rm.arr_words_srt[array_ratios.index(max(array_ratios))]]]))
             else:
                 indexed = list(enumerate(array_winners[0]))
                 top_10 = sorted(indexed, key=operator.itemgetter(1))[-10:]
                 top_10 = sorted(list(reversed([i for i, v in top_10])))
                 t = []
-                distanceFromLastResult = []
                 xSorted = sorted(top_10)
                 j = 0
                 ratio_str = []
                 strings = []
+                timeArr = []
                 strings_with_punc = []
                 for i in range(len(xSorted) - 1):
                     t.append((xSorted[i],))
+                    timeLine = timeUnion.timeUnion(rm.srt_time[rm.srt_words[rm.arr_words_srt[xSorted[i]]]])
                     best_str = rm.arr_words_srt[xSorted[i]]
                     best_str_with_punc = rm.dict_without_punctuation_srt[rm.arr_words_srt[xSorted[i]]].rstrip().lstrip().lstrip("-")
                     ki = -1
@@ -99,16 +94,20 @@ class MannagerZvi:
                         best_str = rm.arr_words_srt[xSorted[i] + ki] + " " + best_str
                         best_str_with_punc = rm.dict_without_punctuation_srt[rm.arr_words_srt[xSorted[i] + ki]].rstrip().lstrip().lstrip("-") + " " + best_str_with_punc
                         t[j] = t[j] + (xSorted[i] + ki,)
+                        timeLine = timeLine.union(timeUnion.timeUnion(rm.srt_time[rm.srt_words[rm.arr_words_srt[xSorted[i] + ki]]]))
                         ki -= 1
                     ki = 1
                     while ki + xSorted[i] in range(len(rm.arr_words_srt)) and SequenceMatcher(None, best_str, lineScript).ratio() < SequenceMatcher(None, best_str + " " + rm.arr_words_srt[xSorted[i] + ki], lineScript).ratio():
                         best_str = best_str + " " + rm.arr_words_srt[xSorted[i] + ki]
                         best_str_with_punc = best_str_with_punc + " " + rm.dict_without_punctuation_srt[rm.arr_words_srt[xSorted[i] + ki]].rstrip().lstrip().lstrip("-")
                         t[j] = t[j] + (xSorted[i] + ki,)
+                        timeLine = timeLine.union(
+                            timeUnion.timeUnion(rm.srt_time[rm.srt_words[rm.arr_words_srt[xSorted[i] + ki]]]))
                         ki += 1
                     j = j + 1
                     ratio_str.append(SequenceMatcher(None, best_str, lineScript).ratio())
                     strings.append(best_str)
+                    timeArr.append(str(timeLine))
                     strings_with_punc.append(best_str_with_punc)
                 the_best_distance = 0
                 the_best_index = -1
@@ -119,7 +118,8 @@ class MannagerZvi:
                         the_best_index = numIndex
                 LastResult = the_best_index
                 dict_lines[rm.dict_without_punctuation_script[rm.arr_words_script[lineScriptIndex]]] = strings_with_punc[the_best_index]
-            file_new.write(str(lineScriptIndex) + ". " + "\n" + rm.dict_without_punctuation_script[rm.arr_words_script[lineScriptIndex]].rstrip().lstrip() + " - SCRIPT" + "\n" + dict_lines[rm.dict_without_punctuation_script[rm.arr_words_script[lineScriptIndex]]].rstrip().lstrip() + " - SRT" + "\n")
+                bestTimeArr.append(timeArr[the_best_index])
+            file_new.write(str(lineScriptIndex + 1) + ". " + str(bestTimeArr[lineScriptIndex]) + "\n" + rm.script_talkers[lineScriptIndex] + "\n" + rm.dict_without_punctuation_script[rm.arr_words_script[lineScriptIndex]].rstrip().lstrip() + " - Script" + "\n" + dict_lines[rm.dict_without_punctuation_script[rm.arr_words_script[lineScriptIndex]]].rstrip().lstrip() + " - Srt" + "\n")
 
 
 d = MannagerZvi("script.txt", r"(.*):(.*)", r"\d\r\n(.*?)\r\n(.*?)\r\n\r\n", "srt.txt",constants.access_token)

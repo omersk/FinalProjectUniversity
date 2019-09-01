@@ -42,7 +42,7 @@ class RegexMaker:
                         self.dict_words_script[word] += 1
                     else:
                         self.dict_words_script[word] = 1
-            i += 1
+                i += 1
 
     def find_matches_srt(self):
         test_srt = self.f_srt.read()
