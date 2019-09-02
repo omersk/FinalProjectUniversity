@@ -127,8 +127,6 @@ class MannagerZvi:
                 LastResult = the_best_index
                 dict_lines[rm.dict_without_punctuation_script[rm.arr_words_script[lineScriptIndex]]] = strings_with_punc[the_best_index]
                 bestTimeArr.append(timeArr[the_best_index])
-            if "One across is Aegean" in lineScript:
-                pass
             lineScriptAfterPunc = rm.dict_without_punctuation_script[rm.arr_words_script[lineScriptIndex]].rstrip().lstrip()
             lineSrtPredicted = dict_lines[rm.dict_without_punctuation_script[rm.arr_words_script[lineScriptIndex]]].rstrip().lstrip()
             Customize_Ratio = max([SequenceMatcher(None, lineScriptAfterPunc, lineSrtPredicted).ratio(), SequenceMatcher(None, lineSrtPredicted, lineScriptAfterPunc).ratio()])
