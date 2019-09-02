@@ -66,10 +66,10 @@ No. We are committing genetic fraud. There's no guarantee that our sperm is goin
 Leonard
 Sheldon, this was your idea. A little extra money to get fractional T1 bandwidth in the apartment. - Script
 Sheldon, this was your idea. A little extra money to get fractional T-1 bandwidth in the apartment. - Srt
-18. 00:02:13,847 --> 00:02:17,087
+18. 00:01:48,699 --> 00:02:02,276
 Sheldon
 I know, and I do yearn for faster downloads, but there's some poor woman is going to pin her hopes on my sperm, what if she winds up with a toddler who doesn't know if he should use an integral or a differential to solve the area under a curve. - Script
-I don't know... I've never reneged on a proffer of sperm before. - Srt
+I know, and I do yearn for faster downloads. But there's some poor woman who's gonna pin her hopes on my sperm. What if she winds up with a toddler who doesn't know if he should use an integral or a differential to solve the area under a curve? - Srt
 19. 00:02:02,969 --> 00:02:05,567
 Leonard
 I'm sure she'll still love him. - Script
@@ -114,10 +114,10 @@ Bye. - Srt
 Sheldon
 Bye-bye - Script
 Bye. - Srt
-30. 00:02:32,238 --> 00:02:34,455
+30. 00:21:12,188 --> 00:21:13,397
 Leonard
 See you. - Script
-Bye. Nice meeting you. - Srt
+Thank you. - Srt
 31. 00:02:37,429 --> 00:02:39,151
 Sheldon
 Are you still mad about the sperm bank? - Script
@@ -134,18 +134,18 @@ You want to hear an interesting thing about stairs? - Srt
 Leonard
 Not really. - Script
 Not really. - Srt
-35. 00:02:46,691 --> 00:02:49,555
+35. 00:02:46,691 --> 00:02:52,014
 Sheldon
 If the height of a single step is off by as little as two millimetres, most people will trip. - Script
-If the height of a single step is off by as little as two millimeters, - Srt
+If the height of a single step is off by as little as two millimeters,  most people will trip. - Srt
 36. 00:02:49,692 --> 00:02:55,692
 Leonard
 I don't care. Two millimetres? That doesn't seem right. - Script
 I don't care. Two milli... That doesn't seem right. - Srt
-37. 00:02:55,814 --> 00:02:58,230
+37. 00:02:55,814 --> 00:02:59,881
 Sheldon
 No, it's true, I did a series of experiments when I was twelve, my father broke his clavicle. - Script
-No, it's true, I did a series of experiments when I was 12. - Srt
+No, it's true, I did a series of experiments when I was 12. My father broke his clavicle. - Srt
 38. 00:03:01,289 --> 00:03:03,159
 Leonard
 Is that why they sent you to boarding school? - Script
@@ -230,10 +230,10 @@ Hi. - Srt
 Penny
 Hi. - Script
 Hi. - Srt
-59. 00:03:47,790 --> 00:03:57,228
+59. 00:03:55,889 --> 00:03:57,228
 Leonard
 Hi. Well, uh, oh, welcome to the building. - Script
-Hi. Well... Welcome to the building. - Srt
+Welcome to the building. - Srt
 60. 00:03:57,655 --> 00:03:59,824
 Penny
 Thankyou, maybe we can have coffee sometime. - Script
@@ -314,10 +314,10 @@ I'm gonna invite her over. We'll have a nice meal and... chat. - Srt
 Sheldon
 Chat? We don't chat. At least not offline. - Script
 Chat? We don't chat. At least not offline. - Srt
-80. 00:02:18,627 --> 00:04:07,037
+80. 00:04:58,085 --> 00:05:03,993
 Leonard
 Well it's not difficult, you just listen to what she says and then you say something appropriate in response. - Script
-Let's try just walking out.  Bye.  Bye. Nice meeting you. Are you still mad about the sperm bank? - Srt
+It's not difficult. You just listen to what she says and then you say something appropriate in response. - Srt
 81. 00:05:05,390 --> 00:05:06,390
 Sheldon
 To what end? - Script
@@ -346,10 +346,10 @@ Hi. - Srt
 Leonard
 Anyway, um. We brought home Indian food. And, um. I know that moving can be stressful, and I find that when I'm undergoing stress, that good food and company can have a comforting effect. Also, curry is a natural laxative, and I don't have to tell you that, uh, a clean colon is just one less thing to worry about. - Script
 Anyway... We brought home Indian food. And... I know that moving can be stressful, and I find that when I'm undergoing stress, that good food and company can have a comforting effect. Also, curry is a natural laxative, and I don't have to tell you that, you know, a clean colon is just... one less thing to worry about. - Srt
-88. 00:02:02,969 --> 00:02:10,357
+88. 00:05:37,685 --> 00:05:43,089
 Sheldon
 Leonard, I'm not expert here but I believe in the context of a luncheon invitation, you might want to skip the reference to bowel movements. - Script
-I'm sure she'll still love him.  I wouldn't. Well, what do you want to do? I want to leave. - Srt
+I'm no expert, but I believe in the context of a luncheon invitation, you might want to skip the reference to bowel movements. - Srt
 89. 00:05:43,700 --> 00:05:45,450
 Penny
 Oh, you're inviting me over to eat? - Script
@@ -357,7 +357,7 @@ You're inviting me over to eat? - Srt
 90. 00:12:03,666 --> 00:12:04,896
 Leonard
 Uh, yes. - Script
-Yes. - Srt
+ Yes. - Srt
 91. 00:05:47,876 --> 00:05:49,830
 Penny
 Oh, that's so nice, I'd love to. - Script
@@ -486,7 +486,7 @@ In the winter, that seat is close enough to the radiator to remain warm, and yet
 Penny
 Do you want me to move? - Script
 Do you want me to move? - Srt
-123. 00:03:53,971 --> 00:03:55,010
+123. 00:08:09,338 --> 00:08:11,237
 Sheldon
 Well. - Script
 Well... - Srt
@@ -517,7 +517,7 @@ That's not true. Koothrappali and Wolowitz come over all the time. - Srt
 130. 00:08:45,513 --> 00:08:46,907
 Leonard
 Yes I now, but - Script
-I know, but... - Srt
+ I know, but... - Srt
 131. 00:08:45,513 --> 00:08:48,766
 Sheldon
 Tuesday night we played Klingon boggle until one in the morning. - Script
@@ -526,10 +526,10 @@ Tuesday night, we played Klingon Boggle till 1:00 a.m. - Srt
 Leonard
 Yes, I remember. - Script
 Yeah, I remember. - Srt
-133. 00:06:23,971 --> 00:06:27,089
+133. 00:08:50,020 --> 00:08:51,855
 Sheldon
 I resent you saying we don't have company. - Script
-Okay, make yourself at home. Thank you. - Srt
+ Don't say we don't have company. - Srt
 134. 00:14:58,066 --> 00:14:59,460
 Leonard
 I'm sorry. - Script
@@ -550,10 +550,10 @@ So... Klingon Boggle? - Srt
 Leonard
 Yeah, it's like regular boggle but, in Klingon. That's probably enough about us, tell us about you. - Script
 Yeah. It's like regular Boggle, but... in Klingon. That's probably enough about us. So, tell us about you. - Srt
-139. 00:06:23,971 --> 00:06:27,089
+139. 00:09:12,920 --> 00:09:15,234
 Penny
 Um, me, okay, I'm Sagittarius, which probably tells you way more than you need to know. - Script
-Okay, make yourself at home. Thank you. - Srt
+which probably tells you way more than you need to know. - Srt
 140. 00:09:15,371 --> 00:09:22,996
 Sheldon
 Yes, it tells us that you participate in the mass cultural delusion that the Sun's apparent position relative to arbitrarily defined constellations and the time of your birth somehow effects your personality. - Script
@@ -638,18 +638,18 @@ God, you know, 4 years I lived with him. 4 years... that's like as long as high 
 Sheldon
 It took you four years to get through High School? - Script
 It took you 4 years to get through high school? - Srt
-161. 00:08:50,020 --> 00:08:51,855
+161. 00:02:02,969 --> 00:02:05,567
 Leonard
 Don't. - Script
-Don't say we don't have company. - Srt
+ I wouldn't. - Srt
 162. 00:11:01,192 --> 00:11:03,994
 Penny
 I just, I can't believe I trusted him . - Script
 It just... I can't believe I trusted him. - Srt
-163. 00:07:37,504 --> 00:07:41,588
+163. 00:11:08,944 --> 00:11:11,554
 Leonard
 Should I say something? I feel like I should say something. - Script
-No... I sit there. What's the difference? - Srt
+Should I say something? I feel like I should say something. - Srt
 164. 00:11:11,677 --> 00:11:13,372
 Sheldon
 You? No, you'll only make it worse. - Script
@@ -774,10 +774,10 @@ That's not to say that if a carnal relationship were to develop, that I wouldn't
 Sheldon
 Do you think this possibility will be helped or hindered when she discovers your Luke Skywalker no-more-tears shampoo? - Script
 Do you think this possibility will be helped or hindered when she discovers your Luke Skywalker no-more-tears shampoo? - Srt
-195. 00:13:32,448 --> 00:13:37,749
+195. 00:13:35,836 --> 00:13:37,749
 Leonard
 It's Darth Vader shampoo. (There is a knock on the door.) Luke Skywalker's the conditioner. - Script
-It's Darth Vader shampoo. Luke Skywalker's the conditioner. - Srt
+Luke Skywalker's the conditioner. - Srt
 196. 00:13:40,346 --> 00:13:43,066
 Howard
 Wait till you see this. - Script
@@ -862,14 +862,14 @@ Hey, is there a trick to getting it to switch from tub to shower...? Hi. Sorry. 
 Howard
 Enchante Madamoiselle. Howard Wolowitz, Cal-Tech department of Applied Physics. You may be familiar with some of my work, it's currently orbiting Jupiter's largest moon taking high-resolution digital photographs. - Script
 Howard Wolowitz, Caltech department of applied physics. You may be familiar with some of my work. It's currently orbiting Jupiter's largest moon taking high-resolution digital photographs. - Srt
-217. 00:09:57,470 --> 00:10:01,477
+217. 00:14:51,058 --> 00:14:53,368
 Penny
 Penny. I work at the Cheesecake Factory. - Script
-I'm a waitress at The Cheesecake Factory. I love cheesecake. - Srt
-218. 00:16:32,446 --> 00:16:34,315
+Penny. I work at The Cheesecake Factory. - Srt
+218. 00:14:53,951 --> 00:14:55,782
 Leonard
 Come on, I'll show you the trick with the shower. - Script
-Come on, you know how it is with breakups. - Srt
+I'll show you the trick with the shower. - Srt
 219. 00:14:56,318 --> 00:14:57,318
 Howard
 Bon douche. - Script
@@ -974,14 +974,14 @@ Right, I could have stayed behind and watch Wolowitz try to hit on Penny in Russ
 Leonard
 Come on, you know how it is with break-ups. - Script
 Come on, you know how it is with breakups. - Srt
-245. 00:07:37,504 --> 00:07:38,925
+245. 00:16:34,437 --> 00:16:36,548
 Sheldon
 No I don't. And neither do you. - Script
-No... I sit there. - Srt
-246. 00:11:19,536 --> 00:11:21,074
+No, I don't... and neither do you. - Srt
+246. 00:16:37,757 --> 00:16:39,221
 Leonard
 Wuh, I, I broke up with Joyce Kim. - Script
-I still love him. - Srt
+I broke up with Joyce Kim. - Srt
 247. 00:16:39,343 --> 00:16:42,596
 Sheldon
 You did not break up with Joyce Kim, she defected to North Korea. - Script
@@ -1046,10 +1046,10 @@ What did I just--  We're here to pick up Penny's TV. - Srt
 Voice
 Get lost. - Script
 <i>Get lost.</i> - Srt
-263. 00:15:17,366 --> 00:15:18,914
+263. 00:17:47,472 --> 00:17:48,647
 Sheldon
 Okay, thanks for your time. - Script
-Okay, thanks.  You're welcome. - Srt
+Okay, thanks for you time. - Srt
 264. 00:17:49,220 --> 00:17:51,109
 Leonard
 We're not going to give up just like that. - Script
@@ -1098,10 +1098,10 @@ Yeah? - Srt
 Leonard
 I'm Leonard, this is Sheldon. - Script
 I'm Leonard, this is Sheldon. - Srt
-276. 00:07:40,577 --> 00:07:41,588
+276. 00:18:57,102 --> 00:18:58,114
 Sheldon
 From the intercom. - Script
-What's the difference? - Srt
+From the intercom. - Srt
 277. 00:19:00,150 --> 00:19:01,858
 Man
 How the hell did you get in the building? - Script
@@ -1114,10 +1114,10 @@ We're scientists. - Srt
 Sheldon
 Tell him about our IQ. - Script
 Tell him about our IQ. - Srt
-280. 00:15:22,067 --> 00:15:24,719
+280. 00:19:21,367 --> 00:19:23,025
 Sheldon
 Leonard. - Script
-Hey, Leonard? - Srt
+Leonard... - Srt
 281. 00:19:21,367 --> 00:19:23,025
 Leonard
 What? - Script
@@ -1186,10 +1186,10 @@ That sounds interesting. - Srt
 Howard
 So you'll think about it? - Script
 You'll think about it? - Srt
-298. 00:18:39,998 --> 00:18:46,121
+298. 00:20:32,313 --> 00:20:34,838
 Penny
 Oh, I don't think I'll be able to stop thinking about it. - Script
-This is it. I'll do the talking. Good thinking. I'll just be the muscle. - Srt
+I don't think I'll be able to stop thinking about it. - Srt
 299. 00:20:36,811 --> 00:20:37,863
 Raj
 Smooth. - Script
@@ -1202,14 +1202,14 @@ We're home. - Srt
 Penny
 Oh, my God, what happened? - Script
 My God, what happened? - Srt
-302. 00:00:12,753 --> 00:00:18,140
+302. 00:20:43,584 --> 00:20:48,537
 Leonard
 Well, your ex-boyfriend sends his regards and I think the rest is fairly self-explanatory. - Script
-Agreed. What's your point? There's no point, I just think it's a good idea for a T-shirt. - Srt
-303. 00:02:02,969 --> 00:02:09,235
+Well, your ex-boyfriend sends his regards and I think the rest is fairly self-explanatory. - Srt
+303. 00:20:49,249 --> 00:20:53,897
 Penny
 I'm so sorry, I really thought if you guys went instead of me he wouldn't be such an ass. - Script
-I'm sure she'll still love him.  I wouldn't. Well, what do you want to do? - Srt
+I'm so sorry. I really thought if you guys went instead of me he wouldn't be such an ass. - Srt
 304. 00:20:54,019 --> 00:20:56,006
 Leonard
 No, it was a valid hypothesis. - Script
@@ -1234,10 +1234,10 @@ Thank you. You're not done with her, are you? - Srt
 Leonard
 Our babies will be smart and beautiful. - Script
 Are babies will be smart and beautiful. - Srt
-310. 00:04:18,547 --> 00:04:19,720
+310. 00:21:28,258 --> 00:21:29,761
 Sheldon
 Not to mention imaginary. - Script
-Not with commentary. - Srt
+Not to mention imaginary. - Srt
 311. 00:21:35,754 --> 00:21:37,626
 Leonard
 Is Thai food okay with you Penny? - Script
@@ -1266,18 +1266,18 @@ So... - Srt
 Sheldon
 They would be gastronomically redundant. I can see we're going to have to spell out everything for this girl. - Script
 It would be gastronomically redundant. I can see we're going to have to spell out everything for this girl. - Srt
-318. 00:17:20,149 --> 00:17:22,838
+318. 00:21:49,753 --> 00:21:55,602
 Penny
 Any ideas Raj? (He just looks at her with a worried expression.) - Script
-He speaks English. He just can't speak to women. - Srt
+Any ideas, Raj? Turn left on Lake Street and head up to Colorado. - Srt
 319. 00:21:53,439 --> 00:21:58,477
 Howard
 Turn left on Lake Street and head up to Colorado. I know a wonderful little sushi bar that has karaoke. - Script
 Turn left on Lake Street and head up to Colorado. I know a wonderful little sushi bar that has karaoke. - Srt
-320. 00:20:28,625 --> 00:20:30,606
+320. 00:21:58,603 --> 00:21:59,805
 Penny
 That sounds like fun. - Script
-That sounds interesting. - Srt
+That sounds like fun. - Srt
 321. 00:21:08,359 --> 00:21:09,809
 Howard (sings) 
 Baby, baby don't get hooked on me. Uh, baby, baby don't get hooked on me. - Script

@@ -39,6 +39,7 @@ class MannagerZvi:
         }
         bestTimeArr = []
         LastResult = 0
+        ArrayRatios = []
         for lineScriptIndex in tqdm(range(len(rm.arr_words_script))):
             lineScript = rm.arr_words_script[lineScriptIndex]
             for wordIndex in range(len(lineScript.split(' '))):
@@ -50,9 +51,11 @@ class MannagerZvi:
                     for lineSrtIndex in range(len(rm.arr_words_srt)):
                         lineSrt = rm.arr_words_srt[lineSrtIndex]
                         if word in lineSrt.split(' '):
+                            if word == "I":
+                                pass
                             if lineSrt and lineScript:
-                                line_word_matrix[0][lineSrtIndex] = float((sumSrt - rm.dict_words_srt[word])) / float(
-                                    sumSrt*len(lineSrt.split(' '))) * float((sumScript - rm.dict_words_script[word])) / float(sumScript*len(lineScript.split(' ')))
+                                line_word_matrix[0][lineSrtIndex] = float((sumSrt - 5*rm.dict_words_srt[word])) / float(
+                                    sumSrt) * float((sumScript - 5*rm.dict_words_script[word])) / float(sumScript*len(lineScript.split(' ')))
                     dict_word[word] = line_word_matrix
         for lineScriptIndex in tqdm(range(len(rm.arr_words_script))):
             lineScript = rm.arr_words_script[lineScriptIndex]
@@ -73,7 +76,12 @@ class MannagerZvi:
                 bestTimeArr.append(timeUnion.timeUnion(rm.srt_time[rm.srt_words[rm.arr_words_srt[array_ratios.index(max(array_ratios))]]]))
             else:
                 indexed = list(enumerate(array_winners[0]))
-                top_10 = sorted(indexed, key=operator.itemgetter(1))[-10:]
+                sorted_indexed = sorted(indexed, key=operator.itemgetter(1))
+                top_10 = sorted_indexed[-10:]
+                copy_top_10 = sorted_indexed[-10:]
+                for i, v in copy_top_10:
+                    if v < cutoff_ratio:
+                        top_10.remove((i, v))
                 top_10 = sorted(list(reversed([i for i, v in top_10])))
                 t = []
                 xSorted = sorted(top_10)
@@ -82,7 +90,7 @@ class MannagerZvi:
                 strings = []
                 timeArr = []
                 strings_with_punc = []
-                for i in range(len(xSorted) - 1):
+                for i in range(len(xSorted)):
                     t.append((xSorted[i],))
                     timeLine = timeUnion.timeUnion(rm.srt_time[rm.srt_words[rm.arr_words_srt[xSorted[i]]]])
                     best_str = rm.arr_words_srt[xSorted[i]]
@@ -119,8 +127,29 @@ class MannagerZvi:
                 LastResult = the_best_index
                 dict_lines[rm.dict_without_punctuation_script[rm.arr_words_script[lineScriptIndex]]] = strings_with_punc[the_best_index]
                 bestTimeArr.append(timeArr[the_best_index])
-            file_new.write(str(lineScriptIndex + 1) + ". " + str(bestTimeArr[lineScriptIndex]) + "\n" + rm.script_talkers[lineScriptIndex] + "\n" + rm.dict_without_punctuation_script[rm.arr_words_script[lineScriptIndex]].rstrip().lstrip() + " - Script" + "\n" + dict_lines[rm.dict_without_punctuation_script[rm.arr_words_script[lineScriptIndex]]].rstrip().lstrip() + " - Srt" + "\n")
+            if "One across is Aegean" in lineScript:
+                pass
+            lineScriptAfterPunc = rm.dict_without_punctuation_script[rm.arr_words_script[lineScriptIndex]].rstrip().lstrip()
+            lineSrtPredicted = dict_lines[rm.dict_without_punctuation_script[rm.arr_words_script[lineScriptIndex]]].rstrip().lstrip()
+            Customize_Ratio = max([SequenceMatcher(None, lineScriptAfterPunc, lineSrtPredicted).ratio(), SequenceMatcher(None, lineSrtPredicted, lineScriptAfterPunc).ratio()])
+            if Customize_Ratio < 0.85:
+                array_ratios = []
+                for lineSrtIndex in range(len(rm.arr_words_srt)):
+                    lineSrt = rm.arr_words_srt[lineSrtIndex]
+                    array_ratios.append(SequenceMatcher(None, lineSrt, lineScript).ratio() * normal_dis((1.0/(1 + abs((lineSrtIndex - LastResult))))))
+                if SequenceMatcher(None, rm.dict_without_punctuation_script[rm.arr_words_script[lineScriptIndex]].rstrip().lstrip(), rm.dict_without_punctuation_srt[rm.arr_words_srt[array_ratios.index(max(array_ratios))]].rstrip().lstrip().lstrip("-")).ratio() > Customize_Ratio:
+                    file_new.write(str(lineScriptIndex + 1) + ". " + str(timeUnion.timeUnion(rm.srt_time[rm.srt_words[rm.arr_words_srt[array_ratios.index(max(array_ratios))]]])) + "\n" + rm.script_talkers[lineScriptIndex] + "\n" + rm.dict_without_punctuation_script[rm.arr_words_script[lineScriptIndex]].rstrip().lstrip() + " - Script" + "\n" + rm.dict_without_punctuation_srt[rm.arr_words_srt[array_ratios.index(max(array_ratios))]].rstrip().lstrip().lstrip("-") + " - Srt" + "\n")
+                    ArrayRatios.append(SequenceMatcher(None, rm.dict_without_punctuation_script[rm.arr_words_script[lineScriptIndex]].rstrip().lstrip(), rm.dict_without_punctuation_srt[rm.arr_words_srt[array_ratios.index(max(array_ratios))]].rstrip().lstrip().lstrip("-")).ratio())
+                else:
+                    file_new.write(
+                        str(lineScriptIndex + 1) + ". " + str(bestTimeArr[lineScriptIndex]) + "\n" + rm.script_talkers[
+                            lineScriptIndex] + "\n" + lineScriptAfterPunc + " - Script" + "\n" + lineSrtPredicted + " - Srt" + "\n")
+                    ArrayRatios.append(Customize_Ratio)
+            else:
+                file_new.write(str(lineScriptIndex + 1) + ". " + str(bestTimeArr[lineScriptIndex]) + "\n" + rm.script_talkers[lineScriptIndex] + "\n" + lineScriptAfterPunc + " - Script" + "\n" + lineSrtPredicted + " - Srt" + "\n")
+                ArrayRatios.append(Customize_Ratio)
 
+        print sum(ArrayRatios)/len(ArrayRatios)
 
 d = MannagerZvi("script.txt", r"(.*):(.*)", r"\d\r\n(.*?)\r\n(.*?)\r\n\r\n", "srt.txt",constants.access_token)
 d.main_action(constants.url_script, constants.url_srt, 50, "outputfile.txt")
