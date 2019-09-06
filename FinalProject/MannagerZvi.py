@@ -6,7 +6,6 @@ import timeUnion
 from tqdm import tqdm
 import constants
 import numpy
-import heapq
 import operator
 
 
@@ -19,7 +18,7 @@ class MannagerZvi:
         self.access_token = access_token
         self.dict_position = {}
 
-    def main_action(self, url_script, url_srt, num_of_lines, output_file):
+    def main_action(self, url_script, url_srt):
         file_new = open("outputfilenew.txt", 'w')
         d = DropBoxDownloader.DropBoxDownloader(self.access_token)
         d.download_file(url_script, self.script_file_path)
@@ -150,4 +149,4 @@ class MannagerZvi:
         print sum(ArrayRatios)/len(ArrayRatios)
 
 d = MannagerZvi("script.txt", r"(.*):(.*)", r"\d\r\n(.*?)\r\n(.*?)\r\n\r\n", "srt.txt",constants.access_token)
-d.main_action(constants.url_script, constants.url_srt, 50, "outputfile.txt")
+d.main_action(constants.url_script, constants.url_srt)
