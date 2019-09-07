@@ -26,7 +26,7 @@ One across is "Aegean." Eight down is "Nabokov." 26 across is "MCM." 14 down is.
 Receptionist
 Can I help you? - Script
 Can I help you? - Srt
-8. 00:00:54,673 --> 00:12:04,896
+8. 00:00:50,185 --> 00:00:57,626
 Leonard
 Yes. Um, is this the High IQ sperm bank? - Script
 Yes. Is this the high-IQ sperm bank? - Srt
@@ -42,7 +42,7 @@ I think this is the place. - Srt
 Receptionist
 Fill these out. - Script
 Fill these out. - Srt
-12. 00:01:08,001 --> 00:21:13,397
+12. 00:01:06,149 --> 00:01:09,827
 Leonard
 Thank-you. We'll be right back. - Script
 Thank you.  We'll be right back. - Srt
@@ -106,15 +106,15 @@ Let's try just walking out. - Srt
 Leonard
 Okay. - Script
 Me? Okay. - Srt
-28. 00:04:04,796 --> 00:04:07,037
+28. 00:02:32,238 --> 00:02:34,455
  Receptionist
 Bye. - Script
 Bye. - Srt
-29. 00:04:04,796 --> 00:04:07,037
+29. 00:02:32,238 --> 00:02:34,455
 Sheldon
 Bye-bye - Script
-Bye. - Srt
-30. 00:21:12,188 --> 00:21:13,397
+ Bye. - Srt
+30. 00:01:06,149 --> 00:01:07,666
 Leonard
 See you. - Script
 Thank you. - Srt
@@ -242,27 +242,27 @@ Thank you. Maybe we can have coffee sometime. - Srt
 Leonard
 Oh, great. - Script
 Oh, wait. - Srt
-62. 00:05:50,007 --> 00:05:51,007
+62. 00:03:59,946 --> 00:04:01,750
 Penny
 Great. - Script
 Great. - Srt
-63. 00:05:50,007 --> 00:05:51,007
+63. 00:03:59,946 --> 00:04:01,750
 Sheldon
 Great. - Script
 Great. - Srt
-64. 00:04:04,796 --> 00:05:51,007
+64. 00:03:59,946 --> 00:04:07,037
 Leonard
 Great. Well, bye. - Script
 Great.  Well... bye. - Srt
-65. 00:04:04,796 --> 00:04:07,037
+65. 00:02:32,238 --> 00:02:34,455
 Penny
 Bye. - Script
 Bye. - Srt
-66. 00:04:04,796 --> 00:04:07,037
+66. 00:02:32,238 --> 00:02:34,455
 Sheldon
 Bye. - Script
 Bye. - Srt
-67. 00:04:04,796 --> 00:04:07,037
+67. 00:02:32,238 --> 00:02:34,455
 Leonard
 Bye. - Script
 Bye. - Srt
@@ -354,7 +354,7 @@ I'm no expert, but I believe in the context of a luncheon invitation, you might 
 Penny
 Oh, you're inviting me over to eat? - Script
 You're inviting me over to eat? - Srt
-90. 00:12:03,666 --> 00:12:04,896
+90. 00:00:50,185 --> 00:00:51,771
 Leonard
 Uh, yes. - Script
  Yes. - Srt
@@ -362,7 +362,7 @@ Uh, yes. - Script
 Penny
 Oh, that's so nice, I'd love to. - Script
 Oh, that's so nice. I'd love to. - Srt
-92. 00:05:50,007 --> 00:05:51,007
+92. 00:03:59,946 --> 00:04:01,750
 Leonard
 Great. - Script
 Great. - Srt
@@ -394,10 +394,10 @@ This looks like some serious stuff.  Leonard, did you do this? - Srt
 Sheldon
 Actually that's my work. - Script
 Actually, that's my work. - Srt
-100. 00:12:24,411 --> 00:12:25,411
+100. 
 Penny
 Wow. - Script
-How so? - Srt
+NO IN SRT!!!! - Srt
 101. 00:06:39,767 --> 00:06:49,203
 Sheldon
 Yeah, well, it's just some quantum mechanics, with a little string theory doodling around the edges. That part there, that's just a joke, it's a spoof of the Bourne-Oppenheimer approximation. - Script
@@ -426,7 +426,7 @@ Holy smokes. - Srt
 Sheldon
 If by holy smokes you mean a derivative restatement of the kind of stuff you can find scribbled on the wall of any men's room at MIT, sure. - Script
 If by "holy smokes", you mean a derivative restatement of the kind of stuff you can find scribbled on the wall of any men's room at MIT, sure. - Srt
-108. 00:19:21,367 --> 00:19:23,025
+108. 00:07:12,174 --> 00:07:13,483
 Leonard
 What? - Script
 What? - Srt
@@ -486,7 +486,7 @@ In the winter, that seat is close enough to the radiator to remain warm, and yet
 Penny
 Do you want me to move? - Script
 Do you want me to move? - Srt
-123. 00:08:09,338 --> 00:08:11,237
+123. 00:03:53,971 --> 00:03:55,010
 Sheldon
 Well. - Script
 Well... - Srt
@@ -494,18 +494,18 @@ Well... - Srt
 Leonard
 Just sit somewhere else. - Script
 Just sit somewhere else. - Srt
-125. 00:08:13,513 --> 00:08:33,803
+125. 
 Sheldon
 Fine. (Wanders in circles, looking lost.) - Script
-Fine. Sheldon, sit! - Srt
+NO IN SRT!!!! - Srt
 126. 00:08:32,737 --> 00:08:33,803
 Leonard
 Sheldon, sit! - Script
 Sheldon, sit! - Srt
-127. 00:18:53,776 --> 00:18:54,776
+127. 
 Sheldon
 Aaah! - Script
-Yeah? - Srt
+NO IN SRT!!!! - Srt
 128. 00:08:39,430 --> 00:08:42,552
 Leonard
 Well this is nice. We don't have a lot of company over. - Script
@@ -566,7 +566,7 @@ Participate in the what? - Srt
 Leonard
 I think what Sheldon's trying to say, is that Sagittarius wouldn't have been our first guess. - Script
 I think what Sheldon's trying to say is that Sagittarius wouldn't have been our first guess. - Srt
-143. 00:09:34,912 --> 00:10:29,937
+143. 00:09:34,912 --> 00:09:44,008
 Penny
 Oh, yeah, a lot of people think I'm a water sign. Okay, let's see, what else, oh, I'm a vegetarian, oh, except for fish, and the occasional steak, I love steak. - Script
 Yeah, a lot of people think I'm a water sign. Okay, let's see, what else... I'm a vegetarian. Except for fish. And the occasional steak. I love steak! - Srt
@@ -610,7 +610,7 @@ No, I'm from Omaha. - Srt
 Leonard
 Well, if that was a movie I would go see it. - Script
 If that was movie, I would go see it. - Srt
-154. 00:10:26,594 --> 00:10:35,010
+154. 00:09:37,863 --> 00:10:35,010
 Penny
 I know, right? Okay, let's see, what else? Um, that's about it. That's the story of Penny. - Script
 I know, right? Okay, let's see, what else... Guess that's about it. That's the story of Penny. - Srt
@@ -638,10 +638,10 @@ God, you know, 4 years I lived with him. 4 years... that's like as long as high 
 Sheldon
 It took you four years to get through High School? - Script
 It took you 4 years to get through high school? - Srt
-161. 00:02:02,969 --> 00:02:05,567
+161. 
 Leonard
 Don't. - Script
- I wouldn't. - Srt
+NO IN SRT!!!! - Srt
 162. 00:11:01,192 --> 00:11:03,994
 Penny
 I just, I can't believe I trusted him . - Script
@@ -658,7 +658,7 @@ You? No, you'll only make it worse. - Srt
 Penny
 You want to know the most pathetic part? Even though I hate his lying, cheating guts, I still love him. Is that crazy? - Script
 You want to know the most pathetic part? Even though I hate his lying, cheating guts... I still love him. Is that crazy? - Srt
-166. 00:12:03,666 --> 00:12:04,896
+166. 00:00:50,185 --> 00:00:51,771
 Sheldon
 Yes. - Script
 Yes. - Srt
@@ -678,7 +678,7 @@ Our shower works. - Srt
 Penny
 Really? Would it be totally weird if I used it? - Script
 Really? Would it be totally weird if I used it? - Srt
-171. 00:12:03,666 --> 00:12:04,896
+171. 00:00:50,185 --> 00:00:51,771
 Sheldon
 Yes. - Script
 Yes. - Srt
@@ -798,10 +798,10 @@ It's a Stephen Hawking lecture from MIT in 1974. - Srt
 Leonard
 This is not a good time. - Script
 This isn't a good time. - Srt
-201. 00:21:40,874 --> 00:21:43,223
+201. 
 Howard: It’s before he became a creepy computer voice
 . - Script
-So? - Srt
+NO IN SRT!!!! - Srt
 202. 00:13:57,312 --> 00:13:59,254
 Leonard
 That's great, you guys have to go. - Script
@@ -830,10 +830,10 @@ And she's not a lady. She's just a new neighbor. - Srt
 Howard
 Hang on, there really is a lady here? - Script
 Hang on, there really is a lady here? - Srt
-209. 00:03:24,078 --> 00:03:25,978
+209. 
 Leonard
 Uh-huh. - Script
-Oh, hi. - Srt
+NO IN SRT!!!! - Srt
 210. 00:14:15,081 --> 00:14:18,101
 Howard
 And you want us out because you're anticipating coitus? - Script
@@ -886,10 +886,10 @@ It's French for "good shower. " It's a sentiment I can express in six languages.
 Leonard
 Save it for your blog, Howard. - Script
 Save it for your blog, Howard. - Srt
-223. 00:13:43,189 --> 00:13:44,189
+223. 
 Howard
 See-ka-tong-guay-jow. - Script
-See what? - Srt
+NO IN SRT!!!! - Srt
 224. 00:15:14,931 --> 00:15:17,244
 Leonard
 Uh, there it goes, it sticks, I'm sorry. - Script
@@ -897,7 +897,7 @@ All right, there it goes. It sticks. I'm sorry. - Srt
 225. 00:15:17,366 --> 00:15:18,914
 Penny
 Okay. Thanks. - Script
-Okay, thanks. - Srt
+ Okay, thanks. - Srt
 226. 00:15:17,366 --> 00:15:21,079
 Leonard
 You're welcome, oh, you're going to step right, okay, I'll. - Script
@@ -930,10 +930,10 @@ I'll probably say yes. - Srt
 Penny
 It's just not the kind of thing you ask a guy you've just met. - Script
 It's just not the kind of thing you ask a guy you just met. - Srt
-234. 00:12:24,411 --> 00:12:25,411
+234. 
 Leonard
 Wow. - Script
-How so? - Srt
+NO IN SRT!!!! - Srt
 235. 00:15:48,801 --> 00:15:51,863
 Sheldon
 I really think we should examine the chain of causality here. - Script
@@ -1022,7 +1022,7 @@ Really? Why? - Srt
 Howard
 He's kind of a nerd. Juice box? - Script
 He's kind of a nerd. Juice box? - Srt
-257. 00:18:42,559 --> 00:18:43,694
+257. 00:17:36,063 --> 00:17:37,183
 Leonard (pushes buzzer) 
 I'll do the talking. - Script
 I'll do the talking. - Srt
@@ -1045,7 +1045,7 @@ What did I just--  We're here to pick up Penny's TV. - Srt
 262. 00:17:44,517 --> 00:17:47,350
 Voice
 Get lost. - Script
-<i>Get lost.</i> - Srt
+ <i>Get lost.</i> - Srt
 263. 00:17:47,472 --> 00:17:48,647
 Sheldon
 Okay, thanks for your time. - Script
@@ -1082,7 +1082,7 @@ What do you think their combined IQ is? - Srt
 Leonard
 Just grab the door. - Script
 Just grab the door! - Srt
-272. 00:18:39,998 --> 00:18:43,694
+272. 00:17:36,063 --> 00:18:40,998
 Leonard
 This is it. (Knocks.) I'll do the talking. - Script
 This is it. I'll do the talking. - Srt
@@ -1118,7 +1118,7 @@ Tell him about our IQ. - Srt
 Sheldon
 Leonard. - Script
 Leonard... - Srt
-281. 00:19:21,367 --> 00:19:23,025
+281. 00:07:12,174 --> 00:07:13,483
 Leonard
 What? - Script
 What? - Srt
@@ -1226,7 +1226,7 @@ Really, thank you so much for going and trying, you're just... You're so terrifi
 Leonard
 Really? Great. - Script
 Really? Great. - Srt
-308. 00:21:12,188 --> 00:21:21,873
+308. 00:01:06,149 --> 00:21:21,873
 Sheldon
 Thank you. You're not done with her, are you? - Script
 Thank you. You're not done with her, are you? - Srt
@@ -1266,10 +1266,10 @@ So... - Srt
 Sheldon
 They would be gastronomically redundant. I can see we're going to have to spell out everything for this girl. - Script
 It would be gastronomically redundant. I can see we're going to have to spell out everything for this girl. - Srt
-318. 00:21:49,753 --> 00:21:55,602
+318. 
 Penny
 Any ideas Raj? (He just looks at her with a worried expression.) - Script
-Any ideas, Raj? Turn left on Lake Street and head up to Colorado. - Srt
+NO IN SRT!!!! - Srt
 319. 00:21:53,439 --> 00:21:58,477
 Howard
 Turn left on Lake Street and head up to Colorado. I know a wonderful little sushi bar that has karaoke. - Script
@@ -1278,10 +1278,10 @@ Turn left on Lake Street and head up to Colorado. I know a wonderful little sush
 Penny
 That sounds like fun. - Script
 That sounds like fun. - Srt
-321. 00:21:08,359 --> 00:21:09,809
+321. 
 Howard (sings) 
 Baby, baby don't get hooked on me. Uh, baby, baby don't get hooked on me. - Script
-Why don't you put some clothes on, - Srt
+NO IN SRT!!!! - Srt
 322. 00:22:13,239 --> 00:22:19,424
 Sheldon
 I don't know what your odds are in the world as a whole, but as far as the population of this car goes, you're a veritable Mack Daddy. - Script
