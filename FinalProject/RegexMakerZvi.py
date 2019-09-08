@@ -9,7 +9,7 @@ class RegexMakerZvi:
         self.script_talkers = {}
         self.script_words = {}
         self.dict_words_script = {}
-        self.srt_time = {}
+        self.srt_time = []
         self.dict_words_srt = {}
         self.dict_position_script = {}
         self.srt_words = {}
@@ -51,7 +51,6 @@ class RegexMakerZvi:
         # LOOP SRT -----------
         for matchNum, match in tqdm(enumerate(matches_srt, start=1)):
             if "Scene" not in match.group(1):
-                self.srt_time[i] = match.group(1)
                 line = str(re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f\x7f-\xff]', '',
                                   match.group(2).replace("\xe2\x80\x99", "'")).replace('\r', '')).strip('(').rstrip().lstrip()
                 a = None
@@ -67,6 +66,7 @@ class RegexMakerZvi:
                     else:
                         self.srt_words[line] = self.srt_words[line] + (i,)
                     self.arr_words_srt.append(line)
+                    self.srt_time.append(match.group(1))
                     for word in line.split(" "):
                         if word in self.dict_words_srt.keys():
                             self.dict_words_srt[word] += 1
@@ -75,7 +75,6 @@ class RegexMakerZvi:
                 if a:
                     for line_enter in a:
                         line_with_all = line_enter
-                        self.srt_time[i] = match.group(1)
                         line_enter = str(re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f\x7f-\xff]', '',
                                           line_enter.replace("\xe2\x80\x99", "'")).replace('\r', '')).strip(
                             '(').rstrip().lstrip()
@@ -88,6 +87,7 @@ class RegexMakerZvi:
                         else:
                             self.srt_words[line_enter] = self.srt_words[line_enter] + (i,)
                         self.arr_words_srt.append(line_enter)
+                        self.srt_time.append(match.group(1))
                         for word in line_enter.split(" "):
                             if word in self.dict_words_srt.keys():
                                 self.dict_words_srt[word] += 1
