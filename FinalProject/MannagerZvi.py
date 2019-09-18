@@ -11,6 +11,13 @@ import operator
 
 class MannagerZvi:
     def __init__(self, script_file_path, regex_script, regex_srt, srt_file_path, access_token):
+        """
+        :param script_file_path: the script file path we download from dropbox
+        :param regex_script: the regex we used to the script file
+        :param regex_srt: the regex we used to the srt file
+        :param srt_file_path: the path to the srt file that there we download from dropbox
+        :param access_token: access token for access the dropbox
+        """
         self.script_file_path = script_file_path
         self.regex_script = regex_script
         self.regex_srt = regex_srt
@@ -18,10 +25,15 @@ class MannagerZvi:
         self.access_token = access_token
         self.dict_position = {}
         self.rm = None
-        self.dict_word = {
+        self.word_to_srt_line_match = {
         }
 
     def download_things(self, url_script, url_srt):
+        """
+        :param url_script: the url to the script
+        :param url_srt: the url to the srt
+        :return: download from dropbox to the script_file_path and srt_file_path
+        """
         d = DropBoxDownloader.DropBoxDownloader(self.access_token)
         d.download_file(url_script, self.script_file_path)
         d.download_file(url_srt, self.srt_file_path)
@@ -29,7 +41,10 @@ class MannagerZvi:
         self.rm.find_matches_script()
         self.rm.find_matches_srt()
 
-    def before_main_action(self, a):
+    def before_main_action(self):
+        """
+        :return: make a dictionary with the matching ratio of every word to every line in srt
+        """
         sumScript = sum(self.rm.dict_words_script.values())
         sumSrt = sum(self.rm.dict_words_srt.values())
         for lineScriptIndex in tqdm(range(len(self.rm.arr_words_script))):
@@ -37,39 +52,46 @@ class MannagerZvi:
             for wordIndex in range(len(lineScript.split(' '))):
                 line_word_matrix = numpy.zeros((1, len(self.rm.arr_words_srt)))
                 word = lineScript.split(' ')[wordIndex]
-                if word in self.dict_word.keys():
+                if word in self.word_to_srt_line_match.keys():
                     pass
                 else:
                     for lineSrtIndex in range(len(self.rm.arr_words_srt)):
                         lineSrt = self.rm.arr_words_srt[lineSrtIndex]
                         if word in lineSrt.split(' '):
-                            if word == "I":
-                                pass
                             if lineSrt and lineScript:
-                                line_word_matrix[0][lineSrtIndex] = float((sumSrt - a*self.rm.dict_words_srt[word])) / float(
-                                    sumSrt) * float((sumScript - a*self.rm.dict_words_script[word])) / float(sumScript*len(lineScript.split(' ')))
-                    self.dict_word[word] = line_word_matrix
+                                line_word_matrix[0][lineSrtIndex] = float((sumSrt - 5*self.rm.dict_words_srt[word])) / float(
+                                    sumSrt) * float((sumScript - 5*self.rm.dict_words_script[word])) / float(sumScript*len(lineScript.split(' ')))
+                    self.word_to_srt_line_match[word] = line_word_matrix
 
     def main_action(self):
-        file_new = open("outputfilenew.txt", 'w')
-        normal_dis = scipy.stats.norm(1, 1.5).pdf
-        cutoff_ratio = 0.05
+        """
+        :return: text file with the union of the script and the srt
+        """
+        file_new = open("outputfilenew.txt", 'w')  # the file path that will be the union between the srt and script
+        normal_dis = scipy.stats.norm(1, 1.5).pdf  # normal distribution pdf
+        cutoff_ratio = 0.05  # cutoff that ratio below that will not be written in the union file
         dict_lines = {
 
-        }
-        bestTimeArr = []
-        LastResult = 0
-        ArrayRatios = []
+        }  # dict of the matches between the lines
+        bestTimeArr = []  # the time array
+        LastResult = 0  # the last index of the script line that the srt line was customized
+        ArrayRatios = []  # array with the matching ratios
         for lineScriptIndex in tqdm(range(len(self.rm.arr_words_script))):
-            lineScript = self.rm.arr_words_script[lineScriptIndex]
-            if "Okay" in lineScript:
-                pass
-            line_matrix = self.dict_word[lineScript.split(' ')[0]]
+            """
+            We run like that : 
+            for every line_script in script we check the most similar line in srt both in contents and time
+            """
+            lineScript = self.rm.arr_words_script[lineScriptIndex]  # the string of the line
+            line_matrix = self.word_to_srt_line_match[lineScript.split(' ')[0]]  # this will be matrix of the each word and his ratio to line in srt
             for wordIndex in range(len(lineScript.split(' ')) - 1):
+                """
+                we build a matrix that her rows will be the words of the script and the columns will be ratios of each
+                line srt
+                """
                 if wordIndex == 0:
                     wordIndex += 1
                 word = lineScript.split(' ')[wordIndex]
-                line_matrix = numpy.row_stack((line_matrix, self.dict_word[word]))
+                line_matrix = numpy.row_stack((line_matrix, self.word_to_srt_line_match[word]))
             array_winners = numpy.dot(numpy.ones((1, len(lineScript.split(" ")))), line_matrix)
             if max(array_winners[0]) < cutoff_ratio:
                 array_ratios = []
@@ -170,5 +192,5 @@ class MannagerZvi:
 
 d = MannagerZvi("script.txt", r"(.*):(.*)", r"\d\r\n(.*?)\r\n(.*?)\r\n\r\n", "srt.txt",constants.access_token)
 d.download_things(constants.url_script, constants.url_srt)
-d.before_main_action(5)
+d.before_main_action()
 print d.main_action()
