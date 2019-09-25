@@ -78,6 +78,7 @@ class RegexMakerZvi:
                     for line_enter in a:
                         line_with_all = line_enter
                         self.srt_time[i] = match.group(1)
+                        self.initial_time.append(match.group(1).split(' --> ')[0])
                         line_enter = str(re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f\x7f-\xff]', '',
                                           line_enter.replace("\xe2\x80\x99", "'")).replace('\r', '')).strip(
                             '(').rstrip().lstrip()

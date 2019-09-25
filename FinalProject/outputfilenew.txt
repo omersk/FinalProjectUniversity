@@ -113,7 +113,7 @@ Bye. - Srt
 29. 00:02:32,238 --> 00:02:34,455
 Sheldon
 Bye-bye - Script
- Bye. - Srt
+Bye. - Srt
 30. 
 Leonard
 See you. - Script
@@ -214,26 +214,26 @@ Okay, well... Guess I'm your new neighbor. Penny. - Srt
 Leonard
 Leonard, Sheldon. - Script
 Leonard. Sheldon. - Srt
-55. 00:03:24,078 --> 00:03:25,978
+55. 
 Penny
 Hi. - Script
- Hi. - Srt
-56. 00:03:24,078 --> 00:03:25,978
+NO IN SRT!!!! - Srt
+56. 
 Leonard
 Hi. - Script
- Hi. - Srt
-57. 00:03:24,078 --> 00:03:25,978
+NO IN SRT!!!! - Srt
+57. 
 Sheldon
 Hi. - Script
- Hi. - Srt
-58. 00:03:24,078 --> 00:03:25,978
+NO IN SRT!!!! - Srt
+58. 
 Penny
 Hi. - Script
- Hi. - Srt
-59. 00:03:55,889 --> 00:03:57,228
+NO IN SRT!!!! - Srt
+59. 
 Leonard
 Hi. Well, uh, oh, welcome to the building. - Script
-Welcome to the building. - Srt
+NO IN SRT!!!! - Srt
 60. 00:03:57,655 --> 00:03:59,824
 Penny
 Thankyou, maybe we can have coffee sometime. - Script
@@ -254,18 +254,18 @@ Great. - Srt
 Leonard
 Great. Well, bye. - Script
 Great.  Well... bye. - Srt
-65. 00:02:32,238 --> 00:02:34,455
+65. 00:04:04,796 --> 00:04:07,037
 Penny
 Bye. - Script
- Bye. - Srt
+Bye. - Srt
 66. 00:04:04,796 --> 00:04:07,037
 Sheldon
 Bye. - Script
 Bye. - Srt
-67. 00:02:32,238 --> 00:02:34,455
+67. 00:04:04,796 --> 00:04:07,037
 Leonard
 Bye. - Script
- Bye. - Srt
+Bye. - Srt
 68. 00:04:11,010 --> 00:04:12,746
 Leonard
 Should we have invited her for lunch? - Script
@@ -362,7 +362,7 @@ NO IN SRT!!!! - Srt
 Penny
 Oh, that's so nice, I'd love to. - Script
 Oh, that's so nice. I'd love to. - Srt
-92. 00:03:59,946 --> 00:04:01,750
+92. 00:05:50,007 --> 00:05:51,007
 Leonard
 Great. - Script
 Great. - Srt
@@ -610,10 +610,10 @@ No, I'm from Omaha. - Srt
 Leonard
 Well, if that was a movie I would go see it. - Script
 If that was movie, I would go see it. - Srt
-154. 
+154. 00:10:26,594 --> 00:10:35,010
 Penny
 I know, right? Okay, let's see, what else? Um, that's about it. That's the story of Penny. - Script
-NO IN SRT!!!! - Srt
+I know, right? Okay, let's see, what else... Guess that's about it. That's the story of Penny. - Srt
 155. 00:10:36,189 --> 00:10:37,706
 Leonard
 Well it sounds wonderful. - Script
@@ -1082,10 +1082,10 @@ What do you think their combined IQ is? - Srt
 Leonard
 Just grab the door. - Script
 Just grab the door! - Srt
-272. 
+272. 00:18:39,998 --> 00:18:43,694
 Leonard
 This is it. (Knocks.) I'll do the talking. - Script
-NO IN SRT!!!! - Srt
+This is it. I'll do the talking. - Srt
 273. 00:18:43,947 --> 00:18:46,121
 Sheldon
 Good thinking, I'll just be the muscle. - Script
