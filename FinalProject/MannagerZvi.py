@@ -128,7 +128,7 @@ class MannagerZvi:
                     for each line in the top ten we check if his neighbors are also lines that custom to our line
                     """
                     t.append((xSorted[i],))  # this will be tupple that hold each line neighbors that also custom
-                    timeLine = timeUnion.timeUnion(self.rm.srt_time[min(self.rm.srt_words[self.rm.arr_words_srt[xSorted[i]]], key=lambda t: abs(t-LastResult))])
+                    timeLine = timeUnion.timeUnion(self.rm.srt_time[min(self.rm.srt_words[self.rm.arr_words_srt[xSorted[i]]], key=lambda x: abs(x-LastResult))])
                     best_str = self.rm.arr_words_srt[xSorted[i]]
                     best_str_with_punc = self.rm.dict_without_punctuation_srt[self.rm.arr_words_srt[xSorted[i]]].rstrip().lstrip().lstrip("-")
                     ki = -1  # first we check for those who come before the top ten line
@@ -138,7 +138,7 @@ class MannagerZvi:
                         best_str = self.rm.arr_words_srt[xSorted[i] + ki] + " " + best_str
                         best_str_with_punc = self.rm.dict_without_punctuation_srt[self.rm.arr_words_srt[xSorted[i] + ki]].rstrip().lstrip().lstrip("-") + " " + best_str_with_punc
                         t[j] = t[j] + (xSorted[i] + ki,)
-                        timeLine = timeLine.union(timeUnion.timeUnion(self.rm.srt_time[min(self.rm.srt_words[self.rm.arr_words_srt[xSorted[i] + ki]], key=lambda t:abs(t-LastResult))]))
+                        timeLine = timeLine.union(timeUnion.timeUnion(self.rm.srt_time[min(self.rm.srt_words[self.rm.arr_words_srt[xSorted[i] + ki]], key=lambda x:abs(x-LastResult))]))
                         ki -= 1
                     ki = 1  # than we check for those who come after the top ten line
                     while ki + xSorted[i] in range(len(self.rm.arr_words_srt)) and SequenceMatcher(None, best_str, lineScript).ratio() < SequenceMatcher(None, best_str + " " + self.rm.arr_words_srt[xSorted[i] + ki], lineScript).ratio():
@@ -146,7 +146,7 @@ class MannagerZvi:
                         best_str_with_punc = best_str_with_punc + " " + self.rm.dict_without_punctuation_srt[self.rm.arr_words_srt[xSorted[i] + ki]].rstrip().lstrip().lstrip("-")
                         t[j] = t[j] + (xSorted[i] + ki,)
                         timeLine = timeLine.union(
-                            timeUnion.timeUnion(self.rm.srt_time[min(self.rm.srt_words[self.rm.arr_words_srt[xSorted[i] + ki]], key=lambda t:abs(t-LastResult))]))
+                            timeUnion.timeUnion(self.rm.srt_time[min(self.rm.srt_words[self.rm.arr_words_srt[xSorted[i] + ki]], key=lambda x:abs(x-LastResult))]))
                         ki += 1
                     j = j + 1
                     ratio_str.append(SequenceMatcher(None, best_str, lineScript).ratio())  # we add the final ratio ( with neighbors )
