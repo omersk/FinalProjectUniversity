@@ -15,6 +15,7 @@ class RegexMakerZvi:
         self.srt_words = {}
         self.arr_words_script = []
         self.arr_words_srt = []
+        self.initial_time = []
         self.regex_srt = regex_srt
         self.f_srt = open(srt_file_path, "r+")
         self.dict_without_punctuation_script = {}
@@ -52,6 +53,7 @@ class RegexMakerZvi:
         for matchNum, match in tqdm(enumerate(matches_srt, start=1)):
             if "Scene" not in match.group(1):
                 self.srt_time[i] = match.group(1)
+                self.initial_time.append(match.group(1).split(' --> ')[0])
                 line = str(re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f\x7f-\xff]', '',
                                   match.group(2).replace("\xe2\x80\x99", "'")).replace('\r', '')).strip('(').rstrip().lstrip()
                 a = None

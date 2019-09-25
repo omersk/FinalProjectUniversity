@@ -7,7 +7,7 @@ from tqdm import tqdm
 import constants
 import numpy
 import operator
-
+import string
 
 class MannagerZvi:
     def __init__(self, script_file_path, regex_script, regex_srt, srt_file_path, access_token):
@@ -68,13 +68,14 @@ class MannagerZvi:
         :return: text file with the union of the script and the srt
         """
         file_new = open("outputfilenew.txt", 'w')  # the file path that will be the union between the srt and script
-        normal_dis = scipy.stats.norm(1, 1.5).pdf  # normal distribution pdf
+        normal_dis = scipy.stats.norm(0.5, 1.5).pdf  # normal distribution pdf
+        normal_dis_for_results = scipy.stats.norm(4, 7).pdf
         cutoff_ratio = 0.05  # cutoff that ratio below that will not be written in the union file
         dict_lines = {
 
         }  # dict of the matches between the lines
         bestTimeArr = []  # the time array
-        LastResult = 0  # the last index of the script line that the srt line was customized
+        LastResult = -1  # the last index of the script line that the srt line was customized
         ArrayRatios = []  # array with the matching ratios
         for lineScriptIndex in tqdm(range(len(self.rm.arr_words_script))):
             """
@@ -82,6 +83,8 @@ class MannagerZvi:
             for every line_script in script we check the most similar line in srt both in contents and time
             """
             lineScript = self.rm.arr_words_script[lineScriptIndex]  # the string of the line
+            if "You want to hear an interesting" in lineScript:
+                pass
             line_matrix = self.word_to_srt_line_match[lineScript.split(' ')[0]]  # this will be matrix of the each word and his ratio to line in srt
             for wordIndex in range(len(lineScript.split(' ')) - 1):
                 """
@@ -102,7 +105,6 @@ class MannagerZvi:
                     lineSrt = self.rm.arr_words_srt[lineSrtIndex]
                     array_ratios.append(SequenceMatcher(None, lineSrt, lineScript).ratio() * normal_dis((1.0/(1 + abs((lineSrtIndex - LastResult))))))
                 dict_lines[self.rm.dict_without_punctuation_script[self.rm.arr_words_script[lineScriptIndex]]] = self.rm.dict_without_punctuation_srt[self.rm.arr_words_srt[array_ratios.index(max(array_ratios))]].rstrip().lstrip().lstrip("-")
-                LastResult = array_ratios.index(max(array_ratios))
                 bestTimeArr.append(timeUnion.timeUnion(self.rm.srt_time[min(self.rm.srt_words[self.rm.arr_words_srt[array_ratios.index(max(array_ratios))]], key=lambda t: abs(t-LastResult))]))
             else:
                 """
@@ -163,12 +165,13 @@ class MannagerZvi:
                     if the_best_distance < normal_dis((1.0/(1 + abs((num[0] - LastResult)))))*ratio_str[numIndex]:
                         the_best_distance = normal_dis((1.0/(1 + abs((num[0] - LastResult)))))*ratio_str[numIndex]
                         the_best_index = numIndex
-                LastResult = the_best_index
                 dict_lines[self.rm.dict_without_punctuation_script[self.rm.arr_words_script[lineScriptIndex]]] = strings_with_punc[the_best_index]
                 bestTimeArr.append(timeArr[the_best_index])
             lineScriptAfterPunc = self.rm.dict_without_punctuation_script[self.rm.arr_words_script[lineScriptIndex]].rstrip().lstrip()
             lineSrtPredicted = dict_lines[self.rm.dict_without_punctuation_script[self.rm.arr_words_script[lineScriptIndex]]].rstrip().lstrip()
             Customize_Ratio = max([SequenceMatcher(None, lineScriptAfterPunc, lineSrtPredicted).ratio(), SequenceMatcher(None, lineSrtPredicted, lineScriptAfterPunc).ratio()])
+            index_of_customize_ratio = self.rm.initial_time.index(
+                str(bestTimeArr[lineScriptIndex]).split(" --> ")[0])
             if Customize_Ratio < 0.85:
                 """
                 here we do some things if the ratio wasn't good enough
@@ -176,33 +179,74 @@ class MannagerZvi:
                 array_ratios = []
                 for lineSrtIndex in range(len(self.rm.arr_words_srt)):
                     lineSrt = self.rm.arr_words_srt[lineSrtIndex]
-                    array_ratios.append(SequenceMatcher(None, lineSrt, lineScript).ratio())
+                    array_ratios.append(SequenceMatcher(None, lineSrt, lineScript).ratio() * normal_dis_for_results((abs((lineSrtIndex - LastResult)))))
                 max_ratio = max(array_ratios)
                 max_ratio_index = array_ratios.index(max_ratio)
-                if max_ratio > Customize_Ratio:
+                max_ratio = max_ratio * (1/(normal_dis_for_results(1)))
+                if max_ratio > (Customize_Ratio * (1 / (normal_dis_for_results(1))) * normal_dis_for_results((abs((index_of_customize_ratio - LastResult))))):
                     if max_ratio > 0.5:
                         file_new.write(str(lineScriptIndex + 1) + ". " + str(timeUnion.timeUnion(self.rm.srt_time[min(self.rm.srt_words[self.rm.arr_words_srt[max_ratio_index]], key=lambda t: abs(t-LastResult))])) + "\n" + self.rm.script_talkers[lineScriptIndex] + "\n" + self.rm.dict_without_punctuation_script[self.rm.arr_words_script[lineScriptIndex]].rstrip().lstrip() + " - Script" + "\n" + self.rm.dict_without_punctuation_srt[self.rm.arr_words_srt[array_ratios.index(max(array_ratios))]].rstrip().lstrip().lstrip("-") + " - Srt" + "\n")
                         ArrayRatios.append(SequenceMatcher(None, self.rm.dict_without_punctuation_script[self.rm.arr_words_script[lineScriptIndex]].rstrip().lstrip(), self.rm.dict_without_punctuation_srt[self.rm.arr_words_srt[max_ratio_index]].rstrip().lstrip().lstrip("-")).ratio())
+                        LastResult = max_ratio_index
                     else:
                         file_new.write(
                             str(lineScriptIndex + 1) + ". " + "\n" + self.rm.script_talkers[
                                 lineScriptIndex] + "\n" + lineScriptAfterPunc + " - Script" + "\n" + "NO IN SRT!!!!" + " - Srt" + "\n")
                 else:
-                    if Customize_Ratio > 0.5:
+                    if (Customize_Ratio * (1 / (normal_dis_for_results(1))) * normal_dis_for_results((abs((index_of_customize_ratio - LastResult))))) > 0.5:
                         file_new.write(
                             str(lineScriptIndex + 1) + ". " + str(bestTimeArr[lineScriptIndex]) + "\n" + self.rm.script_talkers[
                                 lineScriptIndex] + "\n" + lineScriptAfterPunc + " - Script" + "\n" + lineSrtPredicted + " - Srt" + "\n")
                         ArrayRatios.append(Customize_Ratio)
+                        LastResult = index_of_customize_ratio
                     else:
                         file_new.write(
                             str(lineScriptIndex + 1) + ". " + "\n" + self.rm.script_talkers[
                                 lineScriptIndex] + "\n" + lineScriptAfterPunc + " - Script" + "\n" + "NO IN SRT!!!!" + " - Srt" + "\n")
-
-
             else:
-                file_new.write(str(lineScriptIndex + 1) + ". " + str(bestTimeArr[lineScriptIndex]) + "\n" + self.rm.script_talkers[lineScriptIndex] + "\n" + lineScriptAfterPunc + " - Script" + "\n" + lineSrtPredicted + " - Srt" + "\n")
-                ArrayRatios.append(Customize_Ratio)
-
+                if (Customize_Ratio * (1 / (normal_dis_for_results(1))) * normal_dis_for_results(
+                        (abs((index_of_customize_ratio - LastResult))))) > 0.5:
+                    file_new.write(
+                        str(lineScriptIndex + 1) + ". " + str(bestTimeArr[lineScriptIndex]) + "\n" +
+                        self.rm.script_talkers[
+                            lineScriptIndex] + "\n" + lineScriptAfterPunc + " - Script" + "\n" + lineSrtPredicted + " - Srt" + "\n")
+                    ArrayRatios.append(Customize_Ratio)
+                    LastResult = index_of_customize_ratio
+                else:
+                    array_ratios = []
+                    for lineSrtIndex in range(len(self.rm.arr_words_srt)):
+                        lineSrt = self.rm.arr_words_srt[lineSrtIndex]
+                        array_ratios.append(SequenceMatcher(None, lineSrt, lineScript).ratio() * normal_dis_for_results(
+                            (abs((lineSrtIndex - LastResult)))))
+                    max_ratio = max(array_ratios)
+                    max_ratio_index = array_ratios.index(max_ratio)
+                    max_ratio = max_ratio * (1 / (normal_dis_for_results(1)))
+                    if max_ratio > 0.5:
+                        file_new.write(str(lineScriptIndex + 1) + ". " + str(timeUnion.timeUnion(self.rm.srt_time[
+                                                                                                     min(
+                                                                                                         self.rm.srt_words[
+                                                                                                             self.rm.arr_words_srt[
+                                                                                                                 max_ratio_index]],
+                                                                                                         key=lambda
+                                                                                                             t: abs(
+                                                                                                             t - LastResult))])) + "\n" +
+                                       self.rm.script_talkers[lineScriptIndex] + "\n" +
+                                       self.rm.dict_without_punctuation_script[self.rm.arr_words_script[
+                                           lineScriptIndex]].rstrip().lstrip() + " - Script" + "\n" +
+                                       self.rm.dict_without_punctuation_srt[self.rm.arr_words_srt[
+                                           array_ratios.index(max(array_ratios))]].rstrip().lstrip().lstrip(
+                                           "-") + " - Srt" + "\n")
+                        ArrayRatios.append(SequenceMatcher(None, self.rm.dict_without_punctuation_script[
+                            self.rm.arr_words_script[lineScriptIndex]].rstrip().lstrip(),
+                                                           self.rm.dict_without_punctuation_srt[
+                                                               self.rm.arr_words_srt[
+                                                                   max_ratio_index]].rstrip().lstrip().lstrip(
+                                                               "-")).ratio())
+                        LastResult = max_ratio_index
+                    else:
+                        file_new.write(
+                            str(lineScriptIndex + 1) + ". " + "\n" + self.rm.script_talkers[
+                                lineScriptIndex] + "\n" + lineScriptAfterPunc + " - Script" + "\n" + "NO IN SRT!!!!" + " - Srt" + "\n")
         return sum(ArrayRatios)/len(ArrayRatios)  # our confidence in repentance
 
 d = MannagerZvi("script.txt", r"(.*):(.*)", r"\d\r\n(.*?)\r\n(.*?)\r\n\r\n", "srt.txt",constants.access_token)
