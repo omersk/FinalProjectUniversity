@@ -95,8 +95,6 @@ class MannagerZvi:
             for every line_script in script we check the most similar line in srt both in contents and time
             """
             lineScript = self.rm.arr_words_script[lineScriptIndex]  # the string of the line
-            if "Hi" in lineScript:
-                pass
             line_matrix = self.word_to_srt_line_match[lineScript.split(' ')[0]]  # this will be matrix of the each word and his ratio to line in srt
             for wordIndex in range(len(lineScript.split(' ')) - 1):
                 """
