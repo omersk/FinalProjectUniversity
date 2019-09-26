@@ -7,17 +7,19 @@ from tqdm import tqdm
 import constants
 import numpy
 import operator
-import string
 import math
 
 
 def normal_dis_for_results(t):
-    sigma = 7
-    mean = 4
+    sigma = 8
+    mean = 2
     if t > 0:
         return 1.0 / math.sqrt(2.0 * numpy.pi * sigma*sigma) * math.exp(-((t - mean) * (t - mean)) / (2.0 * sigma*sigma))
+    elif t < 0:
+        return 0.9 / math.sqrt(2.0 * numpy.pi * sigma * sigma) * math.exp(
+            -((t - mean) * (t - mean)) / (2.0 * sigma * sigma))
     else:
-        return 0.6 / math.sqrt(2.0 * numpy.pi * sigma*sigma) * math.exp(-((t - mean) * (t - mean)) / (2.0 * sigma*sigma))
+        return 0 # / math.sqrt(2.0 * numpy.pi * sigma*sigma) * math.exp(-((t - mean) * (t - mean)) / (2.0 * sigma*sigma))
 
 
 class MannagerZvi:
@@ -93,7 +95,7 @@ class MannagerZvi:
             for every line_script in script we check the most similar line in srt both in contents and time
             """
             lineScript = self.rm.arr_words_script[lineScriptIndex]  # the string of the line
-            if "mean to interrupt" in lineScript:
+            if "Hi" in lineScript:
                 pass
             line_matrix = self.word_to_srt_line_match[lineScript.split(' ')[0]]  # this will be matrix of the each word and his ratio to line in srt
             for wordIndex in range(len(lineScript.split(' ')) - 1):
@@ -193,35 +195,36 @@ class MannagerZvi:
                 max_ratio = max(array_ratios)
                 max_ratio_index = array_ratios.index(max_ratio)
                 max_ratio = max_ratio * (1/(normal_dis_for_results(1)))
+                time = None
                 if max_ratio > (Customize_Ratio * (1 / (normal_dis_for_results(1))) * normal_dis_for_results(((index_of_customize_ratio - LastResult)))):
-                    if max_ratio > 0.5:
-                        file_new.write(str(lineScriptIndex + 1) + ". " + str(timeUnion.timeUnion(self.rm.srt_time[min(self.rm.srt_words[self.rm.arr_words_srt[max_ratio_index]], key=lambda t: abs(t-LastResult))])) + "\n" + self.rm.script_talkers[lineScriptIndex] + "\n" + self.rm.dict_without_punctuation_script[self.rm.arr_words_script[lineScriptIndex]].rstrip().lstrip() + " - Script" + "\n" + self.rm.dict_without_punctuation_srt[self.rm.arr_words_srt[array_ratios.index(max(array_ratios))]].rstrip().lstrip().lstrip("-") + " - Srt" + "\n")
+                    if max_ratio > 0.4:
+                        time = str(timeUnion.timeUnion(self.rm.srt_time[min(self.rm.srt_words[self.rm.arr_words_srt[max_ratio_index]], key=lambda t: abs(t-LastResult))]))
+                        file_new.write(str(lineScriptIndex + 1) + ". " + time + "\n" + self.rm.script_talkers[lineScriptIndex] + "\n" + self.rm.dict_without_punctuation_script[self.rm.arr_words_script[lineScriptIndex]].rstrip().lstrip() + " - Script" + "\n" + self.rm.dict_without_punctuation_srt[self.rm.arr_words_srt[array_ratios.index(max(array_ratios))]].rstrip().lstrip().lstrip("-") + " - Srt" + "\n")
                         ArrayRatios.append(SequenceMatcher(None, self.rm.dict_without_punctuation_script[self.rm.arr_words_script[lineScriptIndex]].rstrip().lstrip(), self.rm.dict_without_punctuation_srt[self.rm.arr_words_srt[max_ratio_index]].rstrip().lstrip().lstrip("-")).ratio())
-                        LastResult = max_ratio_index
                     else:
                         file_new.write(
                             str(lineScriptIndex + 1) + ". " + "\n" + self.rm.script_talkers[
                                 lineScriptIndex] + "\n" + lineScriptAfterPunc + " - Script" + "\n" + "NO IN SRT!!!!" + " - Srt" + "\n")
                 else:
-                    if (Customize_Ratio * (1 / (normal_dis_for_results(1))) * normal_dis_for_results(((index_of_customize_ratio - LastResult)))) > 0.5:
+                    if (Customize_Ratio * (1 / (normal_dis_for_results(1))) * normal_dis_for_results(((index_of_customize_ratio - LastResult)))) > 0.4:
+                        LastResult = index_of_customize_ratio
                         file_new.write(
                             str(lineScriptIndex + 1) + ". " + str(bestTimeArr[lineScriptIndex]) + "\n" + self.rm.script_talkers[
                                 lineScriptIndex] + "\n" + lineScriptAfterPunc + " - Script" + "\n" + lineSrtPredicted + " - Srt" + "\n")
                         ArrayRatios.append(Customize_Ratio)
-                        LastResult = index_of_customize_ratio
                     else:
                         file_new.write(
                             str(lineScriptIndex + 1) + ". " + "\n" + self.rm.script_talkers[
                                 lineScriptIndex] + "\n" + lineScriptAfterPunc + " - Script" + "\n" + "NO IN SRT!!!!" + " - Srt" + "\n")
             else:
                 if (Customize_Ratio * (1 / (normal_dis_for_results(1))) * normal_dis_for_results(
-                        ((index_of_customize_ratio - LastResult)))) > 0.5:
+                        ((index_of_customize_ratio - LastResult)))) > 0.4:
+                    LastResult = index_of_customize_ratio
                     file_new.write(
                         str(lineScriptIndex + 1) + ". " + str(bestTimeArr[lineScriptIndex]) + "\n" +
                         self.rm.script_talkers[
                             lineScriptIndex] + "\n" + lineScriptAfterPunc + " - Script" + "\n" + lineSrtPredicted + " - Srt" + "\n")
                     ArrayRatios.append(Customize_Ratio)
-                    LastResult = index_of_customize_ratio
                 else:
                     array_ratios = []
                     for lineSrtIndex in range(len(self.rm.arr_words_srt)):
@@ -231,7 +234,8 @@ class MannagerZvi:
                     max_ratio = max(array_ratios)
                     max_ratio_index = array_ratios.index(max_ratio)
                     max_ratio = max_ratio * (1 / (normal_dis_for_results(1)))
-                    if max_ratio > 0.5:
+                    if max_ratio > 0.4:
+                        LastResult = max_ratio_index
                         file_new.write(str(lineScriptIndex + 1) + ". " + str(timeUnion.timeUnion(self.rm.srt_time[
                                                                                                      min(
                                                                                                          self.rm.srt_words[
@@ -252,7 +256,6 @@ class MannagerZvi:
                                                                self.rm.arr_words_srt[
                                                                    max_ratio_index]].rstrip().lstrip().lstrip(
                                                                "-")).ratio())
-                        LastResult = max_ratio_index
                     else:
                         file_new.write(
                             str(lineScriptIndex + 1) + ". " + "\n" + self.rm.script_talkers[

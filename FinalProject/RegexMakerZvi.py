@@ -52,14 +52,14 @@ class RegexMakerZvi:
         # LOOP SRT -----------
         for matchNum, match in tqdm(enumerate(matches_srt, start=1)):
             if "Scene" not in match.group(1):
-                self.srt_time[i] = match.group(1)
-                self.initial_time.append(match.group(1).split(' --> ')[0])
                 line = str(re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f\x7f-\xff]', '',
                                   match.group(2).replace("\xe2\x80\x99", "'")).replace('\r', '')).strip('(').rstrip().lstrip()
                 a = None
                 if line[0] == "-":
                     a = line.split("\n")
                 if not a:
+                    self.srt_time[i] = match.group(1)
+                    self.initial_time.append(match.group(1).split(' --> ')[0])
                     line = line.replace('\n', ' ')#.translate(None, string.punctuation).replace('\n', ' ')
                     line_without_punc = line.translate(None, string.punctuation)
                     self.dict_without_punctuation_srt[line_without_punc] = line
