@@ -16,6 +16,14 @@ class timeUnion:
 
     def __str__(self):
         return str(self.start_time) + " --> " + str(self.end_time)
+
+    def getInitialTimeInSec(self):
+        return get_sec(self.start_time)
+
+    def getEndTimeInSec(self):
+        return get_sec(self.end_time)
+
+
 def get_sec(time_str):
     """Get Seconds from time."""
     h, m, sms = time_str.split(':')
