@@ -291,7 +291,7 @@ class MannagerZvi:
                                                                "-")).ratio())
                     else:
                         """
-                        the new ratio didn't work therefore we decided that the line is no in the srt
+                        the new ratio didn't work ( low ratio ) therefore we decided that the line is no in the srt
                         """
                         file_new.write(
                             str(lineScriptIndex + 1) + ". " + "\n" + self.rm.script_talkers[
