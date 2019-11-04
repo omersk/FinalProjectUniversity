@@ -19,7 +19,7 @@ def normal_dis_for_results(t):
         return 0.9 / math.sqrt(2.0 * numpy.pi * sigma * sigma) * math.exp(
             -((t - mean) * (t - mean)) / (2.0 * sigma * sigma))
     else:
-        return 0 # / math.sqrt(2.0 * numpy.pi * sigma*sigma) * math.exp(-((t - mean) * (t - mean)) / (2.0 * sigma*sigma))
+        return 0
 
 
 class MannagerZvi:
@@ -86,6 +86,8 @@ class MannagerZvi:
         dict_lines = {
 
         }  # dict of the matches between the lines
+        CutOffAlmostSurely = 0.85
+        CutOffNotSure = 0.4
         bestTimeArr = []  # the time array
         LastResult = -1  # the last index of the script line that the srt line was customized
         ArrayRatios = []  # array with the matching ratios
@@ -182,41 +184,68 @@ class MannagerZvi:
             Customize_Ratio = max([SequenceMatcher(None, lineScriptAfterPunc, lineSrtPredicted).ratio(), SequenceMatcher(None, lineSrtPredicted, lineScriptAfterPunc).ratio()])
             index_of_customize_ratio = self.rm.initial_time.index(
                 str(bestTimeArr[lineScriptIndex]).split(" --> ")[0])
-            if Customize_Ratio < 0.85:
+            if Customize_Ratio < CutOffAlmostSurely:
                 """
-                here we do some things if the ratio wasn't good enough
+                the matching ratio not good enough, so therefore we do some things
                 """
                 array_ratios = []
                 for lineSrtIndex in range(len(self.rm.arr_words_srt)):
+                    """
+                    here we check the maximum ratio by using different matching type
+                    """
                     lineSrt = self.rm.arr_words_srt[lineSrtIndex]
                     array_ratios.append(SequenceMatcher(None, lineSrt, lineScript).ratio() * normal_dis_for_results(((lineSrtIndex - LastResult))))
                 max_ratio = max(array_ratios)
                 max_ratio_index = array_ratios.index(max_ratio)
                 max_ratio = max_ratio * (1/(normal_dis_for_results(1)))
-                time = None
                 if max_ratio > (Customize_Ratio * (1 / (normal_dis_for_results(1))) * normal_dis_for_results(((index_of_customize_ratio - LastResult)))):
-                    if max_ratio > 0.4:
+                    """
+                    check if the result we got here is better than what we got at the other time
+                    if it does, we use this result
+                    """
+                    if max_ratio > CutOffNotSure:
+                        """
+                        we didn't get bad result but we are not sure is good enough, we will still take it 
+                        """
                         time = str(timeUnion.timeUnion(self.rm.srt_time[min(self.rm.srt_words[self.rm.arr_words_srt[max_ratio_index]], key=lambda t: abs(t-LastResult))]))
                         file_new.write(str(lineScriptIndex + 1) + ". " + time + "\n" + self.rm.script_talkers[lineScriptIndex] + "\n" + self.rm.dict_without_punctuation_script[self.rm.arr_words_script[lineScriptIndex]].rstrip().lstrip() + " - Script" + "\n" + self.rm.dict_without_punctuation_srt[self.rm.arr_words_srt[array_ratios.index(max(array_ratios))]].rstrip().lstrip().lstrip("-") + " - Srt" + "\n")
                         ArrayRatios.append(SequenceMatcher(None, self.rm.dict_without_punctuation_script[self.rm.arr_words_script[lineScriptIndex]].rstrip().lstrip(), self.rm.dict_without_punctuation_srt[self.rm.arr_words_srt[max_ratio_index]].rstrip().lstrip().lstrip("-")).ratio())
                     else:
+                        """
+                        the matching ratio were too low, therefore we decided that it's not in the srt
+                        """
                         file_new.write(
                             str(lineScriptIndex + 1) + ". " + "\n" + self.rm.script_talkers[
                                 lineScriptIndex] + "\n" + lineScriptAfterPunc + " - Script" + "\n" + "NO IN SRT!!!!" + " - Srt" + "\n")
                 else:
-                    if (Customize_Ratio * (1 / (normal_dis_for_results(1))) * normal_dis_for_results(((index_of_customize_ratio - LastResult)))) > 0.4:
+                    """
+                    the try to find new ratio discovered as unsuccessful
+                    """
+                    if (Customize_Ratio * (1 / (normal_dis_for_results(1))) * normal_dis_for_results(((index_of_customize_ratio - LastResult)))) > CutOffNotSure:
+                        """
+                        not bad result, but not good, still we decided to take it
+                        """
                         LastResult = index_of_customize_ratio
                         file_new.write(
                             str(lineScriptIndex + 1) + ". " + str(bestTimeArr[lineScriptIndex]) + "\n" + self.rm.script_talkers[
                                 lineScriptIndex] + "\n" + lineScriptAfterPunc + " - Script" + "\n" + lineSrtPredicted + " - Srt" + "\n")
                         ArrayRatios.append(Customize_Ratio)
                     else:
+                        """
+                        the matching ratio were too low, therefore we decided that it's not in the srt
+                        """
                         file_new.write(
                             str(lineScriptIndex + 1) + ". " + "\n" + self.rm.script_talkers[
                                 lineScriptIndex] + "\n" + lineScriptAfterPunc + " - Script" + "\n" + "NO IN SRT!!!!" + " - Srt" + "\n")
             else:
+                """
+                the ratio of the words is good but we also want to check the distance between last word
+                """
                 if (Customize_Ratio * (1 / (normal_dis_for_results(1))) * normal_dis_for_results(
-                        ((index_of_customize_ratio - LastResult)))) > 0.4:
+                        ((index_of_customize_ratio - LastResult)))) > CutOffNotSure:
+                    """
+                    its were above our cutoff therefore we took it
+                    """
                     LastResult = index_of_customize_ratio
                     file_new.write(
                         str(lineScriptIndex + 1) + ". " + str(bestTimeArr[lineScriptIndex]) + "\n" +
@@ -224,6 +253,9 @@ class MannagerZvi:
                             lineScriptIndex] + "\n" + lineScriptAfterPunc + " - Script" + "\n" + lineSrtPredicted + " - Srt" + "\n")
                     ArrayRatios.append(Customize_Ratio)
                 else:
+                    """
+                    it weren't good after the distance check so we check for new line by using different method
+                    """
                     array_ratios = []
                     for lineSrtIndex in range(len(self.rm.arr_words_srt)):
                         lineSrt = self.rm.arr_words_srt[lineSrtIndex]
@@ -232,7 +264,10 @@ class MannagerZvi:
                     max_ratio = max(array_ratios)
                     max_ratio_index = array_ratios.index(max_ratio)
                     max_ratio = max_ratio * (1 / (normal_dis_for_results(1)))
-                    if max_ratio > 0.4:
+                    if max_ratio > CutOffNotSure:
+                        """
+                        check if the new ratio worked
+                        """
                         LastResult = max_ratio_index
                         file_new.write(str(lineScriptIndex + 1) + ". " + str(timeUnion.timeUnion(self.rm.srt_time[
                                                                                                      min(
@@ -255,6 +290,9 @@ class MannagerZvi:
                                                                    max_ratio_index]].rstrip().lstrip().lstrip(
                                                                "-")).ratio())
                     else:
+                        """
+                        the new ratio didn't work therefore we decided that the line is no in the srt
+                        """
                         file_new.write(
                             str(lineScriptIndex + 1) + ". " + "\n" + self.rm.script_talkers[
                                 lineScriptIndex] + "\n" + lineScriptAfterPunc + " - Script" + "\n" + "NO IN SRT!!!!" + " - Srt" + "\n")
