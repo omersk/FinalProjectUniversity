@@ -1,5 +1,5 @@
-import dropbox
 import constants
+import dropbox
 access_token = constants.access_token
 dbx = dropbox.Dropbox(access_token)
 with open("Test.txt", "w") as f:

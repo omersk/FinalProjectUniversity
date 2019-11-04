@@ -1,10 +1,10 @@
+import constants
 import DropBoxDownloader
 import RegexMakerZvi
 from difflib import SequenceMatcher
 import scipy.stats
 import timeUnion
 from tqdm import tqdm
-import constants
 import numpy
 import operator
 import math
