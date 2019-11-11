@@ -80,7 +80,7 @@ class MannagerZvi:
         """
         :return: text file with the union of the script and the srt
         """
-        file_new = open("outputfilenew.txt", 'w')  # the file path that will be the union between the srt and script
+        file_new = open(constants.outputfile, 'w')  # the file path that will be the union between the srt and script
         normal_dis = scipy.stats.norm(0.5, 1.5).pdf  # normal distribution pdf
         cutoff_ratio = 0.05  # cutoff that ratio below that will not be written in the union file
         dict_lines = {

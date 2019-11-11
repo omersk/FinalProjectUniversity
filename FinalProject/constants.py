@@ -1,13 +1,23 @@
 import subprocess
 modules = ['dropbox', 'moviepy', 'linecache', 'shutil', 'difflib', 'scipy', 'tqdm', 'numpy', 'operator', 'math',
-           'string', 're', 'matplotlib', 'sys']
+           'string', 're', 'matplotlib', 'pygame', 'os']
 for pkg in modules:
     try:
-        globals()[pkg] = __import__(pkg)
+        if pkg != 'SpeechRecognition':
+            globals()[pkg] = __import__(pkg)
+        else:
+            globals()[pkg] = __import__('speech_recognition')
     except ImportError:
         subprocess.check_call(["python", '-m', 'pip', 'install', pkg])
 
 url_srt = "/srt-scrip/srt-all/The_Big_Bang_Theory - season1.en/The Big Bang Theory - 1x01 - Pilot.HDTV.XOR.en.srt"
 url_script = "/srt-scrip/scripts/series-1-episode-1-pilot-episode.txt"
-access_token = "ZjLsrohKF6AAAAAAAAABI5URO-nBYnGcRP1nuYMasHM7t3EiB7Su2psz9Ef1wuqG"
+access_token = "ZjLsrohKF6AAAAAAAAABJHGNaIudeMqpCQn9y5C2G_RyQ_tpZuIHmCWmvCu-nqux"
 BIG_NUM = 10
+outputfile = 'outputfilenew.txt'
+
+def get_sec(time_str):
+    """Get Seconds from time."""
+    h, m, sms = time_str.split(':')
+    s, ms = sms.split(",")
+    return int(h) * 3600 + int(m) * 60 + int(s) + 0.001 * int(ms)

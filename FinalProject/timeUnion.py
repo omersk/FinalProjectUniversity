@@ -1,3 +1,5 @@
+from constants import get_sec
+
 class timeUnion:
     def __init__(self, time):
         self.start_time = time.split(" --> ")[0]
@@ -22,10 +24,3 @@ class timeUnion:
 
     def getEndTimeInSec(self):
         return get_sec(self.end_time)
-
-
-def get_sec(time_str):
-    """Get Seconds from time."""
-    h, m, sms = time_str.split(':')
-    s, ms = sms.split(",")
-    return int(h) * 3600 + int(m) * 60 + int(s) + 0.001 * int(ms)
