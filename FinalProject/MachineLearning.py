@@ -11,14 +11,17 @@ from constants import get_sec
 
 a = raw_input("name : ")
 
-def cut_audio(name, start_time, end_time):
-    input_data = read("Audios/" + name + ".wav")
+def cut_audio(name, start_time, end_time, folder_in, folder_out):
+    try:
+        input_data = read(folder_in + "/" + name + ".wav")
+    except IOError:
+        input_data = read("Audios" + "/" + name + ".wav")
     fs = input_data[0]
     audio = input_data[1]
     audio = audio[:, ]
-    if not os.path.exists("AfterCuttedAudios"):
-        os.makedirs("AfterCuttedAudios")
-    write("AfterCuttedAudios/" + name + ".wav", fs, audio[int(start_time*fs):int(end_time*fs)])
+    if not os.path.exists(folder_out):
+        os.makedirs(folder_out)
+    write(folder_out + "/" + name + ".wav", fs, audio[int(start_time*fs):int(end_time*fs)])
 
 
 def playSound(filename):
@@ -27,7 +30,31 @@ def playSound(filename):
 
 
 
-def remove_another_talker(name, words):
+def initial_cut(name, words):
+    input_data = read("Audios/" + name + ".wav")
+    fs = input_data[0]
+    audio = input_data[1]
+    audio = audio[:, 0]
+    audioSaver = []
+    for i in audio:
+        audioSaver.append(i)
+    i = 1
+    if max(abs(j) for j in audio[0:i]) < 100:
+        i = i + 10000
+        while max(abs(j) for j in audio[i-10000:i]) < 100:
+            i = i + 10000
+        cut_audio(name, float(i)/fs, len(audio) - 1, "AfterCuttedAudios", "AfterInitialCuttedAudios")
+    audio = audioSaver
+    i = 1
+    if list(abs(j) < 400 for j in audio[0:i]).count(True) < i/2 + 1000:
+        i = i + 10000
+        while list(abs(j) < 400 for j in audio[i-10000:i]).count(True) < 5000:
+            i = i + 10000
+        cut_audio(name, float(i)/fs, len(audio) - 1, "AfterCuttedAudios", "AfterInitialCuttedAudios")
+
+
+
+def end_cut(name, words):
     input_data = read("Audios/" + name + ".wav")
     fs = input_data[0]
     audio = input_data[1]
@@ -36,12 +63,22 @@ def remove_another_talker(name, words):
     minimum_cut_time = len(words.split(" ")) * 0.18 * fs
     print minimum_cut_time
     i = len(audio) - int(len(audio) * 0.3)
+    if len(audio)/fs > 8:
+        i = len(audio) - int(2 * fs)
     print len(words.split(" "))
     while i + 6000 < len(audio):
         if i > minimum_cut_time:
             if max(abs(j) for j in audio[i:i+6000]) < 100:
-                cut_audio(name, 0, i/fs)
+                cut_audio(name, 0, i/fs + 0.2, "Audios", "AfterCuttedAudios")
+                print i / fs
+                print i / fs + 0.2
                 return float(len(audio))/fs - float(i)/fs
+            elif list(abs(j) < 400 for j in audio[i:i+10000]).count(True) < 4500:
+                print i / fs
+                print i / fs + 0.2
+                cut_audio(name, 0, i/fs + 0.2, "Audios", "AfterCuttedAudios")
+                return 0
+
         i = i + 1000
     return 0
 
@@ -99,7 +136,8 @@ else:
             if not os.path.exists("Audios"):
                 os.makedirs("Audios")
             shutil.move(name + "_" + str(j) + ".wav", "Audios/s" + str(j) + ".wav")
-            cutted_last = remove_another_talker("s" + str(j), words)
+            cutted_last = end_cut("s" + str(j), words)
+            initial_cut("s" + str(j), words)
             i += 4
             j += 1
 
