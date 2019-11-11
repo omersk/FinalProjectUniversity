@@ -69,14 +69,18 @@ def end_cut(name, words):
     while i + 6000 < len(audio):
         if i > minimum_cut_time:
             if max(abs(j) for j in audio[i:i+6000]) < 100:
-                cut_audio(name, 0, i/fs + 0.2, "Audios", "AfterCuttedAudios")
+                # --> works less good, see s7, need improvements:
+                # cut_audio(name, 0, i/fs + 0.2, "Audios", "AfterCuttedAudios")
+                cut_audio(name, 0, i / fs, "Audios", "AfterCuttedAudios")
                 print i / fs
                 print i / fs + 0.2
                 return float(len(audio))/fs - float(i)/fs
             elif list(abs(j) < 400 for j in audio[i:i+10000]).count(True) < 4500:
                 print i / fs
                 print i / fs + 0.2
-                cut_audio(name, 0, i/fs + 0.2, "Audios", "AfterCuttedAudios")
+                # --> works less good, see s7, need improvements:
+                #cut_audio(name, 0, i/fs + 0.2, "Audios", "AfterCuttedAudios")
+                cut_audio(name, 0, i / fs, "Audios", "AfterCuttedAudios")
                 return 0
 
         i = i + 1000
