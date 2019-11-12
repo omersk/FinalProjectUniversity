@@ -6,12 +6,10 @@ import shutil
 from scipy.io.wavfile import read, write
 import matplotlib.pyplot as plt
 import os
-import pygame
-from constants import get_sec
+import sys
 
-a = raw_input("name : ")
 
-def cut_audio(name, start_time, end_time, folder_in, folder_out):
+def cut_audio(name, start_time, end_time, folder_in="Audios", folder_out="SoloCutted"):
     try:
         input_data = read(folder_in + "/" + name + ".wav")
     except IOError:
@@ -24,34 +22,31 @@ def cut_audio(name, start_time, end_time, folder_in, folder_out):
     write(folder_out + "/" + name + ".wav", fs, audio[int(start_time*fs):int(end_time*fs)])
 
 
-def playSound(filename):
-    pygame.mixer.music.load(filename)
-    pygame.mixer.music.play()
-
-
-
 def initial_cut(name, words):
     input_data = read("Audios/" + name + ".wav")
     fs = input_data[0]
     audio = input_data[1]
     audio = audio[:, 0]
-    audioSaver = []
-    for i in audio:
-        audioSaver.append(i)
     i = 1
+    doescutted = False
     if max(abs(j) for j in audio[0:i]) < 100:
         i = i + 10000
         while max(abs(j) for j in audio[i-10000:i]) < 100:
             i = i + 10000
         cut_audio(name, float(i)/fs, len(audio) - 1, "AfterCuttedAudios", "AfterInitialCuttedAudios")
-    audio = audioSaver
-    i = 1
-    if list(abs(j) < 400 for j in audio[0:i]).count(True) < i/2 + 1000:
+        doescutted = True
+    if doescutted == True:
+        input_data = read("AfterInitialCuttedAudios/" + name + ".wav")
+        fs = input_data[0]
+        audio = input_data[1]
+        audio = audio[:, 0]
+    i = 10000
+    print list(abs(j) < 400 for j in audio[0:i]).count(True)
+    if list(abs(j) < 400 for j in audio[0:i]).count(True) < 6800:
         i = i + 10000
-        while list(abs(j) < 400 for j in audio[i-10000:i]).count(True) < 5000:
-            i = i + 10000
+        while list(abs(j) < 400 for j in audio[i-5000:i]).count(True) < 4000:
+            i = i + 5000
         cut_audio(name, float(i)/fs, len(audio) - 1, "AfterCuttedAudios", "AfterInitialCuttedAudios")
-
 
 
 def end_cut(name, words):
@@ -61,26 +56,20 @@ def end_cut(name, words):
     audio = audio[:, 0]
 
     minimum_cut_time = len(words.split(" ")) * 0.18 * fs
-    print minimum_cut_time
     i = len(audio) - int(len(audio) * 0.3)
     if len(audio)/fs > 8:
         i = len(audio) - int(2 * fs)
-    print len(words.split(" "))
     while i + 6000 < len(audio):
         if i > minimum_cut_time:
-            if max(abs(j) for j in audio[i:i+6000]) < 100:
+            if max(abs(j) for j in audio[i:i+6000]) < 300:
                 # --> works less good, see s7, need improvements:
                 # cut_audio(name, 0, i/fs + 0.2, "Audios", "AfterCuttedAudios")
                 cut_audio(name, 0, i / fs, "Audios", "AfterCuttedAudios")
-                print i / fs
-                print i / fs + 0.2
                 return float(len(audio))/fs - float(i)/fs
             elif list(abs(j) < 400 for j in audio[i:i+10000]).count(True) < 4500:
-                print i / fs
-                print i / fs + 0.2
                 # --> works less good, see s7, need improvements:
                 #cut_audio(name, 0, i/fs + 0.2, "Audios", "AfterCuttedAudios")
-                cut_audio(name, 0, i / fs, "Audios", "AfterCuttedAudios")
+                cut_audio(name, 0, float(i) / fs, "Audios", "AfterCuttedAudios")
                 return 0
 
         i = i + 1000
@@ -98,7 +87,6 @@ def plot_graph(name):
     input_data = read("Audios/" + name + ".wav")
     fs = input_data[0]
     audio = input_data[1]
-    print fs
     # plot the first 1024 samples
     plt.plot(list(frange(0.0, len(audio)*1.0/fs, 1.0/fs))[0:len(audio)], audio[:, 0])
     # label the axes
@@ -110,14 +98,10 @@ def plot_graph(name):
     plt.show()
 
 
-if len(a) > 0:
-    if len(a.split(" ")) < 2:
-        plot_graph(a)
-    elif len(a.split(" ")) == 3:
-        cut_audio(a.split(" ")[0], float(a.split(" ")[1]), float(a.split(" ")[2]))
-#if len(sys.argv) >= 2:
-#    plot_graph(sys.argv[1])
-
+if len(sys.argv) == 2:
+    plot_graph(sys.argv[1])
+elif len(sys.argv) == 4:
+    cut_audio(sys.argv[1], float(sys.argv[2]), float(sys.argv[3]))
 else:
     filename = constants.outputfile
     i = 1

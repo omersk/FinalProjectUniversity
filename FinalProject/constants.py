@@ -1,6 +1,6 @@
 import subprocess
 modules = ['dropbox', 'moviepy', 'linecache', 'shutil', 'difflib', 'scipy', 'tqdm', 'numpy', 'operator', 'math',
-           'string', 're', 'matplotlib', 'pygame', 'os']
+           'string', 're', 'matplotlib', 'os', 'sys']
 for pkg in modules:
     try:
         if pkg != 'SpeechRecognition':
@@ -12,7 +12,7 @@ for pkg in modules:
 
 url_srt = "/srt-scrip/srt-all/The_Big_Bang_Theory - season1.en/The Big Bang Theory - 1x01 - Pilot.HDTV.XOR.en.srt"
 url_script = "/srt-scrip/scripts/series-1-episode-1-pilot-episode.txt"
-access_token = "ZjLsrohKF6AAAAAAAAABJHGNaIudeMqpCQn9y5C2G_RyQ_tpZuIHmCWmvCu-nqux"
+access_token = "ZjLsrohKF6AAAAAAAAABJbigPRF-tccVde38X9wdagZRy9Z91ZhDWpG5qQx4NzOc"
 BIG_NUM = 10
 outputfile = 'outputfilenew.txt'
 
