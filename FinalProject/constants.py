@@ -12,7 +12,7 @@ for pkg in modules:
 
 url_srt = "/srt-scrip/srt-all/The_Big_Bang_Theory - season1.en/The Big Bang Theory - 1x01 - Pilot.HDTV.XOR.en.srt"
 url_script = "/srt-scrip/scripts/series-1-episode-1-pilot-episode.txt"
-access_token = "ZjLsrohKF6AAAAAAAAABKGNmrf0fqguEIXoIC-IJ3j5mzbELVUvkTepyCG_7OBtV"
+access_token = "ZjLsrohKF6AAAAAAAA#BKe2ppHBfFrcC3894reHhVB55JWSeSz2dYDam_wGhseG_"
 BIG_NUM = 10
 outputfile = 'outputfilenew.txt'
 
