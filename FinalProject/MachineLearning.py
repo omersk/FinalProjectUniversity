@@ -47,7 +47,9 @@ def initial_cut(name, words):
         while list(abs(j) < 400 for j in audio[i-5000:i]).count(True) < 4000:
             i = i + 5000
         cut_audio(name, float(i)/fs, len(audio) - 1, "AfterCuttedAudios", "AfterInitialCuttedAudios")
-
+        doescutted = True
+    if not doescutted:
+        cut_audio(name,0,len(audio) - 1, "AfterCuttedAudios", "AfterInitialCuttedAudios")
 
 def end_cut(name, words):
     input_data = read("Audios/" + name + ".wav")
@@ -61,14 +63,19 @@ def end_cut(name, words):
         i = len(audio) - int(2 * fs)
     while i + 6000 < len(audio):
         if i > minimum_cut_time:
-            if max(abs(j) for j in audio[i:i+6000]) < 300:
+            if max(abs(j) for j in audio[i:i+6000]) < 200:
                 # --> works less good, see s7, need improvements:
                 # cut_audio(name, 0, i/fs + 0.2, "Audios", "AfterCuttedAudios")
                 cut_audio(name, 0, i / fs, "Audios", "AfterCuttedAudios")
+                print 'ballasdlasldalsdldsaldsal'
+                print i
                 return float(len(audio))/fs - float(i)/fs
+
             elif list(abs(j) < 400 for j in audio[i:i+10000]).count(True) < 4500:
                 # --> works less good, see s7, need improvements:
                 #cut_audio(name, 0, i/fs + 0.2, "Audios", "AfterCuttedAudios")
+                print 'asddsadas'
+                print i
                 cut_audio(name, 0, float(i) / fs, "Audios", "AfterCuttedAudios")
                 return 0
 
@@ -88,6 +95,7 @@ def plot_graph(name):
     fs = input_data[0]
     audio = input_data[1]
     # plot the first 1024 samples
+    fs = 1
     plt.plot(list(frange(0.0, len(audio)*1.0/fs, 1.0/fs))[0:len(audio)], audio[:, 0])
     # label the axes
     plt.ylabel("Amplitude")

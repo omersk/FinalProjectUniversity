@@ -91,6 +91,7 @@ class MannagerZvi:
         bestTimeArr = []  # the time array
         LastResult = -1  # the last index of the script line that the srt line was customized
         ArrayRatios = []  # array with the matching ratios
+        RowOfNotFound = 0
         for lineScriptIndex in tqdm(range(len(self.rm.arr_words_script))):
             """
             We run like that : 
@@ -203,13 +204,14 @@ class MannagerZvi:
                     check if the result we got here is better than what we got at the other time
                     if it does, we use this result
                     """
-                    if max_ratio > CutOffNotSure:
+                    if max_ratio > CutOffNotSure or RowOfNotFound > 2:
                         """
                         we didn't get bad result but we are not sure is good enough, we will still take it 
                         """
                         time = str(timeUnion.timeUnion(self.rm.srt_time[min(self.rm.srt_words[self.rm.arr_words_srt[max_ratio_index]], key=lambda t: abs(t-LastResult))]))
                         file_new.write(str(lineScriptIndex + 1) + ". " + time + "\n" + self.rm.script_talkers[lineScriptIndex] + "\n" + self.rm.dict_without_punctuation_script[self.rm.arr_words_script[lineScriptIndex]].rstrip().lstrip() + " - Script" + "\n" + self.rm.dict_without_punctuation_srt[self.rm.arr_words_srt[array_ratios.index(max(array_ratios))]].rstrip().lstrip().lstrip("-") + " - Srt" + "\n")
                         ArrayRatios.append(SequenceMatcher(None, self.rm.dict_without_punctuation_script[self.rm.arr_words_script[lineScriptIndex]].rstrip().lstrip(), self.rm.dict_without_punctuation_srt[self.rm.arr_words_srt[max_ratio_index]].rstrip().lstrip().lstrip("-")).ratio())
+                        RowOfNotFound = 0
                     else:
                         """
                         the matching ratio were too low, therefore we decided that it's not in the srt
@@ -217,11 +219,12 @@ class MannagerZvi:
                         file_new.write(
                             str(lineScriptIndex + 1) + ". " + "\n" + self.rm.script_talkers[
                                 lineScriptIndex] + "\n" + lineScriptAfterPunc + " - Script" + "\n" + "NO IN SRT!!!!" + " - Srt" + "\n")
+                        RowOfNotFound = RowOfNotFound + 1
                 else:
                     """
                     the try to find new ratio discovered as unsuccessful
                     """
-                    if (Customize_Ratio * (1 / (normal_dis_for_results(1))) * normal_dis_for_results(((index_of_customize_ratio - LastResult)))) > CutOffNotSure:
+                    if (Customize_Ratio * (1 / (normal_dis_for_results(1))) * normal_dis_for_results(((index_of_customize_ratio - LastResult)))) > CutOffNotSure or RowOfNotFound > 2:
                         """
                         not bad result, but not good, still we decided to take it
                         """
@@ -230,6 +233,7 @@ class MannagerZvi:
                             str(lineScriptIndex + 1) + ". " + str(bestTimeArr[lineScriptIndex]) + "\n" + self.rm.script_talkers[
                                 lineScriptIndex] + "\n" + lineScriptAfterPunc + " - Script" + "\n" + lineSrtPredicted + " - Srt" + "\n")
                         ArrayRatios.append(Customize_Ratio)
+                        RowOfNotFound = 0
                     else:
                         """
                         the matching ratio were too low, therefore we decided that it's not in the srt
@@ -237,12 +241,14 @@ class MannagerZvi:
                         file_new.write(
                             str(lineScriptIndex + 1) + ". " + "\n" + self.rm.script_talkers[
                                 lineScriptIndex] + "\n" + lineScriptAfterPunc + " - Script" + "\n" + "NO IN SRT!!!!" + " - Srt" + "\n")
+                        RowOfNotFound = RowOfNotFound + 1
+
             else:
                 """
                 the ratio of the words is good but we also want to check the distance between last word
                 """
                 if (Customize_Ratio * (1 / (normal_dis_for_results(1))) * normal_dis_for_results(
-                        ((index_of_customize_ratio - LastResult)))) > CutOffNotSure:
+                        ((index_of_customize_ratio - LastResult)))) > CutOffNotSure  or RowOfNotFound > 2:
                     """
                     its were above our cutoff therefore we took it
                     """
@@ -252,6 +258,7 @@ class MannagerZvi:
                         self.rm.script_talkers[
                             lineScriptIndex] + "\n" + lineScriptAfterPunc + " - Script" + "\n" + lineSrtPredicted + " - Srt" + "\n")
                     ArrayRatios.append(Customize_Ratio)
+                    RowOfNotFound = 0
                 else:
                     """
                     it weren't good after the distance check so we check for new line by using different method
@@ -264,7 +271,7 @@ class MannagerZvi:
                     max_ratio = max(array_ratios)
                     max_ratio_index = array_ratios.index(max_ratio)
                     max_ratio = max_ratio * (1 / (normal_dis_for_results(1)))
-                    if max_ratio > CutOffNotSure:
+                    if max_ratio > CutOffNotSure  or RowOfNotFound > 2:
                         """
                         check if the new ratio worked
                         """
@@ -289,6 +296,7 @@ class MannagerZvi:
                                                                self.rm.arr_words_srt[
                                                                    max_ratio_index]].rstrip().lstrip().lstrip(
                                                                "-")).ratio())
+                        RowOfNotFound = 0
                     else:
                         """
                         the new ratio didn't work ( low ratio ) therefore we decided that the line is no in the srt
@@ -296,6 +304,8 @@ class MannagerZvi:
                         file_new.write(
                             str(lineScriptIndex + 1) + ". " + "\n" + self.rm.script_talkers[
                                 lineScriptIndex] + "\n" + lineScriptAfterPunc + " - Script" + "\n" + "NO IN SRT!!!!" + " - Srt" + "\n")
+                        RowOfNotFound = RowOfNotFound + 1
+
         return sum(ArrayRatios)/len(ArrayRatios)  # our confidence in repentance
 
 d = MannagerZvi("script.txt", r"(.*):(.*)", r"\d\r\n(.*?)\r\n(.*?)\r\n\r\n", "srt.txt",constants.access_token)
