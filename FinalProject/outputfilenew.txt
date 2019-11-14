@@ -86,7 +86,7 @@ Well, what do you want to do? - Srt
 Sheldon
 I want to leave. - Script
 I want to leave. - Srt
-23. 
+23. 00:00:00,000 --> 00:00:00,000
 Leonard
 Okay. - Script
 NO IN SRT!!!! - Srt
@@ -102,7 +102,7 @@ I don't know... I've never reneged on a proffer of sperm before. - Srt
 Sheldon
 Let's try just walking out. - Script
 Let's try just walking out. - Srt
-27. 
+27. 00:00:00,000 --> 00:00:00,000
 Leonard
 Okay. - Script
 NO IN SRT!!!! - Srt
@@ -110,7 +110,7 @@ NO IN SRT!!!! - Srt
  Receptionist
 Bye. - Script
 Bye. - Srt
-29. 
+29. 00:00:00,000 --> 00:00:00,000
 Sheldon
 Bye-bye - Script
 NO IN SRT!!!! - Srt
@@ -122,7 +122,7 @@ See you. - Script
 Sheldon
 Are you still mad about the sperm bank? - Script
 Are you still mad about the sperm bank? - Srt
-32. 
+32. 00:00:00,000 --> 00:00:00,000
 Leonard
 No. - Script
 NO IN SRT!!!! - Srt
@@ -182,15 +182,15 @@ Hi. - Script
 Sheldon
 Hi. - Script
  Hi. - Srt
-47. 
+47. 00:00:00,000 --> 00:00:00,000
 Leonard
 Hi. - Script
 NO IN SRT!!!! - Srt
-48. 
+48. 00:00:00,000 --> 00:00:00,000
 Sheldon
 Hi. - Script
 NO IN SRT!!!! - Srt
-49. 
+49. 00:00:00,000 --> 00:00:00,000
 Penny
 Hi. - Script
 NO IN SRT!!!! - Srt
@@ -218,15 +218,15 @@ Leonard. Sheldon. - Srt
 Penny
 Hi. - Script
  Hi. - Srt
-56. 
+56. 00:00:00,000 --> 00:00:00,000
 Leonard
 Hi. - Script
 NO IN SRT!!!! - Srt
-57. 
+57. 00:00:00,000 --> 00:00:00,000
 Sheldon
 Hi. - Script
 NO IN SRT!!!! - Srt
-58. 
+58. 00:00:00,000 --> 00:00:00,000
 Penny
 Hi. - Script
 NO IN SRT!!!! - Srt
@@ -246,7 +246,7 @@ Great. - Srt
 Penny
 Great. - Script
 Great. - Srt
-63. 
+63. 00:00:00,000 --> 00:00:00,000
 Sheldon
 Great. - Script
 NO IN SRT!!!! - Srt
@@ -330,15 +330,15 @@ Hi... again. - Srt
 Penny
 Hi. - Script
 Hi. - Srt
-84. 
+84. 00:00:00,000 --> 00:00:00,000
 Sheldon
 Hi. - Script
 NO IN SRT!!!! - Srt
-85. 
+85. 00:00:00,000 --> 00:00:00,000
 Leonard
 Hi. - Script
 NO IN SRT!!!! - Srt
-86. 
+86. 00:00:00,000 --> 00:00:00,000
 Penny
 Hi. - Script
 NO IN SRT!!!! - Srt
@@ -354,7 +354,7 @@ I'm no expert, but I believe in the context of a luncheon invitation, you might 
 Penny
 Oh, you're inviting me over to eat? - Script
 You're inviting me over to eat? - Srt
-90. 
+90. 00:00:00,000 --> 00:00:00,000
 Leonard
 Uh, yes. - Script
 NO IN SRT!!!! - Srt
@@ -394,7 +394,7 @@ This looks like some serious stuff.  Leonard, did you do this? - Srt
 Sheldon
 Actually that's my work. - Script
 Actually, that's my work. - Srt
-100. 
+100. 00:00:00,000 --> 00:00:00,000
 Penny
 Wow. - Script
 NO IN SRT!!!! - Srt
@@ -406,7 +406,7 @@ Yeah. Well, it's just some quantum mechanics with a little string theory doodlin
 Penny
 So you're like, one of those, beautiful mind genius guys. - Script
 So you're like one of those Beautiful Mind genius guys. - Srt
-103. 
+103. 00:00:00,000 --> 00:00:00,000
 Sheldon
 Yeah? - Script
 NO IN SRT!!!! - Srt
@@ -502,7 +502,7 @@ Fine. Sheldon, sit! - Srt
 Leonard
 Sheldon, sit! - Script
 Sheldon, sit! - Srt
-127. 
+127. 00:00:00,000 --> 00:00:00,000
 Sheldon
 Aaah! - Script
 NO IN SRT!!!! - Srt
@@ -626,7 +626,7 @@ It was. Until I fell in love with a jerk! - Srt
 Sheldon (mouths) 
 What's happening. - Script
 What's happening? - Srt
-158. 
+158. 00:00:00,000 --> 00:00:00,000
 Leonard (mouths back) 
 I don't know. - Script
 NO IN SRT!!!! - Srt
@@ -638,7 +638,7 @@ God, you know, 4 years I lived with him. 4 years... that's like as long as high 
 Sheldon
 It took you four years to get through High School? - Script
 It took you 4 years to get through high school? - Srt
-161. 
+161. 00:00:00,000 --> 00:00:00,000
 Leonard
 Don't. - Script
 NO IN SRT!!!! - Srt
@@ -658,7 +658,7 @@ You? No, you'll only make it worse. - Srt
 Penny
 You want to know the most pathetic part? Even though I hate his lying, cheating guts, I still love him. Is that crazy? - Script
 You want to know the most pathetic part? Even though I hate his lying, cheating guts... I still love him. Is that crazy? - Srt
-166. 
+166. 00:00:00,000 --> 00:00:00,000
 Sheldon
 Yes. - Script
 NO IN SRT!!!! - Srt
@@ -798,7 +798,7 @@ It's a Stephen Hawking lecture from MIT in 1974. - Srt
 Leonard
 This is not a good time. - Script
 This isn't a good time. - Srt
-201. 
+201. 00:00:00,000 --> 00:00:00,000
 Howard: It’s before he became a creepy computer voice
 . - Script
 NO IN SRT!!!! - Srt
@@ -830,7 +830,7 @@ And she's not a lady. She's just a new neighbor. - Srt
 Howard
 Hang on, there really is a lady here? - Script
 Hang on, there really is a lady here? - Srt
-209. 
+209. 00:00:00,000 --> 00:00:00,000
 Leonard
 Uh-huh. - Script
 NO IN SRT!!!! - Srt
@@ -886,7 +886,7 @@ It's French for "good shower. " It's a sentiment I can express in six languages.
 Leonard
 Save it for your blog, Howard. - Script
 Save it for your blog, Howard. - Srt
-223. 
+223. 00:00:00,000 --> 00:00:00,000
 Howard
 See-ka-tong-guay-jow. - Script
 NO IN SRT!!!! - Srt
@@ -930,7 +930,7 @@ I'll probably say yes. - Srt
 Penny
 It's just not the kind of thing you ask a guy you've just met. - Script
 It's just not the kind of thing you ask a guy you just met. - Srt
-234. 
+234. 00:00:00,000 --> 00:00:00,000
 Leonard
 Wow. - Script
 NO IN SRT!!!! - Srt
@@ -942,7 +942,7 @@ I really think we should examine the chain of causality here. - Srt
 Leonard
 Must we? - Script
 Must we? - Srt
-237. 
+237. 00:00:00,000 --> 00:00:00,000
 Sheldon
 Event A. A beautiful woman stands naked in our shower. Event B. We drive half way across town to retrieve a television set from the aforementioned woman's ex-boyfriend. Query, on what plane of existence is there even a semi-rational link between these events? - Script
 NO IN SRT!!!! - Srt
@@ -1278,7 +1278,7 @@ Turn left on Lake Street and head up to Colorado. I know a wonderful little sush
 Penny
 That sounds like fun. - Script
 That sounds like fun. - Srt
-321. 
+321. 00:00:00,000 --> 00:00:00,000
 Howard (sings) 
 Baby, baby don't get hooked on me. Uh, baby, baby don't get hooked on me. - Script
 NO IN SRT!!!! - Srt

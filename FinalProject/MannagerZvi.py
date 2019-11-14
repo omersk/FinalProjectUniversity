@@ -217,7 +217,7 @@ class MannagerZvi:
                         the matching ratio were too low, therefore we decided that it's not in the srt
                         """
                         file_new.write(
-                            str(lineScriptIndex + 1) + ". " + "\n" + self.rm.script_talkers[
+                            str(lineScriptIndex + 1) + ". 00:00:00,000 --> 00:00:00,000" + "\n" + self.rm.script_talkers[
                                 lineScriptIndex] + "\n" + lineScriptAfterPunc + " - Script" + "\n" + "NO IN SRT!!!!" + " - Srt" + "\n")
                         RowOfNotFound = RowOfNotFound + 1
                 else:
@@ -239,7 +239,7 @@ class MannagerZvi:
                         the matching ratio were too low, therefore we decided that it's not in the srt
                         """
                         file_new.write(
-                            str(lineScriptIndex + 1) + ". " + "\n" + self.rm.script_talkers[
+                            str(lineScriptIndex + 1) + ". 00:00:00,000 --> 00:00:00,000" + "\n" + self.rm.script_talkers[
                                 lineScriptIndex] + "\n" + lineScriptAfterPunc + " - Script" + "\n" + "NO IN SRT!!!!" + " - Srt" + "\n")
                         RowOfNotFound = RowOfNotFound + 1
 
@@ -302,7 +302,7 @@ class MannagerZvi:
                         the new ratio didn't work ( low ratio ) therefore we decided that the line is no in the srt
                         """
                         file_new.write(
-                            str(lineScriptIndex + 1) + ". " + "\n" + self.rm.script_talkers[
+                            str(lineScriptIndex + 1) + ". 00:00:00,000 --> 00:00:00,000" + "\n" + self.rm.script_talkers[
                                 lineScriptIndex] + "\n" + lineScriptAfterPunc + " - Script" + "\n" + "NO IN SRT!!!!" + " - Srt" + "\n")
                         RowOfNotFound = RowOfNotFound + 1
 
