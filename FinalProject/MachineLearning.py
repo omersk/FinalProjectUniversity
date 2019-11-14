@@ -10,38 +10,66 @@ import sys
 
 
 def cut_audio(name, start_time, end_time, folder_in="Audios", folder_out="SoloCutted"):
+    """
+    this is a function that came up to the world in order to cut audio into specific time
+    :param name: name of file
+    :param start_time: start time to cut
+    :param end_time: end time to cut
+    :param folder_in: folder we read the name ( folder + name == path )
+    :param folder_out: folder we write the final version
+    :return: nothing
+    """
     try:
-        input_data = read(folder_in + "/" + name + ".wav")
+        input_data = read(folder_in + "/" + name + ".wav")  # input
     except IOError:
+        # If the file is not in the folder in... than we take the file in audio
+        # this is because we do -
+        # endcut(file) : from Audios --> folder in
+        # initialcut(file) : from folder in --> folder out
+        # but sometimes we don't cut in the first function so we need to go to audios to find the file
         input_data = read("Audios" + "/" + name + ".wav")
-    fs = input_data[0]
-    audio = input_data[1]
+    fs = input_data[0]  # the sample rate
+    audio = input_data[1]  # the audio file
     try:
-        audio = audio[:, 0]
+        audio = audio[:, 0]  # no mono audio file --> mono audio file
     except IndexError:
+        # if it's already mono
         pass
-    if not os.path.exists(folder_out):
+    if not os.path.exists(folder_out):  # if path not exist we create it
         os.makedirs(folder_out)
-    write(folder_out + "/" + name + ".wav", fs, audio[int(start_time*fs):int(end_time*fs)])
+    write(folder_out + "/" + name + ".wav", fs, audio[int(start_time*fs):int(end_time*fs)])  # we write the new file
 
 
 def initial_cut(name, words):
-    input_data = read("Audios/" + name + ".wav")
-    fs = input_data[0]
-    audio = input_data[1]
+    """
+    cut audio file in the beginning of them ( from silent + laugh )
+    :param name: name of file
+    :param words: what the man said
+    :return: nothing
+    """
+    input_data = read("Audios/" + name + ".wav")  # read the file
+    fs = input_data[0]  # sample rate
+    audio = input_data[1]  # audio file
     try:
-        audio = audio[:, 0]
+        audio = audio[:, 0]  # stereo --> mono
     except IndexError:
+        # if it's already mono
         pass
-    i = 1
-    doescutted = False
-    if max(abs(j) for j in audio[0:i]) < 100:
-        i = i + 10000
-        while max(abs(j) for j in audio[i-10000:i]) < 100:
+    i = 1000
+    doescutted = False  # boolean variable that indicates if we cut
+    # ------- SILENT'S CUTTING -------
+    if max(abs(j) for j in audio[0:i]) < 100:  # if the max absolute value of the next 1000 elements is silent
+        i = i + 10000  # check the next 10000
+        while max(abs(j) for j in audio[i-10000:i]) < 100:  # while there is silent
             i = i + 10000
-        cut_audio(name, float(i)/fs, len(audio) - 1, "AfterCuttedAudios", "AfterInitialCuttedAudios")
+        cut_audio(name, float(i)/fs, len(audio) - 1, "AfterCuttedAudios", "AfterInitialCuttedAudios")  # we cut
+        # the silent
         doescutted = True
-    if doescutted == True:
+    # ------- SILENT'S CUTTING -------
+
+    # if there was silent, we modify our audio file into the new audio file after cutting the silent, and than we
+    # go into cutting laugh
+    if doescutted == True:  # if we cut, we try to now cut the f
         input_data = read("AfterInitialCuttedAudios/" + name + ".wav")
         fs = input_data[0]
         audio = input_data[1]
@@ -50,17 +78,55 @@ def initial_cut(name, words):
         except IndexError:
             pass
     i = 10000
-    print list(abs(j) < 400 for j in audio[0:i]).count(True)
+    # ------- LAUGH CUTTING -------
     if list(abs(j) < 400 for j in audio[0:i]).count(True) < 6800:
+        # laugh characterize with small number of zero's; therefore we count the number of zero's and check if there
+        # were a few or a lot
         i = i + 10000
-        while list(abs(j) < 400 for j in audio[i-5000:i]).count(True) < 4000 and i < len(audio):
+        while list(abs(j) < 400 for j in audio[i-5000:i]).count(True) < 4000 and i < len(audio):  # while there is laugh
             i = i + 5000
         cut_audio(name, float(i)/fs, len(audio) - 1, "AfterCuttedAudios", "AfterInitialCuttedAudios")
         doescutted = True
-    if not doescutted:
-        cut_audio(name,0,len(audio) - 1, "AfterCuttedAudios", "AfterInitialCuttedAudios")
+    if not doescutted:  # if there is no needing to cut, we just write the file as he now
+        cut_audio(name, 0, len(audio) - 1, "AfterCuttedAudios", "AfterInitialCuttedAudios")
+    # ------- LAUGH CUTTING -------
+
+def middle_cut(name, next_name):
+    """
+    cut file at his middle ( in order to make 2 talkers into 2 files )
+    :param name: name of file
+    :param next_name: the name of the second speaker
+    :return: nothing
+    """
+    input_data = read("Audios/" + name + ".wav")  # read the file
+    fs = input_data[0]  # sample rate
+    audio = input_data[1]  # audio file
+    try:
+        audio = audio[:, 0]  # stereo --> mono
+    except IndexError:
+        # if it's already mono
+        pass
+    arrCut = []  # the array we will work with
+    for i in range(0, len(audio), 3000):  # we run on i in the following - 0, 3000, 6000, ...., len(audio)
+        if max(abs(j) for j in audio[i:i+6000]) < 200:  # if there is silent
+            arrCut.append(i)  # we append it to the array
+    BiggestDiff = max(arrCut[j+1] - arrCut[j] for j in range(len(arrCut) - 1))  # we check where was the longest silent
+    i = 0
+    while i < len(arrCut) - 1:  # check which index is the biggest difference, than we take audio[i] + BiggestDiff/2
+        if arrCut[i+1] - arrCut[i] == BiggestDiff:
+            break
+        i = i + 1
+    write("Audios/" + name + ".wav", fs, audio[0:int(arrCut[i] + BiggestDiff/2)])
+    write("Audios/" + next_name + ".wav", fs, audio[int(arrCut[i] + BiggestDiff/2) + 1: len(audio) - 1])
 
 def end_cut(name, words):
+    """
+    cut audio file in the end of them ( from silent + laugh )
+    :param name: name of file
+    :param words: what the talker said
+    :return: how much seconds we cutted
+    """
+    # -------- SAME IDEA OF FUNCTION LIKE THE INITIAL CUT --------
     input_data = read("Audios/" + name + ".wav")
     fs = input_data[0]
     audio = input_data[1]
@@ -75,8 +141,6 @@ def end_cut(name, words):
     while i + 6000 < len(audio):
         if i > minimum_cut_time:
             if max(abs(j) for j in audio[i:i+6000]) < 200:
-                # --> works less good, see s7, need improvements:
-                # cut_audio(name, 0, i/fs + 0.2, "Audios", "AfterCuttedAudios")
                 if i < fs:
                     i = float(i)
                 cut_audio(name, 0, i / fs, "Audios", "AfterCuttedAudios")
@@ -84,22 +148,31 @@ def end_cut(name, words):
                 return float(len(audio))/fs - float(i)/fs
 
             elif list(abs(j) < 400 for j in audio[i:i+10000]).count(True) < 4500:
-                # --> works less good, see s7, need improvements:
-                #cut_audio(name, 0, i/fs + 0.2, "Audios", "AfterCuttedAudios")
                 cut_audio(name, 0, float(i) / fs, "Audios", "AfterCuttedAudios")
                 return 0
-
         i = i + 1000
     return 0
 
 
 def frange(x, y, jump):
+    """
+    range for float numbers
+    :param x:
+    :param y:
+    :param jump:
+    :return: same as range for float numbers
+    """
     while x < y:
         yield x
         x += jump
 
 
 def plot_graph(name):
+    """
+    plot the sound file
+    :param name: name of the file
+    :return: nothing
+    """
     # read audio samples
     input_data = read("Audios/" + name + ".wav")
     fs = input_data[0]
@@ -119,28 +192,6 @@ def plot_graph(name):
     # display the plot
     plt.show()
 
-
-def middle_cut(name, next_name):
-    input_data = read("Audios/" + name + ".wav")
-    fs = input_data[0]
-    audio = input_data[1]
-    try:
-        audio = audio[:, 0]
-    except IndexError:
-        pass
-    arrCut = []
-    for i in range(0, len(audio), 3000):
-        if max(abs(j) for j in audio[i:i+6000]) < 200:
-            arrCut.append(i)
-    BiggestDiff = max(arrCut[j+1] - arrCut[j] for j in range(len(arrCut) - 1))
-    i = 0
-    while i < len(arrCut) - 1:
-        if arrCut[i+1] - arrCut[i] == BiggestDiff:
-            break
-        i = i + 1
-    write("Audios/" + name + ".wav", fs, audio[0:int(arrCut[i] + BiggestDiff/2)])
-    write("Audios/" + next_name + ".wav", fs, audio[int(arrCut[i] + BiggestDiff/2) + 1: len(audio) - 1])
-
 if len(sys.argv) == 2:
     plot_graph(sys.argv[1])
 elif len(sys.argv) == 4:
@@ -149,39 +200,43 @@ else:
     filename = constants.outputfile
     i = 1
     j = 1
-    cutted_last = 0
+    cutted_last = 0  # how much we cut last file
     while True:
-        if not linecache.getline(filename, i):
+        if not linecache.getline(filename, i):  # end of file
             break
-        time = linecache.getline(filename, i).split(".")[1].lstrip().rstrip()
-        if not time == "00:00:00,000 --> 00:00:00,000":
-            name = linecache.getline(filename, i + 1).lstrip().rstrip()
-            words = linecache.getline(filename, i + 3).lstrip().rstrip()
+        time = linecache.getline(filename, i).split(".")[1].lstrip().rstrip()  # time of the specific line
+        if not time == "00:00:00,000 --> 00:00:00,000":  # if it's in the srt
+            name = linecache.getline(filename, i + 1).lstrip().rstrip()  # name of the speaker
+            words = linecache.getline(filename, i + 3).lstrip().rstrip()  # what he said
             print time
             print name
             t = timeUnion.timeUnion(time)
-            start_time = t.getInitialTimeInSec()
-            end_time = t.getEndTimeInSec()
-            if time == linecache.getline(filename, i + 4).split(".")[1].lstrip().rstrip():
-                wordsAfter = linecache.getline(filename, i + 7).lstrip().rstrip()
-                clip = mp.VideoFileClip("Movie.mp4").subclip(start_time - cutted_last - 0.5, end_time)
-                clip.audio.write_audiofile(name + "_" + str(j) + ".wav")
-                if not os.path.exists("Audios"):
+            start_time = t.getInitialTimeInSec()  # start time
+            end_time = t.getEndTimeInSec()  # end time
+            if time == linecache.getline(filename, i + 4).split(".")[1].lstrip().rstrip():  #  if there is 2
+                # speakers in one line
+                wordsAfter = linecache.getline(filename, i + 7).lstrip().rstrip()  # what the second speaker said
+                clip = mp.VideoFileClip("Movie.mp4").subclip(start_time - cutted_last - 0.5, end_time)  # cutting the
+                # audio
+                clip.audio.write_audiofile(name + "_" + str(j) + ".wav")  # write it into new file
+                if not os.path.exists("Audios"):  # if the dir doesn't exist we create one
                     os.makedirs("Audios")
-                shutil.move(name + "_" + str(j) + ".wav", "Audios/s" + str(j) + ".wav")
-                "There Are Two Speakers"
-                middle_cut("s" + str(j), "s" + str(j+1))
-                initial_cut("s" + str(j), words)
-                cutted_last = end_cut("s" + str(j+1), wordsAfter)
-                i += 4
-                j += 1
+                shutil.move(name + "_" + str(j) + ".wav", "Audios/s" + str(j) + ".wav")  # move it to the dir
+                # There Are Two Speakers
+                middle_cut("s" + str(j), "s" + str(j+1))  # 2 speakers; 1 file --> 1 speaker; 2 files
+                initial_cut("s" + str(j), words)  # initial cut to the first speaker
+                cutted_last = end_cut("s" + str(j+1), wordsAfter)  # end cut to the second speaker
+                i += 4  # next speaker
+                j += 1  # next speaker
             else:
-                clip = mp.VideoFileClip("Movie.mp4").subclip(start_time - cutted_last, end_time)
-                clip.audio.write_audiofile(name + "_" + str(j) + ".wav")
-                if not os.path.exists("Audios"):
+                clip = mp.VideoFileClip("Movie.mp4").subclip(start_time - cutted_last, end_time)  # cutting the
+                # audio
+                clip.audio.write_audiofile(name + "_" + str(j) + ".wav")  # write it into new file
+                if not os.path.exists("Audios"):  # if the dir doesn't exist we create one
                     os.makedirs("Audios")
-                shutil.move(name + "_" + str(j) + ".wav", "Audios/s" + str(j) + ".wav")
-                cutted_last = end_cut("s" + str(j), words)
-                initial_cut("s" + str(j), words)
-        i += 4
-        j += 1
+                shutil.move(name + "_" + str(j) + ".wav", "Audios/s" + str(j) + ".wav")  # move it to the dir
+                # There Are Two Speakers
+                cutted_last = end_cut("s" + str(j), words)  # end cut to the speaker
+                initial_cut("s" + str(j), words)  # initial cut to the first speaker
+        i += 4  # next speaker
+        j += 1  # next speaker
