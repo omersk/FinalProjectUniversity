@@ -1,6 +1,6 @@
 import subprocess
 modules = ['dropbox', 'moviepy', 'linecache', 'shutil', 'difflib', 'scipy', 'tqdm', 'numpy', 'operator', 'math',
-           'string', 're', 'matplotlib', 'os', 'sys']
+           'string', 're', 'matplotlib', 'os', 'sys', 'sklearn']
 for pkg in modules:
     try:
         if pkg != 'SpeechRecognition':
