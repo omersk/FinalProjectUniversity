@@ -186,14 +186,24 @@ def two_seconds_every_file():
         except IndexError:
             # if it's already mono
             pass
-        i = fs
+        t = fs/5
         j = 0
-        while i < len(audio):
-            write("FinalAudios/" + f.split(".")[0] + "_" + str(j) + ".wav", fs, audio[i-fs:i-1])
-            i += fs
+        while t < len(audio):
+            write("FinalAudios/" + f.split(".")[0] + "_" + str(j) + ".wav", fs, audio[t-fs/5:t-1])
+            t += fs/5
             j += 1
 
 
+def cut_laugh_and_silent():
+    onlyfiles = [f for f in listdir("FinalAudios/") if isfile(join("FinalAudios/", f))]
+    if not os.path.exists("LaughOrSilent"):  # if the dir doesn't exist we create one
+        os.makedirs("LaughOrSilent")
+    for f in onlyfiles:
+        input_data = read("FinalAudios/" + f)  # read the file
+        fs = input_data[0]  # sample rate
+        audio = input_data[1]  # audio file
+        if list(abs(j) < 400 for j in audio[0:len(audio) - 1]).count(True) < 600 or max(abs(j) for j in audio[0:len(audio) - 1]) < 400:
+            shutil.move("FinalAudios/" + f, "LaughOrSilent/" + f)
 def plot_graph(name):
     """
     plot the sound file
@@ -201,7 +211,7 @@ def plot_graph(name):
     :return: nothing
     """
     # read audio samples
-    input_data = read("Audios/" + name + ".wav")
+    input_data = read("FinalAudios/" + name + ".wav")
     fs = input_data[0]
     audio = input_data[1]
     # plot the first 1024 samples
@@ -225,6 +235,8 @@ elif len(sys.argv) == 3:
     two_seconds_every_file()
 elif len(sys.argv) == 4:
     cut_audio(sys.argv[1], float(sys.argv[2]), float(sys.argv[3]))
+elif len(sys.argv) == 5:
+    cut_laugh_and_silent()
 else:
     filename = constants.outputfile
     i = 1
