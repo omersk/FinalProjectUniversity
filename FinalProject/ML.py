@@ -1,76 +1,44 @@
-from sklearn.neural_network import MLPClassifier
-import python_speech_features
-import scipy.io.wavfile as wav
-from tqdm import tqdm
-import numpy as np
-from os import listdir
-from os.path import isfile, join
-import sys
-from random import shuffle
-import matplotlib.pyplot as plt
+#!/usr/bin/env python
+#!/usr/local/bin/python
+#!/usr/bin/env PYTHONIOENCODING="utf-8" python
+import os
 
-winner = []
-for testNum in range(20):
-    X = []
-    Y = []
-    onlyfiles = [f for f in listdir("FinalAudios/") if isfile(join("FinalAudios/", f))]
-    shuffle(onlyfiles)
-    names = []
-    for file in onlyfiles:
-        if " " not in file.split("_")[0]:
-            names.append(file.split("_")[0])
-        else:
-            names.append(file.split("_")[0].split(" ")[0])
-    names = list(dict.fromkeys(names))
-    vector_names = []
-    i = 0
-    vector_for_each_name = [0] * len(names)
-    for name in names:
-        vector_for_each_name[i] += 1
-        vector_names.append(np.array(vector_for_each_name))
-        vector_for_each_name[i] -= 1
-        i += 1
-    for f in onlyfiles:
-        if " " not in f.split("_")[0]:
-            f_speaker = f.split("_")[0]
-        else:
-            f_speaker = f.split("_")[0].split(" ")[0]
-        (rate, sig) = wav.read("FinalAudios/" + f)
-        try:
-            mfcc_feat = python_speech_features.mfcc(sig, rate, winlen=0.2)  # mfcc coeffs
-            for index in range(len(mfcc_feat)):
-                X.append(np.array(mfcc_feat[index]))
-                Y.append(np.array(vector_names[names.index(f_speaker)]))
-        except IndexError:
-            pass
-    X = np.asarray(X)
-    Y = np.asarray(Y)
-    Y_test = Y[:50]
-    X_test = X[:50]
-    X = X[50:]
-    Y = Y[50:]
+import tflearn
+import speech_data as data
 
-    clf = MLPClassifier(solver='lbfgs', alpha=1e-2, hidden_layer_sizes=(5, 3), random_state=2)  # create the NN
-    clf.fit(X, Y)  # Train it
+# Simple speaker recognition demo, with 99% accuracy in under a minute ( on digits sample )
 
-    for sample in range(len(X_test)):
-        if list(clf.predict([X[sample]])[0]) == list(Y_test[sample]):
-            winner.append(1)
-        else:
-            winner.append(0)
+# | Adam | epoch: 030 | loss: 0.05330 - acc: 0.9966 -- iter: 0000/1000
+# 'predicted speaker for 9_Vicki_260 : result = ', 'Vicki'
+import tensorflow as tf
+print("You are using tensorflow version "+ tf.__version__) #+" tflearn version "+ tflearn.version)
+if tf.__version__ >= '0.12' and os.name == 'nt':
+	print("sorry, tflearn is not ported to tensorflow 0.12 on windows yet!(?)")
+	quit() # why? works on Mac?
 
-plot_x = []
-plot_y = []
-for i in range(1, len(winner)):
-    plot_y.append(sum(winner[0:i])*1.0/len(winner[0:i]))
-    plot_x.append(i)
-plt.plot(plot_x, plot_y)
-plt.xlabel('x - axis')
-# naming the y axis
-plt.ylabel('y - axis')
+speakers = data.get_speakers()
+number_classes=len(speakers)
+print("speakers",speakers)
 
-# giving a title to my graph
-plt.title('My first graph!')
+batch=data.wave_batch_generator(batch_size=1000, source=data.Source.DIGIT_WAVES, target=data.Target.speaker)
+X,Y=next(batch)
 
-# function to show the plot
-plt.show()
+
+# Classification
+tflearn.init_graph(num_cores=8, gpu_memory_fraction=0.5)
+
+net = tflearn.input_data(shape=[None, 8192]) #Two wave chunks
+net = tflearn.fully_connected(net, 64)
+net = tflearn.dropout(net, 0.5)
+net = tflearn.fully_connected(net, number_classes, activation='softmax')
+net = tflearn.regression(net, optimizer='adam', loss='categorical_crossentropy')
+
+model = tflearn.DNN(net)
+model.fit(X, Y, n_epoch=100, show_metric=True, snapshot_step=100)
+
+# demo_file = "8_Vicki_260.wav"
+demo_file = "8_Bruce_260.wav"
+demo=data.load_wav_file(data.path + demo_file)
+result=model.predict([demo])
+result=data.one_hot_to_item(result,speakers)
+print("predicted speaker for %s : result = %s "%(demo_file,result)) # ~ 97% correct
