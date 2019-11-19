@@ -186,24 +186,31 @@ def two_seconds_every_file():
         except IndexError:
             # if it's already mono
             pass
-        t = fs/5
+        t = fs/2
         j = 0
         while t < len(audio):
-            write("FinalAudios/" + f.split(".")[0] + "_" + str(j) + ".wav", fs, audio[t-fs/5:t-1])
-            t += fs/5
+            write("FinalAudios/" + f.split(".")[0] + "_" + str(j) + ".wav", fs, audio[t-fs/2:t-1])
+            t += fs/2
             j += 1
 
 
 def cut_laugh_and_silent():
     onlyfiles = [f for f in listdir("FinalAudios/") if isfile(join("FinalAudios/", f))]
-    if not os.path.exists("LaughOrSilent"):  # if the dir doesn't exist we create one
-        os.makedirs("LaughOrSilent")
+    if not os.path.exists("Silent"):  # if the dir doesn't exist we create one
+        os.makedirs("Silent")
+    if not os.path.exists("Laugh"):  # if the dir doesn't exist we create one
+        os.makedirs("Laugh")
     for f in onlyfiles:
         input_data = read("FinalAudios/" + f)  # read the file
         fs = input_data[0]  # sample rate
         audio = input_data[1]  # audio file
-        if list(abs(j) < 400 for j in audio[0:len(audio) - 1]).count(True) < 600 or max(abs(j) for j in audio[0:len(audio) - 1]) < 400:
-            shutil.move("FinalAudios/" + f, "LaughOrSilent/" + f)
+        if f == "Howard_293_2.wav":
+            print list(abs(j) < 400 for j in audio[0:len(audio) - 1]).count(True)
+            print list(abs(j) > 400 for j in audio[0:len(audio) - 1]).count(True)
+        if list(abs(j) < 400 for j in audio[0:len(audio) - 1]).count(True) < 10000:
+            shutil.move("FinalAudios/" + f, "Laugh/" + f)
+        elif list(abs(j) > 400 for j in audio[0:len(audio) - 1]).count(True) < 10:
+            shutil.move("FinalAudios/" + f, "Silent/" + f)
 def plot_graph(name):
     """
     plot the sound file
