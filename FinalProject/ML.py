@@ -10,7 +10,7 @@ from tqdm import tqdm
 from random import randint
 winner = []  # this array count how much Bingo we had when we test the NN
 random_winner = []
-for TestNum in tqdm(range(10)):  # in every round we build NN with X,Y that out of them we check 50 after we build the NN
+for TestNum in tqdm(range(40)):  # in every round we build NN with X,Y that out of them we check 50 after we build the NN
     X = []
     Y = []
     onlyfiles = [f for f in listdir("FinalAudios/") if isfile(join("FinalAudios/", f))]   # Files in dir
@@ -56,10 +56,10 @@ for TestNum in tqdm(range(10)):  # in every round we build NN with X,Y that out 
     X = np.asarray(X)
     Y = np.asarray(Y)
 
-    Y_test = Y[:10]  # CHOOSE 50 FOR TEST, OTHERS FOR TRAIN
-    X_test = X[:10]
-    X = X[10:]
-    Y = Y[10:]
+    Y_test = Y[:50]  # CHOOSE 50 FOR TEST, OTHERS FOR TRAIN
+    X_test = X[:50]
+    X = X[50:]
+    Y = Y[50:]
 
     clf = MLPClassifier(solver='lbfgs', alpha=1e-2, hidden_layer_sizes=(5, 3), random_state=2)  # create the NN
     clf.fit(X, Y)  # Train it
@@ -71,7 +71,7 @@ for TestNum in tqdm(range(10)):  # in every round we build NN with X,Y that out 
             winner.append(1)
         else:
             winner.append(0)
-        if f_speaker[randint(0, len(f_speaker) - 1)] == f_speaker[randint(0, len(f_speaker) - 1)]:
+        if only_speakers[randint(0, len(only_speakers) - 1)] == only_speakers[randint(0, len(only_speakers) - 1)]:
             random_winner.append(1)
         else:
             random_winner.append(0)

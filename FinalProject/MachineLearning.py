@@ -209,7 +209,7 @@ def cut_laugh_and_silent():
             print list(abs(j) > 400 for j in audio[0:len(audio) - 1]).count(True)
         if list(abs(j) < 400 for j in audio[0:len(audio) - 1]).count(True) < 10000:
             shutil.move("FinalAudios/" + f, "Laugh/" + f)
-        elif list(abs(j) > 400 for j in audio[0:len(audio) - 1]).count(True) < 10:
+        elif list(abs(j) > 400 for j in audio[0:len(audio) - 1]).count(True) < 100:
             shutil.move("FinalAudios/" + f, "Silent/" + f)
 def plot_graph(name):
     """
