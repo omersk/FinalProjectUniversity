@@ -174,7 +174,11 @@ def frange(x, y, jump):
         x += jump
 
 
-def two_seconds_every_file():
+def half_seconds_every_file():
+    """
+    split audio files to half seconds audios
+    :return: nothing
+    """
     onlyfiles = [f for f in listdir("AfterInitialCuttedAudios/") if isfile(join("AfterInitialCuttedAudios/", f))]
     if not os.path.exists("FinalAudios"):  # if the dir doesn't exist we create one
         os.makedirs("FinalAudios")
@@ -196,6 +200,10 @@ def two_seconds_every_file():
 
 
 def less_than_second_every_file():
+    """
+    split audio files to 1/5 seconds audios
+    :return: nothing
+    """
     onlyfiles = [f for f in listdir("AfterInitialCuttedAudios/") if isfile(join("AfterInitialCuttedAudios/", f))]
     if not os.path.exists("FinalAudios"):  # if the dir doesn't exist we create one
         os.makedirs("FinalAudios")
@@ -218,6 +226,10 @@ def less_than_second_every_file():
 
 
 def cut_laugh_and_silent():
+    """
+    move laugh / silents audio file to a specific dir
+    :return:
+    """
     onlyfiles = [f for f in listdir("FinalAudios/") if isfile(join("FinalAudios/", f))]
     if not os.path.exists("Silent"):  # if the dir doesn't exist we create one
         os.makedirs("Silent")
@@ -227,9 +239,6 @@ def cut_laugh_and_silent():
         input_data = read("FinalAudios/" + f)  # read the file
         fs = input_data[0]  # sample rate
         audio = input_data[1]  # audio file
-        if f == "Howard_293_2.wav":
-            print list(abs(j) < 400 for j in audio[0:len(audio) - 1]).count(True)
-            print list(abs(j) > 400 for j in audio[0:len(audio) - 1]).count(True)
         if list(abs(j) < 400 for j in audio[0:len(audio) - 1]).count(True) < 10000:
             shutil.move("FinalAudios/" + f, "Laugh/" + f)
         elif list(abs(j) > 400 for j in audio[0:len(audio) - 1]).count(True) < 100:
@@ -259,17 +268,24 @@ def plot_graph(name):
     # display the plot
     plt.show()
 
-if len(sys.argv) == 2:
-    plot_graph(sys.argv[1])
-elif len(sys.argv) == 3:
-    two_seconds_every_file()
-elif len(sys.argv) == 4:
-    cut_audio(sys.argv[1], float(sys.argv[2]), float(sys.argv[3]))
-elif len(sys.argv) == 5:
-    cut_laugh_and_silent()
-elif len(sys.argv) == 6:
-    less_than_second_every_file
-else:
+#if len(sys.argv) == 2:
+#    plot_graph(sys.argv[1])
+#elif len(sys.argv) == 3:
+#    half_seconds_every_file()
+#elif len(sys.argv) == 4:
+#    cut_audio(sys.argv[1], float(sys.argv[2]), float(sys.argv[3]))
+#elif len(sys.argv) == 5:
+#    cut_laugh_and_silent()
+#elif len(sys.argv) == 6:
+#    less_than_second_every_file()
+#else:
+
+def main_action():
+    """
+    cut movie into specific audio files with 0.2 sec
+    by the script and srt files. And remove laugh + silent audios.
+    :return:
+    """
     filename = constants.outputfile
     i = 1
     j = 1
@@ -327,3 +343,6 @@ else:
                     print e.message
         i += 4  # next speaker
         j += 1  # next speaker
+    half_seconds_every_file()
+    cut_laugh_and_silent()
+    less_than_second_every_file()
