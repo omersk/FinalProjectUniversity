@@ -173,6 +173,7 @@ def frange(x, y, jump):
         yield x
         x += jump
 
+
 def two_seconds_every_file():
     onlyfiles = [f for f in listdir("AfterInitialCuttedAudios/") if isfile(join("AfterInitialCuttedAudios/", f))]
     if not os.path.exists("FinalAudios"):  # if the dir doesn't exist we create one
@@ -192,6 +193,28 @@ def two_seconds_every_file():
             write("FinalAudios/" + f.split(".")[0] + "_" + str(j) + ".wav", fs, audio[t-fs/2:t-1])
             t += fs/2
             j += 1
+
+
+def less_than_second_every_file():
+    onlyfiles = [f for f in listdir("AfterInitialCuttedAudios/") if isfile(join("AfterInitialCuttedAudios/", f))]
+    if not os.path.exists("FinalAudios"):  # if the dir doesn't exist we create one
+        os.makedirs("FinalAudios")
+    for f in onlyfiles:
+        input_data = read("AfterInitialCuttedAudios/" + f)  # read the file
+        fs = input_data[0]  # sample rate
+        audio = input_data[1]  # audio file
+        try:
+            audio = audio[:, 0]  # stereo --> mono
+        except IndexError:
+            # if it's already mono
+            pass
+        t = fs/5
+        j = 0
+        while t < len(audio):
+            write("FinalAudios/" + f.split(".")[0] + "_" + str(j) + ".wav", fs, audio[t-fs/5:t-1])
+            t += fs/5
+            j += 1
+
 
 
 def cut_laugh_and_silent():
@@ -244,6 +267,8 @@ elif len(sys.argv) == 4:
     cut_audio(sys.argv[1], float(sys.argv[2]), float(sys.argv[3]))
 elif len(sys.argv) == 5:
     cut_laugh_and_silent()
+elif len(sys.argv) == 6:
+    less_than_second_every_file
 else:
     filename = constants.outputfile
     i = 1

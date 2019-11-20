@@ -10,7 +10,10 @@ from tqdm import tqdm
 from random import randint
 winner = []  # this array count how much Bingo we had when we test the NN
 random_winner = []
-for TestNum in tqdm(range(40)):  # in every round we build NN with X,Y that out of them we check 50 after we build the NN
+win_len = 0.04 # in seconds
+step = win_len / 2
+nfft = 2048
+for TestNum in tqdm(range(20)):  # in every round we build NN with X,Y that out of them we check 50 after we build the NN
     X = []
     Y = []
     onlyfiles = [f for f in listdir("FinalAudios/") if isfile(join("FinalAudios/", f))]   # Files in dir
@@ -38,9 +41,10 @@ for TestNum in tqdm(range(40)):  # in every round we build NN with X,Y that out 
             f_speaker = f.split("_")[0]
         else:
             f_speaker = f.split("_")[0].split(" ")[0]
-        (rate, sig) = wav.read("FinalAudios/" + f)  # read the file
+        fs, audio = wav.read("FinalAudios/" + f)  # read the file
         try:
-            mfcc_feat = python_speech_features.mfcc(sig, rate, winlen=0.2, nfft=512)  # mfcc coeffs
+            mfcc_feat = python_speech_features.mfcc(audio, samplerate=fs, winlen=win_len,
+                                               winstep=step, nfft=nfft, appendEnergy=False)
             flat_list = [item for sublist in mfcc_feat for item in sublist]
             X.append(np.array(flat_list))
             Y.append(np.array(vector_names[names.index(f_speaker)]))
