@@ -8,12 +8,13 @@ from random import shuffle
 import matplotlib.pyplot as plt
 from tqdm import tqdm
 from random import randint
+import random
 winner = []  # this array count how much Bingo we had when we test the NN
 random_winner = []
-win_len = 0.04 # in seconds
+win_len = 0.04  # in seconds
 step = win_len / 2
 nfft = 2048
-for TestNum in tqdm(range(20)):  # in every round we build NN with X,Y that out of them we check 50 after we build the NN
+for TestNum in tqdm(range(40)):  # in every round we build NN with X,Y that out of them we check 50 after we build the NN
     X = []
     Y = []
     onlyfiles = [f for f in listdir("FinalAudios/") if isfile(join("FinalAudios/", f))]   # Files in dir
@@ -64,8 +65,8 @@ for TestNum in tqdm(range(20)):  # in every round we build NN with X,Y that out 
     X_test = X[:50]
     X = X[50:]
     Y = Y[50:]
-
-    clf = MLPClassifier(solver='lbfgs', alpha=1e-2, hidden_layer_sizes=(5, 3), random_state=2)  # create the NN
+    print len(X)
+    clf = MLPClassifier(solver='lbfgs', alpha=1e-2, hidden_layer_sizes=(200, 100), random_state=2)  # create the NN
     clf.fit(X, Y)  # Train it
     print list(clf.predict_proba([X[0]])[0])
     print list(Y_test[0])
@@ -91,14 +92,14 @@ plot_random_y = []
 for i in range(1, len(random_winner)):
     plot_random_y.append(sum(random_winner[0:i])*1.0/len(random_winner[0:i]))
     plot_random_x.append(i)
-plt.plot(plot_x, plot_y, 'r')
-plt.plot(plot_random_x, plot_random_y, 'b')
-plt.xlabel('x - axis')
+plt.plot(plot_x, plot_y, 'r', label='machine learning')
+plt.plot(plot_random_x, plot_random_y, 'b', label='random')
+plt.xlabel('Number Of Samples')
 # naming the y axis
-plt.ylabel('y - axis')
+plt.ylabel('Success Rate')
 
 # giving a title to my graph
-plt.title('My first graph!')
+plt.title('Success Rate : Random Vs ML!')
 
 # function to show the plot
 plt.show()
