@@ -14,7 +14,7 @@ random_winner = []
 win_len = 0.04  # in seconds
 step = win_len / 2
 nfft = 2048
-for TestNum in tqdm(range(40)):  # in every round we build NN with X,Y that out of them we check 50 after we build the NN
+for TestNum in tqdm(range(20)):  # in every round we build NN with X,Y that out of them we check 50 after we build the NN
     X = []
     Y = []
     onlyfiles = [f for f in listdir("FinalAudios/") if isfile(join("FinalAudios/", f))]   # Files in dir
@@ -66,7 +66,7 @@ for TestNum in tqdm(range(40)):  # in every round we build NN with X,Y that out 
     X = X[50:]
     Y = Y[50:]
     print len(X)
-    clf = MLPClassifier(solver='lbfgs', alpha=1e-2, hidden_layer_sizes=(200, 100), random_state=2)  # create the NN
+    clf = MLPClassifier(solver='lbfgs', alpha=3e-2, hidden_layer_sizes=(50, 20), random_state=2)  # create the NN
     clf.fit(X, Y)  # Train it
     print list(clf.predict_proba([X[0]])[0])
     print list(Y_test[0])
