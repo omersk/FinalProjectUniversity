@@ -1,1288 +1,892 @@
-1. 00:00:00,601 --> 00:00:12,589
+1. 00:00:00,928 --> 00:00:12,082
 Sheldon
-So if a photon is directed through a plane with two slits in it and either slit is observed it will not go through both slits. If it's unobserved it will, however, if it's observed after it's left the plane but before it hits its target, it will not have gone through both slits. - Script
-So if a photon is directed through a plane with two slits in it and either slit is observed, it will not go through both slits. If it's unobserved, it will. However, if it's observed after it's left the plane but before it hits its target, it won't have gone through both slits. - Srt
-2. 00:00:12,753 --> 00:00:14,762
+Alright, I'm moving my infantry division, augmented by a battalion of Orcs from Lord of the Rings, we flank the Tennessee Volunteers, and the North once again wins the Battle of Gettysburg. - Script
+All right! I'm moving my infantry division. Augmented by bataillon of orcs from Lord of the Rings. We flank the Tennessee volunteers and the North, once again, wins the battle of Gettysburg. - Srt
+2. 00:00:12,469 --> 00:00:17,835
+Howard
+Not so fast, remember the South still has two infantry divisions, plus Superman and Godzilla. - Script
+Not so fast! Remember, the South still has two infantry divisions, plus Superman and Godzilla. - Srt
+3. 00:00:18,427 --> 00:00:26,016
 Leonard
-Agreed, what's your point? - Script
-Agreed. What's your point? - Srt
-3. 00:00:14,950 --> 00:00:18,140
-Sheldon
-There's no point, I just think it's a good idea for a tee-shirt. - Script
-There's no point, I just think it's a good idea for a T-shirt. - Srt
-4. 00:00:23,579 --> 00:00:25,246
-Leonard
-Excuse me? - Script
-Excuse me. - Srt
-5. 00:00:23,579 --> 00:00:25,246
-Receptionist
-Hang on. - Script
- Hang on. - Srt
-6. 00:00:29,629 --> 00:00:48,677
-Leonard
-One across is Aegean, eight down is Nabakov, twenty-six across is MCM, fourteen down is move your finger phylum, which makes fourteen across Port-au-Prince. See, Papa Doc's capital idea, that's Port-au-Prince. Haiti. - Script
-One across is "Aegean." Eight down is "Nabokov." 26 across is "MCM." 14 down is... Move your finger... "Phylum" which makes 14 across "Port-au-Prince" See, "Papa Doc's capitol idea," that's "Port-au-Prince." Haiti. - Srt
-7. 00:00:50,185 --> 00:00:51,771
-Receptionist
-Can I help you? - Script
-Can I help you? - Srt
-8. 00:00:54,673 --> 00:00:57,626
-Leonard
-Yes. Um, is this the High IQ sperm bank? - Script
-Is this the high-IQ sperm bank? - Srt
-9. 00:00:59,495 --> 00:01:02,188
-Receptionist
-If you have to ask, maybe you shouldn't be here. - Script
-If you have to ask, maybe you shouldn't be here. - Srt
-10. 00:01:03,367 --> 00:01:04,939
-Sheldon
-I think this is the place. - Script
-I think this is the place. - Srt
-11. 00:01:06,149 --> 00:01:07,666
-Receptionist
-Fill these out. - Script
-Fill these out. - Srt
-12. 00:01:08,001 --> 00:01:09,827
-Leonard
-Thank-you. We'll be right back. - Script
- We'll be right back. - Srt
-13. 00:01:10,019 --> 00:01:12,178
-Receptionist
-Oh, take your time. I'll just finish my crossword puzzle. Oh wait. - Script
-I'll just finish my crossword puzzle. - Srt
-14. 00:01:25,928 --> 00:01:27,965
-Sheldon
-Leonard, I don't think I can do this. - Script
-Leonard, I don't think I can do this. - Srt
-15. 00:01:28,183 --> 00:01:30,499
-Leonard
-What, are you kidding? You're a semi-pro. - Script
-What, are you kidding? You're a semi-pro. - Srt
-16. 00:01:31,672 --> 00:01:41,949
-Sheldon
-No. We are committing genetic fraud. There's no guarantee that our sperm is going to generate high IQ offspring, think about that. I have a sister with the same basic DNA mix who hostesses at Fuddruckers. - Script
-No. We are committing genetic fraud. There's no guarantee that our sperm is going to generate high-IQ offspring. Think about that. I have a sister with the same basic DNA mix who hostesses at Fuddruckers. - Srt
-17. 00:01:43,382 --> 00:01:48,577
-Leonard
-Sheldon, this was your idea. A little extra money to get fractional T1 bandwidth in the apartment. - Script
-Sheldon, this was your idea. A little extra money to get fractional T-1 bandwidth in the apartment. - Srt
-18. 00:01:48,699 --> 00:02:02,276
-Sheldon
-I know, and I do yearn for faster downloads, but there's some poor woman is going to pin her hopes on my sperm, what if she winds up with a toddler who doesn't know if he should use an integral or a differential to solve the area under a curve. - Script
-I know, and I do yearn for faster downloads. But there's some poor woman who's gonna pin her hopes on my sperm. What if she winds up with a toddler who doesn't know if he should use an integral or a differential to solve the area under a curve? - Srt
-19. 00:02:02,969 --> 00:02:05,567
-Leonard
-I'm sure she'll still love him. - Script
-I'm sure she'll still love him. - Srt
-20. 00:02:02,969 --> 00:02:05,567
-Sheldon
-I wouldn't. - Script
- I wouldn't. - Srt
-21. 00:02:07,744 --> 00:02:09,235
-Leonard
-Well, what do you want to do? - Script
-Well, what do you want to do? - Srt
-22. 00:02:09,357 --> 00:02:10,357
-Sheldon
-I want to leave. - Script
-I want to leave. - Srt
-23. 00:00:00,000 --> 00:00:00,000
-Leonard
-Okay. - Script
-NO IN SRT!!!! - Srt
-24. 00:02:12,155 --> 00:02:13,494
-Sheldon
-What's the protocol for leaving? - Script
-What's the protocol for leaving? - Srt
-25. 00:02:13,847 --> 00:02:17,087
-Leonard
-I don't know, I've never reneged on a proffer of sperm before. - Script
-I don't know... I've never reneged on a proffer of sperm before. - Srt
-26. 00:02:18,627 --> 00:02:20,076
-Sheldon
-Let's try just walking out. - Script
-Let's try just walking out. - Srt
-27. 00:00:00,000 --> 00:00:00,000
-Leonard
-Okay. - Script
-NO IN SRT!!!! - Srt
-28. 00:02:32,238 --> 00:02:34,455
- Receptionist
-Bye. - Script
-Bye. - Srt
-29. 00:00:00,000 --> 00:00:00,000
-Sheldon
-Bye-bye - Script
-NO IN SRT!!!! - Srt
-30. 00:02:32,238 --> 00:02:34,455
-Leonard
-See you. - Script
- Bye. Nice meeting you. - Srt
-31. 00:02:37,429 --> 00:02:39,151
-Sheldon
-Are you still mad about the sperm bank? - Script
-Are you still mad about the sperm bank? - Srt
-32. 00:00:00,000 --> 00:00:00,000
-Leonard
-No. - Script
-NO IN SRT!!!! - Srt
-33. 00:02:41,547 --> 00:02:44,459
-Sheldon
-You want to hear an interesting thing about stairs? - Script
-You want to hear an interesting thing about stairs? - Srt
-34. 00:02:44,927 --> 00:02:45,979
-Leonard
-Not really. - Script
-Not really. - Srt
-35. 00:02:46,691 --> 00:02:52,014
-Sheldon
-If the height of a single step is off by as little as two millimetres, most people will trip. - Script
-If the height of a single step is off by as little as two millimeters,  most people will trip. - Srt
-36. 00:02:49,692 --> 00:02:55,692
-Leonard
-I don't care. Two millimetres? That doesn't seem right. - Script
-I don't care. Two milli... That doesn't seem right. - Srt
-37. 00:02:55,814 --> 00:02:59,881
-Sheldon
-No, it's true, I did a series of experiments when I was twelve, my father broke his clavicle. - Script
-No, it's true, I did a series of experiments when I was 12. My father broke his clavicle. - Srt
-38. 00:03:01,289 --> 00:03:03,159
-Leonard
-Is that why they sent you to boarding school? - Script
-Is that why they sent you to boarding school? - Srt
-39. 00:03:03,281 --> 00:03:05,953
-Sheldon
-No, that was the result of my work with lasers. - Script
-No. That was a result of my work with lasers. - Srt
-40. 00:03:11,966 --> 00:03:12,991
-Leonard
-New neighbour? - Script
-New neighbor? - Srt
-41. 00:03:13,210 --> 00:03:14,210
-Sheldon
-Evidently. - Script
-Evidently. - Srt
-42. 00:03:14,661 --> 00:03:17,286
-Leonard
-Significant improvement over the old neighbour. - Script
-Significant improvement over the old neighbor. - Srt
-43. 00:03:18,365 --> 00:03:21,599
-Sheldon
-Two hundred pound transvestite with a skin condition, yes she is. - Script
-200-pound transvestite with a skin condition? Yes, she is. - Srt
-44. 00:03:24,078 --> 00:03:25,978
+No, no, no, no, Orcs are magic, Superman is vulnerable to magic, not to mention, you already lost Godzilla to the Illinois Cavalry and Hulk. - Script
+No, orcs are magic. Superman is vulnerable to magic. Not to mention you already lost Godzilla to the Illinois cavalry and Hulk. - Srt
+4. 00:00:26,629 --> 00:00:30,594
+Raj
+Why don't you just have Robert E. Lee charge the line with Shiva and Ganesh. - Script
+Why don't you just have Robert E. Lee charge the line with Shiva and Ganesh? - Srt
+5. 00:00:30,819 --> 00:00:32,832
 Penny
-Oh, hi! - Script
-Oh, hi. - Srt
-45. 00:03:24,078 --> 00:03:25,978
+Hi, you guys ready to order? - Script
+You guys ready to order? - Srt
+6. 00:00:34,477 --> 00:00:36,780
+Howard
+Hang on, honey. Shiva and Ganesh? The Hindu Gods against the entire Union army? - Script
+the Hindu gods, against the entire Union army? - Srt
+7. 00:00:36,900 --> 00:00:37,900
 Leonard
-Hi. - Script
- Hi. - Srt
-46. 00:03:24,078 --> 00:03:25,978
+And Orcs! - Script
+And orcs. - Srt
+8. 00:00:38,813 --> 00:00:39,952
+Penny
+I'll be back. - Script
+I'll be back. - Srt
+9. 00:00:40,330 --> 00:00:48,509
+Raj
+Excuse me, Ganesh is the remover of obstacles, and Shiva is the destroyer. When the smoke clears, Abraham Lincoln will be speaking Hindi and drinking mint juleps. - Script
+Excuse me. Ganesh is the Remover of Obstacles and Shiva is the Destroyer. When the smoke clears, Abraham Lincoln will be speaking Hindi and drinking mint juleps. - Srt
+10. 00:00:49,176 --> 00:00:52,429
+Penny
+Alright, my boss says you either have to order, or leave and never come back. - Script
+My boss says you have to either order or leave and never come back. - Srt
+11. 00:00:53,360 --> 00:00:58,555
+Howard
+What do you recommend for someone who worked up a man-sized appetite from a morning of weight training and cardio-funk? - Script
+What do you recommend for someone who worked up a man-sized appetite from a morning of weight training and cardio funk? - Srt
+12. 00:00:58,734 --> 00:00:59,734
+Penny
+A shower. - Script
+A shower. - Srt
+13. 00:01:00,837 --> 00:01:02,913
+Howard
+I'll take the heart smart platter. - Script
+I'll take the Heart Smart platter. - Srt
+14. 00:01:03,727 --> 00:01:05,484
+Penny
+Alright, thank you, and Sheldon. - Script
+All right, thank you, and Sheldon? - Srt
+15. 00:01:05,825 --> 00:01:07,861
 Sheldon
-Hi. - Script
- Hi. - Srt
-47. 00:00:00,000 --> 00:00:00,000
-Leonard
-Hi. - Script
-NO IN SRT!!!! - Srt
-48. 00:00:00,000 --> 00:00:00,000
+We don't eat here, I don't know what's good. - Script
+We don't eat here. I don't know what's good. - Srt
+16. 00:01:08,111 --> 00:01:10,638
+Penny
+Well, it's all good. - Script
+ It's all good. - Srt
+17. 00:01:08,111 --> 00:01:10,638
 Sheldon
-Hi. - Script
-NO IN SRT!!!! - Srt
-49. 00:00:00,000 --> 00:00:00,000
-Penny
-Hi. - Script
-NO IN SRT!!!! - Srt
-50. 00:03:30,861 --> 00:03:33,075
+Statistically unlikely. - Script
+Statistically unlikely. - Srt
+18. 00:01:11,767 --> 00:01:13,748
 Leonard
-We don't mean to interrupt, we live across the hall. - Script
-We don't mean to interrupt. We live across the hall. - Srt
-51. 00:03:33,317 --> 00:03:34,998
-Penny
-Oh, that's nice. - Script
-Oh, that's nice. - Srt
-52. 00:03:39,914 --> 00:03:42,892
-Leonard
-Oh uh no we don't live together um we live together but in separate, heterosexual bedrooms. - Script
-but in separate, heterosexual bedrooms. - Srt
-53. 00:03:44,324 --> 00:03:47,385
-Penny
-Oh, okay, well, guess I'm your new neighbour, Penny. - Script
-Okay, well... Guess I'm your new neighbor. Penny. - Srt
-54. 00:03:47,790 --> 00:03:49,430
-Leonard
-Leonard, Sheldon. - Script
-Leonard. Sheldon. - Srt
-55. 00:03:24,078 --> 00:03:25,978
-Penny
-Hi. - Script
- Hi. - Srt
-56. 00:00:00,000 --> 00:00:00,000
-Leonard
-Hi. - Script
-NO IN SRT!!!! - Srt
-57. 00:00:00,000 --> 00:00:00,000
+Just get a hamburger, you like hamburgers. - Script
+Just get a hamburger. You like hamburgers. - Srt
+19. 00:01:13,868 --> 00:01:18,265
 Sheldon
-Hi. - Script
-NO IN SRT!!!! - Srt
-58. 00:00:00,000 --> 00:00:00,000
-Penny
-Hi. - Script
-NO IN SRT!!!! - Srt
-59. 00:03:55,889 --> 00:03:57,228
+I like the hamburgers where we usually have hamburgers, you can't make the assumption that I'll like the hamburgers here. - Script
+I like hamburgers where we usually have them. You can't make the assumption that I'll like them here. - Srt
+20. 00:01:19,107 --> 00:01:22,281
 Leonard
-Hi. Well, uh, oh, welcome to the building. - Script
-Welcome to the building. - Srt
-60. 00:03:57,655 --> 00:03:59,824
+I'm sorry. Give him a hamburger. - Script
+I'm sorry?  Give him a hamburger. - Srt
+21. 00:01:20,385 --> 00:01:26,252
 Penny
-Thankyou, maybe we can have coffee sometime. - Script
-Thank you. Maybe we can have coffee sometime. - Srt
-61. 00:03:59,946 --> 00:04:01,750
+Uh, which one, the Classic Burger, the Ranch House Burger, the Barbecue Burger or the Kobe burger? - Script
+Which one? The Classic Burger, the Ranch House Burger, the Barbecue Burger, or the Kobe Burger? - Srt
+22. 00:01:26,431 --> 00:01:31,026
+Sheldon
+Can't we just go to Big Boy? They only have one burger. The Big Boy. - Script
+Can't we just go to Big Boy? They only have one burger... the Big Boy. - Srt
+23. 00:01:31,537 --> 00:01:33,168
+Penny
+The Barbecue Burger is like the Big Boy. - Script
+The Barbecue Burger's like the Big Boy. - Srt
+24. 00:01:33,323 --> 00:01:37,999
+Sheldon
+Excuse me, in a world that already includes the Big Boy, why would I settle for something like a Big Boy? - Script
+Excuse me, in a world that already includes a Big Boy, why would I settle for something like a Big Boy? - Srt
+25. 00:01:38,243 --> 00:01:40,133
+Penny
+Because you are not at Big Boy! - Script
+Because you're not at Big Boy! - Srt
+26. 00:01:41,537 --> 00:01:44,131
+Sheldon
+Fine, I'll have the Barbecue Burger. - Script
+Fine, I'll have the Barbecue Burger. - Srt
+27. 00:01:41,537 --> 00:01:44,131
 Leonard
-Oh, great. - Script
-Great. - Srt
-62. 00:03:59,946 --> 00:04:01,750
+Make it two. - Script
+ Make it two. - Srt
+28. 00:01:44,251 --> 00:01:46,483
+Sheldon
+Waitresses don't yell at you at Big Boy. - Script
+Waitresses don't yell at you at Big Boy. - Srt
+29. 00:01:47,601 --> 00:01:49,260
+Lesley (entering) 
+Hey Leonard, hi guys. - Script
+Hey, Leonard. Hi, guys. - Srt
+30. 00:01:49,434 --> 00:01:50,502
+Leonard
+Hey, Lesley. - Script
+Hi, Leslie. - Srt
+31. 00:01:50,622 --> 00:01:51,920
+Lesley
+I didn't know you ate here. - Script
+I didn't know you ate here. - Srt
+32. 00:01:52,056 --> 00:01:54,172
+Sheldon
+We don't. This is a disturbing aberration. - Script
+We don't. This is a disturbing aberration. - Srt
+33. 00:01:54,519 --> 00:01:57,683
+Leonard
+Lesley, this is Penny, she lives across the hall from Sheldon and me. - Script
+Leslie, this is Penny. She lives across the hall from Sheldon and me. - Srt
+34. 00:01:57,816 --> 00:02:00,305
+Howard
+And walks in quiet beauty like the night. - Script
+And walks in quiet beauty like the night. - Srt
+35. 00:02:01,358 --> 00:02:03,250
 Penny
-Great. - Script
-Great. - Srt
+Howard, I've asked you not to do that. - Script
+Howard, I've asked you not to do that. - Srt
+36. 00:02:04,499 --> 00:02:06,795
+Leonard
+Lesley and I do research together at the University. - Script
+Leslie and I do research together at the university. - Srt
+37. 00:02:07,577 --> 00:02:09,159
+Penny
+Oh, wow, a girl scientist. - Script
+Wow, a girl scientist. - Srt
+38. 00:02:09,495 --> 00:02:16,781
+Lesley
+Yep, come for the breasts, stay for the brains. So, I'm glad I ran into you, the physics department string quartet needs a new cellist. - Script
+Yep, come for the breasts, stay for the brains. Glad I ran into you. The Physics Department string quartet needs a new cellist. - Srt
+39. 00:02:16,935 --> 00:02:18,291
+Leonard
+What happened to Elliot Wong? - Script
+What happened to Elliot Wong? - Srt
+40. 00:02:18,443 --> 00:02:26,716
+Lesley
+He switched over to high energy radiation research, had a little mishap, and now the other guys are uncomfortable sitting next to him. So, are you in? - Script
+He switched over to high-energy radiation research, had a little mishap, and now the other guys are uncomfortable sitting next to him.  You're in? - Srt
+41. 00:02:24,767 --> 00:02:26,716
+Leonard
+Yeah, sure, why not. - Script
+Yeah, sure, why not? - Srt
+42. 00:02:27,086 --> 00:02:29,206
+Lesley
+Great, we rehearse on Tuesdays at your place. - Script
+Great, we rehearse on Tuesdays at your place. - Srt
+43. 00:02:29,326 --> 00:02:30,366
+Leonard
+Why at my place? - Script
+Why at my place? - Srt
+44. 00:02:30,539 --> 00:02:36,446
+Lesley
+Yeah, the department of energy said our regular space is kind of a hot zone. Nice meeting you. - Script
+Department of Energy said our regular space is kind of a hot zone.  Nice meeting you. - Srt
+45. 00:02:34,635 --> 00:02:39,023
+Penny
+Yeah, you too. Leonard, I didn't know you played the cello? - Script
+Yeah, you, too. I didn't know you played the cello. - Srt
+46. 00:02:39,196 --> 00:02:45,834
+Leonard
+Yeah, my parents felt that naming me Leonard and putting me in advanced placement classes wasn't getting me beaten up enough. - Script
+Yeah, my parents felt that naming me Leonard and putting me in Advanced Placement classes wasn't getting me beaten up enough. - Srt
+47. 00:02:46,625 --> 00:02:49,462
+Howard
+If you're into music, I happen to be a human beatbox. - Script
+If you're into music, I happen to be a human beatbox. - Srt
+48. 00:02:49,736 --> 00:03:03,412
+Penny
+Really? (Howard performs some of the worst beatboxing imaginable.) I'm actually not that into music. So hey, your friend's really cute, anything going on with you two. - Script
+Really? I'm actually not that into music. Your friend's really cute. Anything going on with you two? - Srt
+49. 00:03:06,761 --> 00:03:08,729
+Leonard
+Lesley? No, no-oh, what are you kidding? - Script
+ What, are you kidding? - Srt
+50. 00:03:06,761 --> 00:03:10,609
+Sheldon
+He asked her out once, it was an embarrassing failure. - Script
+He asked her out once. It was an embarrassing failure. - Srt
+51. 00:03:11,141 --> 00:03:12,684
+Leonard
+Thank you Sheldon. - Script
+Thank you, Sheldon. - Srt
+52. 00:03:12,867 --> 00:03:14,321
+Sheldon
+Oh, I'm sorry, was that supposed to be a secret? - Script
+Was that supposed to be a secret? - Srt
+53. 00:03:15,650 --> 00:03:17,658
+Penny
+Oh, that's too bad, you guys would make a cute couple. - Script
+That's too bad. You guys'd make a cute couple. - Srt
+54. 00:03:20,014 --> 00:03:21,014
+Raj
+Oh dear. - Script
+Oh, dear. - Srt
+55. 00:03:21,362 --> 00:03:23,311
+Howard
+What's the matter? - Script
+What's the matter? - Srt
+56. 00:03:21,362 --> 00:03:23,311
+Raj
+She didn't take my order. - Script
+ She didn't take my order. - Srt
+57. 00:03:23,484 --> 00:03:26,458
+Howard
+How can she take your order when you're too neurotic to talk to her. - Script
+How can she take your order when you're too neurotic to talk to her? - Srt
+58. 00:03:27,330 --> 00:03:30,104
+Raj
+Nevertheless, this will be reflected in her tip. - Script
+Nevertheless, this will be reflected in her tip. - Srt
+59. 00:03:33,488 --> 00:03:35,784
+Leonard
+What did Penny mean, you'd make a cute couple? - Script
+What did Penny mean, "You'd make a cute couple?" - Srt
+60. 00:03:36,473 --> 00:03:53,213
+Sheldon
+Well I assume she meant that the two of you together would constitute a couple that others might consider cute. An alternate, and somewhat less likely interpretation, is that you could manufacture one. As in, oh look, Leonard and Lesley made Mr and Mrs Goldfarb, aren't they adorable. - Script
+I assume she meant the two of you together would constitute a couple that others might consider cute. An alternate and somewhat less likely interpretation is that you could manufacture one. As in, "Look, Leonard and Leslie made Mr. and Mrs. Goldfarb. Aren't they adorable?" - Srt
+61. 00:00:00,000 --> 00:00:00,000
+Leonard
+If Penny didn't know that Lesley had already turned me down then that would unambiguously mean that she, Penny, thought that I should her, Lesley, out, indicating that she, Penny, had no interest in me asking her, Penny, out. But because she did know that I had asked Lesley out and that she, Lesley, had turned me down then she, Penny, could be offering consolation. That's too bad, you would have made a cute couple. But while thinking, good, Leonard remains available. - Script
+NO IN SRT!!!! - Srt
+62. 00:00:00,000 --> 00:00:00,000
+Sheldon
+You're a lucky man, Leonard. - Script
+NO IN SRT!!!! - Srt
 63. 00:00:00,000 --> 00:00:00,000
-Sheldon
-Great. - Script
-NO IN SRT!!!! - Srt
-64. 00:04:04,796 --> 00:04:07,037
-Leonard
-Great. Well, bye. - Script
- Well... bye. - Srt
-65. 00:04:04,796 --> 00:04:07,037
-Penny
-Bye. - Script
- Bye. - Srt
-66. 00:04:04,796 --> 00:04:07,037
-Sheldon
-Bye. - Script
-Bye. - Srt
-67. 00:04:04,796 --> 00:04:07,037
-Leonard
-Bye. - Script
- Bye. - Srt
-68. 00:04:11,010 --> 00:04:12,746
-Leonard
-Should we have invited her for lunch? - Script
-Should we have invited her for lunch? - Srt
-69. 00:04:13,208 --> 00:04:15,818
-Sheldon
-No. We're going to start Season Two of Battlestar Galactica. - Script
-We're gonna start season two of Battlestar Galactica. - Srt
-70. 00:04:16,442 --> 00:04:18,425
-Leonard
-We already watched the Season Two DVDs. - Script
-We already watched the season two DVDs. - Srt
-71. 00:04:18,547 --> 00:04:19,720
-Sheldon
-Not with commentary. - Script
-Not with commentary. - Srt
-72. 00:04:22,401 --> 00:04:26,364
-Leonard
-I think we should be good neighbours, invite her over, make her feel welcome. - Script
-I think we should be good neighbors and invite her over, make her feel welcome. - Srt
-73. 00:04:26,879 --> 00:04:29,545
-Sheldon
-We never invited Louis-slash-Louise over. - Script
-We never invited Louie-slash-Louise over. - Srt
-74. 00:04:30,758 --> 00:04:33,969
-Leonard
-Well, then that was wrong of us. We need to widen our circle. - Script
-And that was wrong of us. We need to widen our circle. - Srt
-75. 00:04:34,374 --> 00:04:39,437
-Sheldon
-I have a very wide circle. I have 212 friends on myspace. - Script
-I have a very wide circle. I have 212 friends on MySpace. - Srt
-76. 00:04:41,405 --> 00:04:43,564
-Leonard
-Yes, and you've never met one of them. - Script
-Yes, and you've never met one of them. - Srt
-77. 00:04:44,310 --> 00:04:45,663
-Sheldon
-That's the beauty of it. - Script
-That's the beauty of it. - Srt
-78. 00:04:48,078 --> 00:04:52,748
-Leonard
-I'm going to invite her over. We'll have a nice meal and chat. - Script
-I'm gonna invite her over. We'll have a nice meal and... chat. - Srt
-79. 00:04:52,955 --> 00:04:55,705
-Sheldon
-Chat? We don't chat. At least not offline. - Script
-Chat? We don't chat. At least not offline. - Srt
-80. 00:04:58,085 --> 00:05:03,993
-Leonard
-Well it's not difficult, you just listen to what she says and then you say something appropriate in response. - Script
-It's not difficult. You just listen to what she says and then you say something appropriate in response. - Srt
-81. 00:05:05,390 --> 00:05:06,390
-Sheldon
-To what end? - Script
-To what end? - Srt
-82. 00:05:08,372 --> 00:05:09,976
-Leonard
-Hi. Again. - Script
-Hi... again. - Srt
-83. 00:05:10,098 --> 00:05:11,971
-Penny
-Hi. - Script
-Hi. - Srt
-84. 00:00:00,000 --> 00:00:00,000
-Sheldon
-Hi. - Script
-NO IN SRT!!!! - Srt
-85. 00:00:00,000 --> 00:00:00,000
-Leonard
-Hi. - Script
-NO IN SRT!!!! - Srt
-86. 00:00:00,000 --> 00:00:00,000
-Penny
-Hi. - Script
-NO IN SRT!!!! - Srt
-87. 00:05:13,254 --> 00:05:35,898
-Leonard
-Anyway, um. We brought home Indian food. And, um. I know that moving can be stressful, and I find that when I'm undergoing stress, that good food and company can have a comforting effect. Also, curry is a natural laxative, and I don't have to tell you that, uh, a clean colon is just one less thing to worry about. - Script
-Anyway... We brought home Indian food. And... I know that moving can be stressful, and I find that when I'm undergoing stress, that good food and company can have a comforting effect. Also, curry is a natural laxative, and I don't have to tell you that, you know, a clean colon is just... one less thing to worry about. - Srt
-88. 00:05:37,685 --> 00:05:43,089
-Sheldon
-Leonard, I'm not expert here but I believe in the context of a luncheon invitation, you might want to skip the reference to bowel movements. - Script
-I'm no expert, but I believe in the context of a luncheon invitation, you might want to skip the reference to bowel movements. - Srt
-89. 00:05:43,700 --> 00:05:45,450
-Penny
-Oh, you're inviting me over to eat? - Script
-You're inviting me over to eat? - Srt
-90. 00:00:00,000 --> 00:00:00,000
-Leonard
-Uh, yes. - Script
-NO IN SRT!!!! - Srt
-91. 00:05:47,876 --> 00:05:49,830
-Penny
-Oh, that's so nice, I'd love to. - Script
-Oh, that's so nice. I'd love to. - Srt
-92. 00:05:50,007 --> 00:05:51,007
-Leonard
-Great. - Script
-Great. - Srt
-93. 00:05:51,155 --> 00:05:53,505
-Penny
-So, what do you guys do for fun around here? - Script
-So, what do you guys do for fun around here? - Srt
-94. 00:05:54,296 --> 00:05:56,127
-Sheldon
-Well, today we tried masturbating for money. - Script
-Today we tried masturbating for money. - Srt
-95. 00:06:23,971 --> 00:06:25,802
-Leonard
-Okay, well, make yourself at home. - Script
-Okay, make yourself at home. - Srt
-96. 00:06:26,089 --> 00:06:27,089
-Penny
-Okay, thankyou. - Script
-Thank you. - Srt
-97. 00:06:27,414 --> 00:06:28,548
-Leonard
-You're very welcome. - Script
-You're very welcome. - Srt
-98. 00:06:32,882 --> 00:06:37,810
-Penny
-This looks like some serious stuff, Leonard, did you do this? - Script
-This looks like some serious stuff.  Leonard, did you do this? - Srt
-99. 00:06:34,742 --> 00:06:37,810
-Sheldon
-Actually that's my work. - Script
-Actually, that's my work. - Srt
-100. 00:00:00,000 --> 00:00:00,000
-Penny
-Wow. - Script
-NO IN SRT!!!! - Srt
-101. 00:06:39,767 --> 00:06:49,203
-Sheldon
-Yeah, well, it's just some quantum mechanics, with a little string theory doodling around the edges. That part there, that's just a joke, it's a spoof of the Bourne-Oppenheimer approximation. - Script
-Yeah. Well, it's just some quantum mechanics with a little string theory doodling around the edges. That part there, that's just a joke. It's a spoof of the Born-Oppenheimer approximation. - Srt
-102. 00:06:50,628 --> 00:06:53,949
-Penny
-So you're like, one of those, beautiful mind genius guys. - Script
-So you're like one of those Beautiful Mind genius guys. - Srt
-103. 00:00:00,000 --> 00:00:00,000
-Sheldon
-Yeah? - Script
-NO IN SRT!!!! - Srt
-104. 00:06:57,707 --> 00:06:59,961
-Penny
-This is really impressive. - Script
-This is really impressive. - Srt
-105. 00:07:00,083 --> 00:07:02,160
-Leonard
-I have a board. If you like boards, this is my board. - Script
-If you like boards, this is my board. - Srt
-106. 00:07:03,255 --> 00:07:04,513
-Penny
-Holy smokes. - Script
-Holy smokes. - Srt
-107. 00:07:04,635 --> 00:07:11,269
-Sheldon
-If by holy smokes you mean a derivative restatement of the kind of stuff you can find scribbled on the wall of any men's room at MIT, sure. - Script
-If by "holy smokes", you mean a derivative restatement of the kind of stuff you can find scribbled on the wall of any men's room at MIT, sure. - Srt
-108. 00:07:12,174 --> 00:07:13,483
-Leonard
-What? - Script
-What? - Srt
-109. 00:07:13,605 --> 00:07:17,213
-Sheldon
-Oh, come on. Who hasn't seen this differential below here I sit broken hearted? - Script
-Who hasn't seen this differential below "Here I sit, broken-hearted"? - Srt
-110. 00:07:17,607 --> 00:07:21,527
-Leonard
-At least I didn't have to invent twenty-six dimensions just to make the math come out. - Script
-At least I didn't have to invent 26 dimensions just to make the math come out. - Srt
-111. 00:07:21,650 --> 00:07:23,100
-Sheldon
-I didn't invent them, they're there. - Script
-I didn't invent them. They're there. - Srt
-112. 00:07:23,222 --> 00:07:26,342
-Leonard
-In what universe? - Script
-In what universe? - Srt
-113. 00:07:23,222 --> 00:07:26,342
-Sheldon
-In all of them, that is the point. - Script
- In all of them... that is the point. - Srt
-114. 00:07:27,374 --> 00:07:28,782
-Penny
-Uh, do you guys mind if I start? - Script
-Do you guys mind if I start? - Srt
-115. 00:07:29,383 --> 00:07:32,517
-Sheldon
-Um, Penny, that's where I sit. - Script
-Penny... that's where l sit. - Srt
-116. 00:07:34,519 --> 00:07:35,681
-Penny
-So, sit next to me. - Script
-So, sit next to me. - Srt
-117. 00:07:37,504 --> 00:07:38,925
-Sheldon
-No, I sit there. - Script
-No... I sit there. - Srt
-118. 00:07:40,577 --> 00:07:41,588
-Penny
-What's the difference? - Script
-What's the difference? - Srt
-119. 00:07:41,724 --> 00:07:43,789
-Sheldon
-What's the difference? - Script
-What's the difference? - Srt
-120. 00:07:41,724 --> 00:07:43,789
-Leonard
-Here we go. - Script
- Here we go. - Srt
-121. 00:07:44,584 --> 00:08:04,647
-Sheldon
-In the winter that seat is close enough to the radiator to remain warm, and yet not so close as to cause perspiration. In the summer it's directly in the path of a cross breeze created by open windows there, and there. It faces the television at an angle that is neither direct, thus discouraging conversation, nor so far wide to create a parallax distortion, I could go on, but I think I've made my point. - Script
-In the winter, that seat is close enough to the radiator to remain warm, and yet not so close as to cause perspiration In the summer, it's directly in the path of a cross-breeze created by opening windows there and there. It faces the television at an angle that is neither direct, thus discouraging conversation, nor so far wide as to create a parallax distortion. I could go on, but I think I've made my point. - Srt
-122. 00:08:07,916 --> 00:08:09,201
-Penny
-Do you want me to move? - Script
-Do you want me to move? - Srt
-123. 00:08:09,338 --> 00:08:11,237
-Sheldon
-Well. - Script
- Well... - Srt
-124. 00:08:09,338 --> 00:08:11,237
-Leonard
-Just sit somewhere else. - Script
-Just sit somewhere else. - Srt
-125. 00:08:13,513 --> 00:08:33,803
-Sheldon
-Fine. (Wanders in circles, looking lost.) - Script
-Fine. Sheldon, sit! - Srt
-126. 00:08:32,737 --> 00:08:33,803
-Leonard
-Sheldon, sit! - Script
-Sheldon, sit! - Srt
-127. 00:00:00,000 --> 00:00:00,000
-Sheldon
-Aaah! - Script
-NO IN SRT!!!! - Srt
-128. 00:08:39,430 --> 00:08:42,552
-Leonard
-Well this is nice. We don't have a lot of company over. - Script
-Well, this is nice. We don't have a lot of company over. - Srt
-129. 00:08:42,675 --> 00:08:45,390
-Sheldon
-That's not true. Koothrapali and Wolowitz come over all the time. - Script
-That's not true. Koothrappali and Wolowitz come over all the time. - Srt
-130. 00:08:45,513 --> 00:08:46,907
-Leonard
-Yes I now, but - Script
- I know, but... - Srt
-131. 00:08:45,513 --> 00:08:48,766
-Sheldon
-Tuesday night we played Klingon boggle until one in the morning. - Script
-Tuesday night, we played Klingon Boggle till 1:00 a.m. - Srt
-132. 00:08:48,888 --> 00:08:49,894
-Leonard
-Yes, I remember. - Script
-Yeah, I remember. - Srt
-133. 00:08:50,020 --> 00:08:51,855
-Sheldon
-I resent you saying we don't have company. - Script
- Don't say we don't have company. - Srt
-134. 00:08:50,020 --> 00:08:51,855
-Leonard
-I'm sorry. - Script
- Sorry. - Srt
-135. 00:08:51,977 --> 00:08:54,885
-Sheldon
-That is an antisocial implication. - Script
-That has negative social implications. - Srt
-136. 00:08:51,977 --> 00:08:54,885
-Leonard
-I said I'm sorry. - Script
- I said I'm sorry! - Srt
-137. 00:08:56,032 --> 00:08:58,493
-Penny
-So, Klingon boggle? - Script
-So... Klingon Boggle? - Srt
-138. 00:08:58,926 --> 00:09:08,842
-Leonard
-Yeah, it's like regular boggle but, in Klingon. That's probably enough about us, tell us about you. - Script
-Yeah. It's like regular Boggle, but... in Klingon. That's probably enough about us. So, tell us about you. - Srt
-139. 00:09:12,920 --> 00:09:15,234
-Penny
-Um, me, okay, I'm Sagittarius, which probably tells you way more than you need to know. - Script
-which probably tells you way more than you need to know. - Srt
-140. 00:09:15,371 --> 00:09:22,996
-Sheldon
-Yes, it tells us that you participate in the mass cultural delusion that the Sun's apparent position relative to arbitrarily defined constellations and the time of your birth somehow effects your personality. - Script
-Yes. It tells us that you participate in the mass cultural delusion that the sun's apparent position relative to arbitrarily defined constellations at the time of your birth - Srt
-141. 00:09:27,680 --> 00:09:29,033
-Penny
-Participate in the what? - Script
-Participate in the what? - Srt
-142. 00:09:29,536 --> 00:09:34,447
-Leonard
-I think what Sheldon's trying to say, is that Sagittarius wouldn't have been our first guess. - Script
-I think what Sheldon's trying to say is that Sagittarius wouldn't have been our first guess. - Srt
-143. 00:09:34,912 --> 00:09:44,008
-Penny
-Oh, yeah, a lot of people think I'm a water sign. Okay, let's see, what else, oh, I'm a vegetarian, oh, except for fish, and the occasional steak, I love steak. - Script
-Yeah, a lot of people think I'm a water sign. Okay, let's see, what else... I'm a vegetarian. Except for fish. And the occasional steak. I love steak! - Srt
-144. 00:09:46,654 --> 00:09:49,884
-Sheldon
-That's interesting. Leonard can't process corn. - Script
-Well, that's interesting. Leonard can't process corn. - Srt
-145. 00:09:54,168 --> 00:09:56,423
-Leonard
-Wu-uh, do you have some sort of a job? - Script
-Well... do you have some sort of a job? - Srt
-146. 00:09:57,470 --> 00:09:59,616
-Penny
-Oh, yeah, I'm a waitress at the Cheesecake Factory. - Script
-I'm a waitress at The Cheesecake Factory. - Srt
-147. 00:10:00,204 --> 00:10:01,477
-Leonard
-Oh, okay. I love cheesecake. - Script
-I love cheesecake. - Srt
-148. 00:10:01,599 --> 00:10:02,656
-Sheldon
-You're lactose intolerant. - Script
-You're lactose-intolerant. - Srt
-149. 00:10:02,779 --> 00:10:05,217
-Leonard
-I don't eat it, I just think it's a good idea. - Script
-I don't eat it... I just think it's a good idea. - Srt
-150. 00:10:06,372 --> 00:10:15,499
-Penny
-Oh, anyways, I'm also writing a screenplay. It's about this sensitive girl who comes to L.A. from Lincoln Nebraska to be an actress, and winds up a waitress at the Cheesecake Factory. - Script
-Anyways, I'm also writing a screenplay. It's about this sensitive girl who comes to L.A. from Lincoln, Nebraska, to be an actress and winds up a waitress at The Cheesecake Factory. - Srt
-151. 00:10:17,125 --> 00:10:18,888
-Leonard
-So it's based on your life? - Script
-So, it's based on your life. - Srt
-152. 00:10:19,070 --> 00:10:20,163
-Penny
-No, I'm from Omaha. - Script
-No, I'm from Omaha. - Srt
-153. 00:10:24,415 --> 00:10:26,472
-Leonard
-Well, if that was a movie I would go see it. - Script
-If that was movie, I would go see it. - Srt
-154. 00:10:33,561 --> 00:10:35,010
-Penny
-I know, right? Okay, let's see, what else? Um, that's about it. That's the story of Penny. - Script
-That's the story of Penny. - Srt
-155. 00:10:36,189 --> 00:10:37,706
-Leonard
-Well it sounds wonderful. - Script
-It sounds wonderful. - Srt
-156. 00:10:39,076 --> 00:10:43,167
-Penny
-It was. Until I fell in love with a jerk. - Script
-It was. Until I fell in love with a jerk! - Srt
-157. 00:10:46,952 --> 00:10:47,991
-Sheldon (mouths) 
-What's happening. - Script
-What's happening? - Srt
-158. 00:00:00,000 --> 00:00:00,000
-Leonard (mouths back) 
-I don't know. - Script
-NO IN SRT!!!! - Srt
-159. 00:10:50,994 --> 00:10:56,374
-Penny
-Oh God, you know, four years I lived with him, four years, that's like as long as High School. - Script
-God, you know, 4 years I lived with him. 4 years... that's like as long as high school. - Srt
-160. 00:10:56,496 --> 00:10:58,505
-Sheldon
-It took you four years to get through High School? - Script
-It took you 4 years to get through high school? - Srt
-161. 00:00:00,000 --> 00:00:00,000
-Leonard
-Don't. - Script
-NO IN SRT!!!! - Srt
-162. 00:11:01,192 --> 00:11:03,994
-Penny
-I just, I can't believe I trusted him . - Script
-It just... I can't believe I trusted him. - Srt
-163. 00:11:08,944 --> 00:11:11,554
-Leonard
-Should I say something? I feel like I should say something. - Script
-Should I say something? I feel like I should say something. - Srt
-164. 00:11:11,677 --> 00:11:13,372
-Sheldon
-You? No, you'll only make it worse. - Script
-You? No, you'll only make it worse. - Srt
-165. 00:11:13,523 --> 00:11:23,099
-Penny
-You want to know the most pathetic part? Even though I hate his lying, cheating guts, I still love him. Is that crazy? - Script
-You want to know the most pathetic part? Even though I hate his lying, cheating guts... I still love him. Is that crazy? - Srt
-166. 00:00:00,000 --> 00:00:00,000
-Sheldon
-Yes. - Script
-NO IN SRT!!!! - Srt
-167. 00:11:37,994 --> 00:11:49,873
-Leonard
-No, it's not crazy it's, uh, uh, it's a paradox. And paradoxes are part of nature, think about light. Now if you look at Huygens, light is a wave, as confirmed by the double slit experiments, but then, along comes Albert Einstein and discovers that light behaves like particles too. Well, I didn't make it worse. - Script
-as confirmed by the double-slit experiments, but then along comes Albert Einstein and discovers that light behaves like particles, too. Well, I didn't make it worse. - Srt
-168. 00:11:52,246 --> 00:11:58,561
-Penny
-Oh, I'm so sorry, I'm such a mess, and on top of everything else I'm all gross from moving and my stupid shower doesn't even work. - Script
-I'm so sorry. I'm such a mess. On top of everything else, I'm all gross from moving and my stupid shower doesn't even work. - Srt
-169. 00:11:58,683 --> 00:11:59,749
-Leonard
-Our shower works. - Script
-Our shower works. - Srt
-170. 00:12:01,592 --> 00:12:03,544
-Penny
-Really? Would it be totally weird if I used it? - Script
-Really? Would it be totally weird if I used it? - Srt
-171. 00:12:03,666 --> 00:12:04,896
-Sheldon
-Yes. - Script
-Yes. - Srt
-172. 00:12:03,666 --> 00:12:04,896
-Leonard
-No. - Script
- No. - Srt
-173. 00:12:03,666 --> 00:12:04,896
-Sheldon
-No. - Script
-No. - Srt
-174. 00:12:03,666 --> 00:12:04,896
-Leonard
-No. - Script
- No. - Srt
-175. 00:12:03,666 --> 00:12:04,896
-Sheldon
-No. - Script
-No. - Srt
-176. 00:12:07,862 --> 00:12:09,239
-Leonard
-It's right down the hall. - Script
-It's right down the hall. - Srt
-177. 00:12:09,519 --> 00:12:12,213
-Penny
-Thanks. You guys are really sweet. - Script
-Thanks. You guys are really sweet. - Srt
-178. 00:12:18,928 --> 00:12:21,374
-Sheldon
-Well this is an interesting development. - Script
-Well, this is an interesting development. - Srt
-179. 00:12:24,411 --> 00:12:25,411
 Leonard
 How so? - Script
-How so? - Srt
-180. 00:12:25,573 --> 00:12:29,523
-Sheldon
-It has been some time since we've had a woman take her clothes off in our apartment. - Script
-It has been some time since we've had a woman take her clothes off in our apartment. - Srt
-181. 00:12:30,329 --> 00:12:34,703
-Leonard
-That's not true, remember at Thanksgiving my grandmother with Alzheimer's had that episode. - Script
-That's not true. Remember at Thanksgiving, my grandmother with Alzheimer's had that episode? - Srt
-182. 00:12:36,816 --> 00:12:42,928
-Sheldon
-Point taken. It has been some time since we've had a woman take her clothes off after which we didn't want to rip our eyes out. - Script
-Point taken. It has been some time since we've had a woman take her clothes off, after which we didn't want to rip our eyes out. - Srt
-183. 00:12:44,319 --> 00:12:47,216
-Leonard
-The worst part was watching her carve that turkey. - Script
-The worst part was watching her carve that turkey. - Srt
-184. 00:12:48,255 --> 00:12:51,112
-Sheldon
-So, what exactly are you trying to accomplish here? - Script
-So what exactly are you trying to accomplish here? - Srt
-185. 00:12:52,048 --> 00:12:53,116
-Leonard
-Excuse me? - Script
-Excuse me? - Srt
-186. 00:12:53,389 --> 00:12:55,426
-Sheldon
-That woman in there's not going to have sex with you. - Script
-That woman is not going to have sex with you. - Srt
-187. 00:12:55,649 --> 00:12:57,918
-Leonard
-Well I'm not trying to have sex with her. - Script
-I'm not trying to have sex with her. - Srt
-188. 00:12:58,050 --> 00:13:00,045
-Sheldon
-Oh, good. Then you won't be disappointed. - Script
-Good. Then you won't be disappointed. - Srt
-189. 00:13:01,346 --> 00:13:05,678
-Leonard
-What makes you think she wouldn't have sex with me, I'm a male and she's a female? - Script
-What makes you think she wouldn't have sex with me? I'm a male and she's a female. - Srt
-190. 00:13:06,159 --> 00:13:08,318
-Sheldon
-Yes, but not of the same species. - Script
-Yes, but not of the same species. - Srt
-191. 00:13:09,314 --> 00:13:13,524
-Leonard
-I'm not going to engage in hypotheticals here, I'm just trying to be a good neighbour. - Script
-I'm not going to engage in hypotheticals here. I'm just trying to be a good neighbor. - Srt
-192. 00:13:13,920 --> 00:13:15,000
-Sheldon
-Oh, of course. - Script
-Of course. - Srt
-193. 00:13:15,670 --> 00:13:23,748
-Leonard
-That's not to say that if a carnal relationship were to develop that I wouldn't participate. However briefly. - Script
-That's not to say that if a carnal relationship were to develop, that I wouldn't participate. However briefly. - Srt
-194. 00:13:25,315 --> 00:13:31,184
-Sheldon
-Do you think this possibility will be helped or hindered when she discovers your Luke Skywalker no-more-tears shampoo? - Script
-Do you think this possibility will be helped or hindered when she discovers your Luke Skywalker no-more-tears shampoo? - Srt
-195. 00:13:35,836 --> 00:13:37,749
-Leonard
-It's Darth Vader shampoo. (There is a knock on the door.) Luke Skywalker's the conditioner. - Script
-Luke Skywalker's the conditioner. - Srt
-196. 00:13:40,346 --> 00:13:43,066
-Howard
-Wait till you see this. - Script
-Wait till you see this. - Srt
-197. 00:13:40,346 --> 00:13:43,066
-Raj
-It's fantastic. Unbelievable. - Script
- It's fantastic, unbelievable. - Srt
-198. 00:13:43,189 --> 00:13:44,189
-Leonard
-See what? - Script
-See what? - Srt
-199. 00:13:45,426 --> 00:13:49,555
-Howard
-It's a Stephen Hawking lecture from MIT in 1974. - Script
-It's a Stephen Hawking lecture from MIT in 1974. - Srt
-200. 00:13:49,677 --> 00:13:50,767
-Leonard
-This is not a good time. - Script
-This isn't a good time. - Srt
-201. 00:00:00,000 --> 00:00:00,000
-Howard: It’s before he became a creepy computer voice
-. - Script
 NO IN SRT!!!! - Srt
-202. 00:13:57,312 --> 00:13:59,254
-Leonard
-That's great, you guys have to go. - Script
-That's great. You guys have to go. - Srt
-203. 00:13:57,312 --> 00:13:59,254
-Raj
-Why? - Script
- Why? - Srt
-204. 00:13:59,376 --> 00:14:00,573
-Leonard
-It's just not a good time. - Script
-It's just not a good time. - Srt
-205. 00:14:00,696 --> 00:14:02,287
+64. 00:04:26,173 --> 00:04:32,461
 Sheldon
-Leonard has a lady over. - Script
-Leonard has a lady over. - Srt
-206. 00:14:02,902 --> 00:14:05,389
-Howard
-Yeah, right, your grandmother back in town? - Script
-Yeah, right... your grandmother back in town? - Srt
-207. 00:14:08,669 --> 00:14:11,198
+You're talking to one of the three men in the Western hemisphere capable of following that train of thought. - Script
+You're talking to one of the three men in the Western hemisphere capable of following that train of thought. - Srt
+65. 00:04:32,932 --> 00:04:34,391
 Leonard
-No. And she's not a lady, she's just a new neighbour. - Script
-And she's not a lady. She's just a new neighbor. - Srt
-208. 00:14:11,479 --> 00:14:13,884
-Howard
-Hang on, there really is a lady here? - Script
-Hang on, there really is a lady here? - Srt
-209. 00:00:00,000 --> 00:00:00,000
+Well, what do you think. - Script
+Well, what do you think? - Srt
+66. 00:04:34,545 --> 00:04:37,131
+Sheldon
+I said I could follow it, I didn't say I cared. - Script
+I said I could follow it. I didn't say I care. - Srt
+67. 00:05:07,857 --> 00:05:09,589
+Lesley
+I admire your fingering. - Script
+I admire your fingering. - Srt
+68. 00:05:10,738 --> 00:05:11,738
 Leonard
-Uh-huh. - Script
+Thank you! - Script
+Thank you. - Srt
+69. 00:05:13,459 --> 00:05:16,175
+Lesley
+Maybe some time you can try that on my instrument. - Script
+Maybe sometime you can try that on my instrument. - Srt
+70. 00:05:25,281 --> 00:05:26,844
+Lesley
+Goodnight guys, good job. - Script
+ G'night, guys. Good job. - Srt
+71. 00:05:25,281 --> 00:05:26,844
+Male string quartettist
+Thanks. - Script
+Thanks. - Srt
+72. 00:05:26,979 --> 00:05:28,445
+Female string quartettist
+See you next week. - Script
+See you next week. - Srt
+73. 00:05:28,862 --> 00:05:31,608
+Leonard
+That was fun, Lesley, thanks for including me. - Script
+That was fun. Thanks for including me. - Srt
+74. 00:05:31,974 --> 00:05:34,945
+Lesley
+You're welcome. If you're up for it we could practise that middle section again. - Script
+If you're up for it, we could practice that middle section again. - Srt
+75. 00:05:35,143 --> 00:05:36,146
+Leonard
+Uh, sure, why not. - Script
+Sure, why not? - Srt
+76. 00:05:42,909 --> 00:05:49,116
+Lesley
+Just so we're clear, you understand that me hanging back to practise with you is a pretext for letting you know that I'm sexually available. - Script
+Just so we're clear, you understand that me hanging back to practice with you is a pretext for letting you know that I'm sexually available. - Srt
+77. 00:05:56,562 --> 00:05:57,562
+Leonard
+Really? - Script
+Really? - Srt
+78. 00:05:57,855 --> 00:05:59,194
+Lesley
+Yeah, I'm good to go. - Script
+Yeah, I'm good to go. - Srt
+79. 00:06:00,039 --> 00:06:01,863
+Leonard
+I thought you weren't interested in me. - Script
+I thought you weren't interested in me. - Srt
+80. 00:06:02,160 --> 00:06:06,387
+Lesley
+That was before I saw you handling that beautiful piece of wood between your legs. - Script
+That was before I saw you handling that beautiful piece of wood between your legs. - Srt
+81. 00:06:08,521 --> 00:06:09,871
+Leonard
+You mean my cello? - Script
+You mean my cello? - Srt
+82. 00:06:10,137 --> 00:06:14,151
+Lesley
+No, I mean the obvious crude double entendre. I'm seducing you. - Script
+No, I mean the obvious, crude, double entendre. I'm seducing you. - Srt
+83. 00:06:16,094 --> 00:06:17,175
+Leonard
+No kidding. - Script
+No kidding. - Srt
+84. 00:06:18,386 --> 00:06:23,642
+Lesley
+What can I say, I'm a passionate and impulsive woman. So how about it? - Script
+What can I say? I'm a passionate and impulsive woman. So how about it? - Srt
+85. 00:00:00,000 --> 00:00:00,000
+Leonard
+Gee, uh - Script
 NO IN SRT!!!! - Srt
-210. 00:14:15,081 --> 00:14:18,101
-Howard
-And you want us out because you're anticipating coitus? - Script
-And you want us out because you're anticipating coitus? - Srt
-211. 00:14:18,605 --> 00:14:20,249
+86. 00:06:26,571 --> 00:06:27,632
+Lesley
+Is it the waitress? - Script
+Is it the waitress? - Srt
+87. 00:06:29,476 --> 00:06:30,499
 Leonard
-I'm not anticipating coitus. - Script
-I'm not anticipating coitus. - Srt
-212. 00:14:20,371 --> 00:14:21,668
-Howard
-So she's available for coitus? - Script
-So she's available for coitus? - Srt
-213. 00:14:21,790 --> 00:14:24,162
+Penny? What about her? - Script
+What about her? - Srt
+88. 00:06:30,711 --> 00:06:36,461
+Lesley
+Well, I thought I saw your pupils dilate when you looked at her, which, unless you're a heroin addict, points to sexual attraction. - Script
+I thought I saw your pupils dilate when you looked at her. Which, unless you're a heroin addict, points to sexual attraction. - Srt
+89. 00:06:37,999 --> 00:06:47,546
 Leonard
-Can we please stop saying coitus? - Script
-Can we please just stop saying "coitus"? - Srt
-214. 00:14:24,284 --> 00:14:27,065
+Well, I did have a poppy seed bagel for breakfast, which could give a positive urine test for opiates but certainly not dilate my pupils, so I guess there's no point in bringing it up. - Script
+I did have a poppy seed bagel for breakfast. Which could cause a positive urine test for opiates, but certainly not dilate my pupils. So I guess there was no point in bringing it up. - Srt
+90. 00:06:48,769 --> 00:06:50,454
+Lesley
+You and the waitress then? - Script
+You and the waitress then. - Srt
+91. 00:06:50,698 --> 00:06:54,374
+Leonard
+No. No, there's nothing going on between Penny and me. - Script
+No... no. There's nothing going on between Penny and me. - Srt
+92. 00:06:54,961 --> 00:06:57,002
+Lesley
+So, you're open to a sexual relationship? - Script
+So you're open to a sexual relationship? - Srt
+93. 00:06:58,474 --> 00:07:00,114
+Leonard
+Yeah. Yeah, I guess I am. - Script
+Yeah, yeah, I guess I am. - Srt
+94. 00:07:00,470 --> 00:07:02,918
+Lesley
+Good. - Script
+Good. - Srt
+95. 00:07:05,224 --> 00:07:06,871
+Leonard
+Yeah, yeah it is good. Did you want to start now? - Script
+Did you want to start now? - Srt
+96. 00:07:07,408 --> 00:07:09,262
+Lesley
+Why don't we finish the section first. - Script
+Why don't we finish the section first? - Srt
+97. 00:07:10,625 --> 00:07:12,601
+Leonard
+Oh. Okay. A little musical foreplay. Terrific. - Script
+A little musical foreplay. Terrific. - Srt
+98. 00:07:34,111 --> 00:07:35,114
+Leonard
+I'm good, I'm good to go. - Script
+I'm good to go. - Srt
+99. 00:00:00,000 --> 00:00:00,000
+Lesley
+Me too. (Exit in direction of bedrooms.) - Script
+NO IN SRT!!!! - Srt
+100. 00:07:48,351 --> 00:07:49,740
+Penny (opening door) 
+Oh, hey Sheldon, what's going on? - Script
+Hey, Sheldon. What's going on? - Srt
+101. 00:07:50,068 --> 00:07:52,307
 Sheldon
-Technically that would be coitus interruptus. - Script
-Technically, that would be"coitus interruptus. " - Srt
-215. 00:14:27,773 --> 00:14:33,450
+I need your opinion on a matter of semiotics. - Script
+I need your opinion on a matter of semiotics. - Srt
+102. 00:07:52,867 --> 00:07:53,899
 Penny
-Hey, is there a trick to getting it to switch from tub to shower. Oh. Hi, sorry. Hello! - Script
-Hey, is there a trick to getting it to switch from tub to shower...? Hi. Sorry. Hello. - Srt
-216. 00:14:39,453 --> 00:14:49,966
-Howard
-Enchante Madamoiselle. Howard Wolowitz, Cal-Tech department of Applied Physics. You may be familiar with some of my work, it's currently orbiting Jupiter's largest moon taking high-resolution digital photographs. - Script
-Howard Wolowitz, Caltech department of applied physics. You may be familiar with some of my work. It's currently orbiting Jupiter's largest moon taking high-resolution digital photographs. - Srt
-217. 00:14:51,058 --> 00:14:53,368
-Penny
-Penny. I work at the Cheesecake Factory. - Script
-Penny. I work at The Cheesecake Factory. - Srt
-218. 00:14:53,951 --> 00:14:55,782
-Leonard
-Come on, I'll show you the trick with the shower. - Script
-I'll show you the trick with the shower. - Srt
-219. 00:14:56,318 --> 00:14:57,318
-Howard
-Bon douche. - Script
-<i>Bonne douche.</i> - Srt
-220. 00:14:58,066 --> 00:14:59,460
-Penny
-I'm sorry. - Script
+I'm sorry? - Script
 I'm sorry? - Srt
-221. 00:14:59,639 --> 00:15:04,245
-Howard
-It's French for good shower. It's a sentiment I can express in six languages. - Script
-It's French for "good shower. " It's a sentiment I can express in six languages. - Srt
-222. 00:15:05,125 --> 00:15:06,833
-Leonard
-Save it for your blog, Howard. - Script
-Save it for your blog, Howard. - Srt
-223. 00:00:00,000 --> 00:00:00,000
-Howard
-See-ka-tong-guay-jow. - Script
+103. 00:07:54,418 --> 00:07:59,262
+Sheldon
+Semiotics. The study of signs and symbols, it's a branch of philosophy related to linguistics. - Script
+Semiotics. The study of signs and symbols. It's a branch of philosophy related to linguistics. - Srt
+104. 00:08:01,039 --> 00:08:06,417
+Penny
+Okay, sweetie, I know you think you're explaining yourself, but you're really not. - Script
+Okay, sweetie, I know you think you're explaing yourself, but you're really not. - Srt
+105. 00:08:08,908 --> 00:08:10,200
+Sheldon
+Just come with me. - Script
+Just come with me. - Srt
+106. 00:08:14,982 --> 00:08:16,936
+Sheldon
+Well? - Script
+Well? - Srt
+107. 00:08:14,982 --> 00:08:16,936
+Penny
+Well what? - Script
+ Well, what? - Srt
+108. 00:08:17,463 --> 00:08:18,813
+Sheldon
+What does it mean? - Script
+What does it mean? - Srt
+109. 00:08:19,658 --> 00:08:21,651
+Penny
+Oh, come on, you went to college. - Script
+Oh, come on, you went to college. - Srt
+110. 00:08:21,829 --> 00:08:23,121
+Sheldon
+Yes, but I was eleven. - Script
+Yes, but I was 11. - Srt
+111. 00:08:26,024 --> 00:08:33,118
+Penny
+Alright, look, a tie on the doorknob usually means someone doesn't want to be disturbed because they're, you know, getting busy. - Script
+All right, look, a tie on the doorknob usually means someone doesn't want to be disturbed because, they're... you know, gettin' busy. - Srt
+112. 00:08:35,317 --> 00:08:37,208
+Sheldon
+So you're saying Leonard has a girl in there. - Script
+So you're saying Leonard has a girl in there? - Srt
+113. 00:08:37,439 --> 00:08:41,943
+Penny
+Well, either that or he's lost his tie rack and gotten really into Bryan Adams. - Script
+Well, either that or he's lost his tie rack and gotten really into Bryan Adams. - Srt
+114. 00:08:43,304 --> 00:08:45,193
+Lesley (voice off) 
+Oh Leonard, you magnificent beast. - Script
+Oh, Leonard, you magnificent beast. - Srt
+115. 00:08:48,353 --> 00:08:50,493
+Penny
+We really shouldn't be standing here. - Script
+We really shouldn't be standing here. - Srt
+116. 00:08:52,865 --> 00:08:54,415
+Sheldon (entering living room) 
+This is very awkward. - Script
+This is very awkward. - Srt
+117. 00:08:54,917 --> 00:08:58,021
+Penny
+Oh, come on, you know, Leonard's had girls over before, right? - Script
+Oh, come on, Leonard's had girls over before, right? - Srt
+118. 00:08:58,769 --> 00:09:07,534
+Sheldon
+Oh, yes, but there's usually planning, courtship and advance notice. Last time I was able to book a cruise to the Arctic to see a solar eclipse. - Script
+Yes, but there's usually planning, courtship, advance notice... Last time, I was able to book a cruise to the Arctic to see a solar eclipse. - Srt
+119. 00:09:08,952 --> 00:09:12,238
+Penny
+Wait, you had to leave the state because your roommate was having sex? - Script
+You had to leave the state because your roommate was having sex? - Srt
+120. 00:09:12,552 --> 00:09:15,464
+Sheldon
+I didn't have to, the dates just happened to coincide. - Script
+I didn't have to. The dates just happened to coincide. - Srt
+121. 00:09:18,430 --> 00:09:20,478
+Penny
+So, do you know who's in there? - Script
+So, do you know who's in there? - Srt
+122. 00:09:21,602 --> 00:09:30,323
+Sheldon
+Well, there's Leonard. (Picking up violin case) And he's either with Lesley Winkle or a 1930's gangster. - Script
+Well, there's Leonard. And he's either with Leslie Winkle or a 1930s gangster. - Srt
+123. 00:09:34,367 --> 00:09:41,047
+Penny
+Hmmm. Good for him. Good for Leonard. Okay, night. - Script
+Good for him. Good for Leonard. Okay, g'night. - Srt
+124. 00:09:41,259 --> 00:09:42,709
+Sheldon
+No, no, wait, hold on. - Script
+No, no, wait, hold on. - Srt
+125. 00:09:42,920 --> 00:09:44,000
+Penny
+What's the matter? - Script
+What's the matter? - Srt
+126. 00:09:44,602 --> 00:09:52,994
+Sheldon
+I don't know what the protocol is here. Do I stay, do I leave? Do I wait to greet them with a refreshing beverage? - Script
+I don't know what the protocol is here. Do I stay? Do I leave? Do I wait to greet them with a refreshing beverage? - Srt
+127. 00:09:55,824 --> 00:09:59,351
+Penny
+Gee, Sheldon, you're asking the wrong girl. I'm usually on the other side of the tie. - Script
+You're asking the wrong girl. I'm usually on the other side of the tie. - Srt
+128. 00:10:20,400 --> 00:10:45,257
+Sheldon
+Hi, Leonard. It's me, Sheldon. In the living room. I just, I wanted you to know I saw the tie. Message received. You're welcome. You carry on. Give my best to Lesley. - Script
+Hi, Leonard? It's me, Sheldon... In the living room. I just... I wanted you to know I saw the tie. Message received. You're welcome. You carry on. Give my best to Leslie. - Srt
+129. 00:00:00,000 --> 00:00:00,000
+Sheldon
+Big boy! (Wakes up, looks at watch, wraps self in blanket, walks towards kitchen) Someone touched my board. Oh God, my board. Leonard! Leonard! - Script
 NO IN SRT!!!! - Srt
-224. 00:15:14,931 --> 00:15:17,244
-Leonard
-Uh, there it goes, it sticks, I'm sorry. - Script
-All right, there it goes. It sticks. I'm sorry. - Srt
-225. 00:15:17,366 --> 00:15:18,914
-Penny
-Okay. Thanks. - Script
- Okay, thanks. - Srt
-226. 00:15:17,366 --> 00:15:21,079
-Leonard
-You're welcome, oh, you're going to step right, okay, I'll. - Script
-You're welcome. You're just gonna to step right... Okay, I'll... - Srt
-227. 00:15:22,067 --> 00:15:24,719
-Penny
-Hey, Leonard? - Script
-Hey, Leonard? - Srt
-228. 00:15:22,067 --> 00:15:24,719
-Leonard
-The hair products are Sheldon's. - Script
- The hair products are Sheldon's. - Srt
-229. 00:15:26,966 --> 00:15:28,575
-Penny
-Um, okay. Can I ask you a favour. - Script
-Can I ask you a favor? - Srt
-230. 00:15:28,705 --> 00:15:33,433
-Leonard
-A favour? Sure, you can ask me a favour, I would do you a favour for you. - Script
-A favor? Sure, you can ask me a favor. I would do you a favor for you. - Srt
-231. 00:15:34,376 --> 00:15:35,764
-Penny
-It's okay if you say no. - Script
-It's okay if you say no. - Srt
-232. 00:15:35,985 --> 00:15:37,506
-Leonard
-Oh, I'll probably say yes. - Script
-I'll probably say yes. - Srt
-233. 00:15:38,770 --> 00:15:42,063
-Penny
-It's just not the kind of thing you ask a guy you've just met. - Script
-It's just not the kind of thing you ask a guy you just met. - Srt
-234. 00:00:00,000 --> 00:00:00,000
-Leonard
-Wow. - Script
-NO IN SRT!!!! - Srt
-235. 00:15:48,801 --> 00:15:51,863
+130. 00:12:01,688 --> 00:12:03,266
+Leonard (entering) 
+Hey, what's the matter? - Script
+Hey, what's the matter? - Srt
+131. 00:12:03,479 --> 00:12:05,660
 Sheldon
-I really think we should examine the chain of causality here. - Script
-I really think we should examine the chain of causality here. - Srt
-236. 00:15:51,992 --> 00:15:53,369
+My equations, someone's tampered with my equations. - Script
+My equations, someone's tampered with my equations. - Srt
+132. 00:12:06,013 --> 00:12:07,499
 Leonard
-Must we? - Script
-Must we? - Srt
-237. 00:00:00,000 --> 00:00:00,000
+Are you sure? - Script
+Are you sure? - Srt
+133. 00:12:07,634 --> 00:12:09,756
 Sheldon
-Event A. A beautiful woman stands naked in our shower. Event B. We drive half way across town to retrieve a television set from the aforementioned woman's ex-boyfriend. Query, on what plane of existence is there even a semi-rational link between these events? - Script
-NO IN SRT!!!! - Srt
-238. 00:16:07,922 --> 00:16:10,222
+Of course I'm sure. Look at the beta-function of quantum chrono-dynamics, the sign's been changed. - Script
+Look at the beta function of quantum chromodynamics. - Srt
+134. 00:12:12,375 --> 00:12:15,960
 Leonard
-She asked me to do her a favour, Sheldon. - Script
-She asked me to do her a favor, Sheldon. - Srt
-239. 00:16:10,567 --> 00:16:17,563
+Oh yeah. But doesn't that fix the problem you've been having? - Script
+Oh, yeah. But doesn't that fix the problem you've been having? - Srt
+135. 00:12:16,088 --> 00:12:21,841
 Sheldon
-Ah, yes, well that may be the proximal cause of our journey, but we both know it only exists in contradistinction to the higher level distal cause. - Script
-Yes, well, that may be the proximal cause of our journey, but we both know it only exists in contradistinction to the higher level distal cause. - Srt
-240. 00:16:17,685 --> 00:16:19,934
+Are you insane? Are you out of your mind? Are you. hey look, that fixes the problem I've been having. - Script
+Are you insane? Are you out of your mind? Are you-- Look! That fixes the problem I've been having. - Srt
+136. 00:10:39,329 --> 00:10:40,524
+Lesley (entering) 
+You're welcome. - Script
+You're welcome. - Srt
+137. 00:12:26,302 --> 00:12:27,651
+Sheldon
+You did this? - Script
+You did this? - Srt
+138. 00:12:28,992 --> 00:12:35,962
+Lesley
+Yeah, I noticed it when I got up to get a glass of water, so I fixed it, now you can show that quarks are asymptotically free at high energies. Pretty cool, huh? - Script
+I noticed it when I got up to get a glass of water. So I fixed it. Now you can show that quarks are asymptotically free at high energies. Pretty cool, huh? - Srt
+139. 00:12:38,285 --> 00:12:39,306
+Sheldon
+Cool? - Script
+"Cool"? - Srt
+140. 00:12:40,547 --> 00:12:43,443
+Lesley
+Listen, I got to hit the lab. Thanks for a great night. - Script
+Listen, I've got to get to the lab. Thanks for a great night. - Srt
+141. 00:12:45,193 --> 00:12:46,659
 Leonard
-Which is? - Script
-Which is? - Srt
-241. 00:16:17,685 --> 00:16:19,934
+Thank you, I'll see you at work. - Script
+Thank you. I'll see you at work. - Srt
+142. 00:12:47,176 --> 00:12:48,815
 Sheldon
-You think with your penis. - Script
- You think with your penis. - Srt
-242. 00:16:21,246 --> 00:16:24,761
-Leonard
-That's a biological impossibility and you didn't have to come. - Script
-That's a biological impossibility. And you didn't have to come. - Srt
-243. 00:16:24,883 --> 00:16:32,255
-Sheldon
-Oh, right, yes, I could have stayed behind and watched Wolowitz try to hit on Penny in Russian, Arabic and Farsi. Why can't she get her own TV. - Script
-Right, I could have stayed behind and watch Wolowitz try to hit on Penny in Russian, Arabic and Farsi. Why can't she get her own TV? - Srt
-244. 00:16:32,446 --> 00:16:34,315
-Leonard
-Come on, you know how it is with break-ups. - Script
-Come on, you know how it is with breakups. - Srt
-245. 00:16:34,437 --> 00:16:36,548
-Sheldon
-No I don't. And neither do you. - Script
-No, I don't... and neither do you. - Srt
-246. 00:16:37,757 --> 00:16:39,221
-Leonard
-Wuh, I, I broke up with Joyce Kim. - Script
-I broke up with Joyce Kim. - Srt
-247. 00:16:39,343 --> 00:16:42,596
-Sheldon
-You did not break up with Joyce Kim, she defected to North Korea. - Script
-You did not break up with Joyce Kim. She defected to North Korea. - Srt
-248. 00:16:42,883 --> 00:16:57,434
-Leonard
-To mend her broken heart. This situation is much less complicated. There's some kind of dispute between Penny and her ex-boyfriend as to who gets custody of the TV. She just wanted to avoid having a scene with him. - Script
-To mend her broken heart. This situation is much less complicated. There's some kind of dispute between Penny and her ex-boyfriend as to who gets custody of the TV. She just wanted to avoid having a scene with him. - Srt
-249. 00:16:57,556 --> 00:17:01,539
-Sheldon
-So we get to have a scene with him? - Script
-So we get to have a scene with him? - Srt
-250. 00:16:57,556 --> 00:17:01,539
-Leonard
-No, Sheldon, there's not going to be a scene. There's two of us and one of him. - Script
- No, there's not going to be a scene. - Srt
-251. 00:17:03,890 --> 00:17:06,486
-Sheldon
-Leonard, the two of us can't even carry a TV. - Script
-Leonard, the two of us can't even carry a TV. - Srt
-252. 00:17:08,635 --> 00:17:11,519
-Penny (to Raj) 
-So, you guys work with Leonard and Sheldon at the University? - Script
-So, you guys work with Leonard and Sheldon at the university? - Srt
-253. 00:17:17,306 --> 00:17:19,312
-Penny
-Uh, I'm sorry, do you speak English? - Script
-I'm sorry, do you speak English? - Srt
-254. 00:17:20,149 --> 00:17:22,838
-Howard
-Oh, he speaks English, he just can't speak to women. - Script
-He speaks English. He just can't speak to women. - Srt
-255. 00:17:23,723 --> 00:17:24,994
-Penny
-Really, why? - Script
-Really? Why? - Srt
-256. 00:17:25,472 --> 00:17:30,774
-Howard
-He's kind of a nerd. Juice box? - Script
-He's kind of a nerd. Juice box? - Srt
-257. 00:17:36,063 --> 00:17:37,183
-Leonard (pushes buzzer) 
-I'll do the talking. - Script
-I'll do the talking. - Srt
-258. 00:17:37,662 --> 00:17:40,471
-Voice from buzzer
-Yeah? - Script
- <i>Yeah?</i> - Srt
-259. 00:17:37,662 --> 00:17:40,471
-Leonard
-Hi, I'm Leonard, this is Sheldon. - Script
- Hi, I'm Leonard, this is Sheldon. - Srt
-260. 00:17:40,639 --> 00:17:42,217
-Sheldon
-Hello. - Script
-Hello. - Srt
-261. 00:17:44,517 --> 00:17:47,350
-Leonard
-What did I just. Uh, we're here to pick up Penny's TV. - Script
- We're here to pick up Penny's TV. - Srt
-262. 00:17:44,517 --> 00:17:47,350
-Voice
-Get lost. - Script
- <i>Get lost.</i> - Srt
-263. 00:17:47,472 --> 00:17:48,647
-Sheldon
-Okay, thanks for your time. - Script
-Okay, thanks for you time. - Srt
-264. 00:17:49,220 --> 00:17:51,109
-Leonard
-We're not going to give up just like that. - Script
-We're not going to give up just like that. - Srt
-265. 00:17:51,236 --> 00:17:55,556
-Sheldon
-Leonard, the TV is in the building, we've been denied access to the building, ergo we are done. - Script
-Leonard, the TV's in the building. We've been denied access to the building, ergo, we are done. - Srt
-266. 00:17:55,803 --> 00:18:03,362
-Leonard
-Excuse me, if I were to give up at the first little hitch I never would have been able to identify the fingerprints of string theory in the aftermath of the big bang. - Script
-Excuse me. If I were to give up on the first little hitch, I never would have identified the fingerprints of string theory in the aftermath of the Big Bang. - Srt
-267. 00:18:04,703 --> 00:18:06,778
-Sheldon
-My apologies. What's your plan. - Script
-My apologies. What's your plan? - Srt
-268. 00:18:20,981 --> 00:18:23,510
-Sheldon
-It's just a privilege to watch your mind at work. - Script
-It's just a privilege to watch your mind at work. - Srt
-269. 00:18:24,705 --> 00:18:30,422
-Leonard
-Come on, we have a combined IQ of 360, we should be able to figure out how to get into a stupid building. - Script
-Come on, we have a combined IQ of 360. We should be able to figure out how to get into a stupid building. - Srt
-270. 00:18:34,552 --> 00:18:36,151
-Sheldon
-What do you think their combined IQ is? - Script
-What do you think their combined IQ is? - Srt
-271. 00:18:36,274 --> 00:18:37,274
-Leonard
-Just grab the door. - Script
-Just grab the door! - Srt
-272. 00:17:36,063 --> 00:17:37,183
-Leonard
-This is it. (Knocks.) I'll do the talking. - Script
-I'll do the talking. - Srt
-273. 00:18:43,947 --> 00:18:46,121
-Sheldon
-Good thinking, I'll just be the muscle. - Script
-Good thinking. I'll just be the muscle. - Srt
-274. 00:18:53,776 --> 00:18:54,776
-Enormous man
-Yeah? - Script
-Yeah? - Srt
-275. 00:18:54,970 --> 00:18:56,637
-Leonard
-I'm Leonard, this is Sheldon. - Script
-I'm Leonard, this is Sheldon. - Srt
-276. 00:18:57,102 --> 00:18:58,114
-Sheldon
-From the intercom. - Script
-From the intercom. - Srt
-277. 00:19:00,150 --> 00:19:01,858
-Man
-How the hell did you get in the building? - Script
-How the hell did you get in the building? - Srt
-278. 00:19:03,265 --> 00:19:04,686
-Leonard
-Oh. We're scientists. - Script
-We're scientists. - Srt
-279. 00:19:07,064 --> 00:19:08,458
-Sheldon
-Tell him about our IQ. - Script
-Tell him about our IQ. - Srt
-280. 00:19:21,367 --> 00:19:23,025
-Sheldon
-Leonard. - Script
-Leonard... - Srt
-281. 00:19:21,367 --> 00:19:23,025
-Leonard
+Uh-duh, hold on, hold on! - Script
+Hold on. Hold on! - Srt
+143. 00:12:49,774 --> 00:12:51,876
+Lesley
 What? - Script
- What? - Srt
-282. 00:19:23,147 --> 00:19:25,542
+What? - Srt
+144. 00:12:49,774 --> 00:12:51,876
 Sheldon
-My mom bought me those pants. - Script
-My mom bought me those pants. - Srt
-283. 00:19:23,147 --> 00:19:25,542
-Leonard
-I'm sorry. - Script
- I'm sorry. - Srt
-284. 00:19:27,033 --> 00:19:28,865
+Who told you you could touch my board? - Script
+ Who told you you could touch my board? - Srt
+145. 00:12:52,642 --> 00:12:53,496
+Lesley
+No-one. - Script
+No one. - Srt
+146. 00:12:53,664 --> 00:12:55,797
 Sheldon
-You're going to have to call her. - Script
-You're going to have to call her. - Srt
-285. 00:19:31,635 --> 00:19:34,410
-Leonard
-Sheldon, I'm so sorry I dragged you through this. - Script
-Sheldon, I am so sorry I dragged you through this. - Srt
-286. 00:19:34,661 --> 00:19:38,329
+I don't come into your house and touch your board. - Script
+I don't come into your house and touch your board. - Srt
+147. 00:12:56,237 --> 00:12:58,488
+Lesley
+There are no incorrect equations on my board. - Script
+There are no incorrect equations on my board. - Srt
+148. 00:13:02,026 --> 00:13:04,811
 Sheldon
-It's okay. It wasn't my first pantsing, and it won't be my last. - Script
-It's okay. It wasn't my first pantsing and it won't be my last. - Srt
-287. 00:19:39,258 --> 00:19:46,337
-Leonard
-And you were right about my motives, I was hoping to establish a relationship with Penny that might have some day led to sex. - Script
-And you were right about my motives. I was hoping to establish a relationship with Penny that might have someday led to sex. - Srt
-288. 00:19:47,625 --> 00:19:49,402
+Oh, that is so so - Script
+Oh, that is so... so... - Srt
+149. 00:13:07,044 --> 00:13:10,516
+Lesley
+I'm sorry, I've got to run, if you come up with an adjective, text me. (Leaves). - Script
+Sorry, I've got to run. If you come up with an adjective, text me. - Srt
+150. 00:13:14,197 --> 00:13:17,837
 Sheldon
-Well you got me out of my pants. - Script
-Well, you got me out of my pants. - Srt
-289. 00:19:51,568 --> 00:19:59,528
-Leonard
-Anyway, I've learned my lesson. She's out of my league, I'm done with her, I've got my work, one day I'll win the Nobel Prize and then I'll die alone. - Script
-Anyway, I've learned my lesson. She's out of my league, I'm done with her. Got my work, one day I'll win the Nobel Prize and then I'll die alone. - Srt
-290. 00:19:59,781 --> 00:20:02,653
-Sheldon
-Don't think like that, you're not going to die alone. - Script
-Don't think like that. You're not going to die alone. - Srt
-291. 00:20:02,880 --> 00:20:05,203
-Leonard
-Thank you Sheldon, you're a good friend. - Script
-Thank you, Sheldon. You're a good friend. - Srt
-292. 00:20:07,000 --> 00:20:09,990
-Sheldon
-And you're certainly not going to win a Nobel Prize. - Script
-And you're certainly not going to win a Nobel Prize. - Srt
-293. 00:20:10,537 --> 00:20:15,869
-Howard
-This is one of my favourite places to kick back after a quest, they have a great house ale. - Script
-This is one of my favorite places to kick back after a quest. They have a great house ale. - Srt
-294. 00:20:16,464 --> 00:20:17,592
+Inconsiderate, that is the adjective, inconsiderate. - Script
+Inconsiderate. That is the adjective, "inconsiderate. " - Srt
+151. 00:13:19,892 --> 00:13:22,726
+Leonard (exiting the apartment) 
+You can stare at your board all day Sheldon, she's still going to be right. - Script
+You can stare at your board all day. She's still going to be right. - Srt
+152. 00:13:22,918 --> 00:13:24,742
+Sheldon (inside) 
+I'm not staring, I'm mulling. - Script
+I'm not staring, I'm hauling. - Srt
+153. 00:00:00,000 --> 00:00:00,000
 Penny
-Wow, cool tiger. - Script
-Cool tiger. - Srt
-295. 00:20:17,714 --> 00:20:27,816
-Howard
-Yeah, I've had him since level ten. His name is Buttons. Anyway, if you had your own game character we could hang out, maybe go on a quest. - Script
-Yeah, I've had him since level ten. His name is Buttons. Anyway, if you had your own game character we could hang out, maybe go on a quest. - Srt
-296. 00:20:28,625 --> 00:20:30,606
-Penny
-Uh, sounds interesting. - Script
-That sounds interesting. - Srt
-297. 00:20:30,973 --> 00:20:31,985
-Howard
-So you'll think about it? - Script
-You'll think about it? - Srt
-298. 00:20:32,313 --> 00:20:34,838
-Penny
-Oh, I don't think I'll be able to stop thinking about it. - Script
-I don't think I'll be able to stop thinking about it. - Srt
-299. 00:20:36,811 --> 00:20:37,863
-Raj
-Smooth. - Script
-Smooth. - Srt
-300. 00:20:40,203 --> 00:20:41,203
-Leonard
-We're home. - Script
-We're home. - Srt
-301. 00:20:41,793 --> 00:20:43,406
-Penny
-Oh, my God, what happened? - Script
-My God, what happened? - Srt
-302. 00:20:43,584 --> 00:20:48,537
-Leonard
-Well, your ex-boyfriend sends his regards and I think the rest is fairly self-explanatory. - Script
-Well, your ex-boyfriend sends his regards and I think the rest is fairly self-explanatory. - Srt
-303. 00:20:49,249 --> 00:20:53,897
-Penny
-I'm so sorry, I really thought if you guys went instead of me he wouldn't be such an ass. - Script
-I'm so sorry. I really thought if you guys went instead of me he wouldn't be such an ass. - Srt
-304. 00:20:54,019 --> 00:20:56,006
-Leonard
-No, it was a valid hypothesis. - Script
-No, it was a valid hypothesis. - Srt
-305. 00:20:56,128 --> 00:20:58,793
-Sheldon
-That was a valid hypothesis? What is happening to you? - Script
-That was a valid...? What is happening to you? - Srt
-306. 00:20:59,930 --> 00:21:12,063
-Penny
-Really, thank you so much for going and trying you're, uh, you're so terrific. Why don't you put some clothes on, I'll get my purse and dinner is on me, okay? - Script
-Really, thank you so much for going and trying, you're just... You're so terrific. Really. Why don't you put some clothes on, I'll get my purse, and dinner is on me, okay? - Srt
-307. 00:21:12,188 --> 00:21:13,397
-Leonard
-Really? Great. - Script
-Really? Great. - Srt
-308. 00:21:19,933 --> 00:21:21,873
-Sheldon
-Thank you. You're not done with her, are you? - Script
-You're not done with her, are you? - Srt
-309. 00:21:23,279 --> 00:21:25,548
-Leonard
-Our babies will be smart and beautiful. - Script
-Are babies will be smart and beautiful. - Srt
-310. 00:21:28,258 --> 00:21:29,761
-Sheldon
-Not to mention imaginary. - Script
-Not to mention imaginary. - Srt
-311. 00:21:35,754 --> 00:21:37,626
-Leonard
-Is Thai food okay with you Penny? - Script
-Is Thai food okay with you, Penny? - Srt
-312. 00:21:35,754 --> 00:21:37,626
-Penny
-Sure. - Script
- Sure. - Srt
-313. 00:21:37,748 --> 00:21:40,517
-Sheldon
-We can't have Thai food, we had Indian for lunch. - Script
-We can't have Thai food,  we had Indian for lunch. - Srt
-314. 00:21:38,880 --> 00:21:40,517
-Penny
-So? - Script
- So? - Srt
-315. 00:21:40,874 --> 00:21:43,223
-Sheldon
-They're both curry based cuisines. - Script
-They're both curry-based cuisines. - Srt
-316. 00:21:38,880 --> 00:21:40,517
-Penny
-So? - Script
- So? - Srt
-317. 00:21:43,360 --> 00:21:49,248
-Sheldon
-They would be gastronomically redundant. I can see we're going to have to spell out everything for this girl. - Script
-It would be gastronomically redundant. I can see we're going to have to spell out everything for this girl. - Srt
-318. 00:21:49,753 --> 00:21:55,602
-Penny
-Any ideas Raj? (He just looks at her with a worried expression.) - Script
-Any ideas, Raj? Turn left on Lake Street and head up to Colorado. - Srt
-319. 00:21:53,439 --> 00:21:58,477
-Howard
-Turn left on Lake Street and head up to Colorado. I know a wonderful little sushi bar that has karaoke. - Script
-Turn left on Lake Street and head up to Colorado. I know a wonderful little sushi bar that has karaoke. - Srt
-320. 00:21:58,603 --> 00:21:59,805
-Penny
-That sounds like fun. - Script
-That sounds like fun. - Srt
-321. 00:00:00,000 --> 00:00:00,000
-Howard (sings) 
-Baby, baby don't get hooked on me. Uh, baby, baby don't get hooked on me. - Script
+Oh, hey Leonard. - Script
 NO IN SRT!!!! - Srt
-322. 00:22:13,239 --> 00:22:19,424
+154. 00:00:00,000 --> 00:00:00,000
+Leonard
+Oh, hi. - Script
+NO IN SRT!!!! - Srt
+155. 00:13:27,266 --> 00:13:30,029
+Penny
+So, how's it going? - Script
+So... how's it going? - Srt
+156. 00:13:33,421 --> 00:13:34,654
+Leonard
+Pretty good. - Script
+Pretty good. - Srt
+157. 00:13:35,920 --> 00:13:39,126
+Penny
+Just pretty good, I'd think you were doing very good. - Script
+Just pretty good? I'd think you were doing very good. - Srt
+158. 00:13:40,936 --> 00:13:46,571
+Leonard
+Pretty, very, there's really no objective scale for delineating variations of good, why do you ask? - Script
+Pretty, very... there's really no objective scale for delineating variations of "good." Why do you ask? - Srt
+159. 00:13:47,198 --> 00:13:50,964
+Penny
+Well, a little bird told me that you and Lesley hooked up last night. - Script
+Well, a little bird told me that you and Leslie hooked up last night. - Srt
+160. 00:13:59,072 --> 00:14:00,112
+Leonard
+Sheldon! - Script
+I don't... - Srt
+161. 00:13:59,072 --> 00:14:00,112
 Sheldon
-I don't know what your odds are in the world as a whole, but as far as the population of this car goes, you're a veritable Mack Daddy. - Script
-I don't know what your odds are in the world as a whole, but as far as the population of this car goes, you're a veritable mack daddy. - Srt
+I'm coming. - Script
+I don't... - Srt
+162. 00:13:56,057 --> 00:13:58,513
+Penny
+So, is it serious, do you like her? - Script
+So, is it serious? Do you like her? - Srt
+163. 00:13:59,072 --> 00:14:07,426
+Leonard
+Wuh, I don't. th-th-th-that's really two different questions, uh, I'm not. Sheldon, we have to go! - Script
+I don't... That's really two different questions. I'm not... Sheldon, we have to go! - Srt
+164. 00:14:07,988 --> 00:14:11,152
+Sheldon
+Boy, you're wound awfully tight for a man who just had sexual intercourse. - Script
+You're wound awfully tight for a man who's just had sexual intercourse. - Srt
+165. 00:14:13,617 --> 00:14:16,483
+Penny
+Alright, well, I'll talk to you later, but, I am so happy for you Leonard. - Script
+All right, I'll talk to you later, but I am so happy for you. - Srt
+166. 00:00:00,000 --> 00:00:00,000
+Leonard
+Thank you. What did she mean, she's happy for me? Is she happy because I'm seeing someone, or is she happy because she thinks that I'm happy, because anyone who cared for someone would want them to be happy, even if the reason for their happiness made the first person unhappy. You know, because the second person, though happy, is now romantically unavailable to the first person. - Script
+NO IN SRT!!!! - Srt
+167. 00:14:43,256 --> 00:14:47,070
+Sheldon
+Do you realise I may have to share a Nobel Prize with your booty call? - Script
+Do you realize I may have to share a Nobel Prize with your booty call? - Srt
+168. 00:14:50,698 --> 00:15:01,815
+Leonard
+You know what, I'm being ridiculous. But who cares what Penny thinks, Lesley is a terrific girl, she's attractive, we like each other, she's extremely intelligent. - Script
+You know what? I'm being ridiculous. Who cares what Penny thinks? Leslie is a terrific girl. She's attractive. We like each other. She's extremely intelligent... - Srt
+169. 00:15:01,970 --> 00:15:04,745
+Sheldon
+She's not that intelligent. - Script
+She's not that intelligent. - Srt
+170. 00:15:01,970 --> 00:15:04,745
+Leonard
+She fixed your equation. - Script
+ She fixed your equation. - Srt
+171. 00:15:05,015 --> 00:15:06,952
+Sheldon
+She got lucky. - Script
+She got lucky. - Srt
+172. 00:15:05,015 --> 00:15:06,952
+Leonard
+You don't believe in luck. - Script
+ You don't believe in luck. - Srt
+173. 00:15:07,107 --> 00:15:09,693
+Sheldon
+I don't have to believe in it for her to be lucky. - Script
+I don't have to believe in it for her to be lucky. - Srt
+174. 00:15:10,793 --> 00:15:22,899
+Leonard
+Regardless, I have a chance at a real relationship with Lesley, I'm not going to pass that up for some hypothetical future happiness with a woman who may or may not want me to be happy with a woman who is currently making me happy. - Script
+Regardless, I have a chance at a real relationship with Leslie. I'm not going to pass that up for some hypothetical future of happiness with a woman who may or may not want me to be happy, with a woman who is currently making me happy. - Srt
+175. 00:00:00,000 --> 00:00:00,000
+Sheldon
+Leonard? - Script
+NO IN SRT!!!! - Srt
+176. 00:00:00,000 --> 00:00:00,000
+Leonard
+Yeah. - Script
+NO IN SRT!!!! - Srt
+177. 00:15:25,656 --> 00:15:27,106
+Sheldon
+I still don't care. - Script
+I still don't care. - Srt
+178. 00:00:00,000 --> 00:00:00,000
+Leonard
+Hey, Lesley. - Script
+NO IN SRT!!!! - Srt
+179. 00:15:37,527 --> 00:15:40,847
+Lesley
+CarefulLeonard, liquid nitrogen, 320 degrees below zero. - Script
+Careful, Leonard. Liquid nitrogen, 320 degrees below zero. - Srt
+180. 00:15:49,636 --> 00:15:52,080
+Leonard
+Brrrr. Why are you smashing a flash frozen banana. - Script
+Why are you smashing a flash-frozen banana? - Srt
+181. 00:15:52,292 --> 00:15:55,301
+Lesley
+Because I've got a bowl of Cheerios and I couldn't find a knife. - Script
+Because I got a bowl of Cheerios and I couldn't find a knife. - Srt
+182. 00:15:57,453 --> 00:16:00,958
+Leonard
+So anyway (puts arms around her) Hello. - Script
+So anyway... Hello. - Srt
+183. 00:16:03,846 --> 00:16:05,173
+Lesley
+Uh, what are you doing? - Script
+What are you doing? - Srt
+184. 00:16:05,904 --> 00:16:12,570
+Leonard
+Just extending the intimacy. Do you want to slip over to the radiation lab and share a decontamination shower? - Script
+Just extending the intimacy. Do you want to slip over to the radiation lab and share a decontamination shower? - Srt
+185. 00:16:17,207 --> 00:16:19,888
+Lesley
+Okay, uh, what exactly do you think's going on between us? - Script
+What exactly do you think's going on between us? - Srt
+186. 00:16:21,260 --> 00:16:24,782
+Leonard
+I'm not sure, but I think I'm about to discover how the banana felt. - Script
+I'm not sure, but I think I'm about to discover how the banana felt. - Srt
+187. 00:16:29,246 --> 00:16:42,213
+Lesley
+Listen, Leonard, neither of us are neuroscientists but we both understand the biochemistry of sex, I mean, dopamine in our brains is released across synapses causing pleasure. You stick electrodes in a rat's brain, give him an orgasm button, he'll push that thing until he starves to death. - Script
+Listen, neither of us are neuroscientists, but we both understand the biochemistry of sex. I mean, dopamine in our brains is released across synapses, causing pleasure. You stick electrodes in a rat's brain, give him an orgasm button, he'll push that thing until he starves to death. - Srt
+188. 00:16:43,472 --> 00:16:44,834
+Leonard
+Who wouldn't? - Script
+Well, who wouldn't? - Srt
+189. 00:16:45,325 --> 00:16:51,362
+Lesley
+Well, the only difference between us and a rat is that you can't stick an electrode in our hypothalamus. That's where you come in. - Script
+Well, the only difference between us and the rat is that you can't stick an electrode in our hypothalamus. That's where you come in. - Srt
+190. 00:16:53,580 --> 00:16:58,884
+Leonard
+Yeah, well, I'm just glad to be a part of it. So what happens now? - Script
+Yeah, well, I'm just glad to be a part of it. So what happens now? - Srt
+191. 00:16:59,096 --> 00:17:02,653
+Lesley
+Well, I don't know about your sex drive, but I'm probably good till New Years. - Script
+I don't know about your sex drive, but I'm probably good till New Year's. - Srt
+192. 00:17:08,220 --> 00:17:09,782
+Leonard
+Oh. Okay. Thank you. - Script
+ Thank you. - Srt
+193. 00:17:08,220 --> 00:17:09,782
+Lesley
+Thank you! - Script
+ Thank you. - Srt
+194. 00:17:13,305 --> 00:17:14,945
+Leonard
+You want to make plans for New Years. - Script
+You want to make plans for New Year's? - Srt
+195. 00:17:15,147 --> 00:17:16,517
+Lesley
+Woah, Leonard, please, you're smothering me. - Script
+Please. You're smothering me. - Srt
+196. 00:00:00,000 --> 00:00:00,000
+Leonard (leaving) 
+Sorry. - Script
+NO IN SRT!!!! - Srt
+197. 00:17:19,733 --> 00:17:21,353
+Howard
+Hey, look, it's Doctor Stud! - Script
+Look. It's Dr. Stud! - Srt
+198. 00:17:23,410 --> 00:17:24,432
+Leonard
+Doctor what? - Script
+Dr. What? - Srt
+199. 00:17:24,610 --> 00:17:29,610
+Howard
+The blogosphere is a-buzzing with news of you and Lesley Winkle making eine kleine bang-bang music. - Script
+The blogosphere is a-buzzin' with news of you and Leslie Winkle making <i>eine kleine bang-bang musik</i>. - Srt
+200. 00:17:31,511 --> 00:17:32,900
+Leonard
+Wha how did it get on the internet? - Script
+How did it get on the Internet? - Srt
+201. 00:17:33,050 --> 00:17:34,272
+Howard
+I put it there. - Script
+I put it there. - Srt
+202. 00:17:35,468 --> 00:17:36,933
+Leonard
+Well, how did you know about it? - Script
+How did you know about it? - Srt
+203. 00:17:37,180 --> 00:17:42,491
+Raj
+A little bird told us. Apparently you are a magnificent beast. - Script
+A little bird told us. Apparently, you are a magnificent beast. - Srt
+204. 00:17:45,555 --> 00:17:46,905
+Leonard
+Well, that part's true! - Script
+That part's true. - Srt
+205. 00:17:51,880 --> 00:17:54,080
+Sheldon
+You know, I think I may have misjudged this restaurant. - Script
+I think I may have misjudged this restaurant. - Srt
+206. 00:17:54,326 --> 00:17:56,305
+Leonard
+No kidding. - Script
+No kidding. - Srt
+207. 00:17:56,498 --> 00:17:59,407
+Sheldon
+I won't go out on a limb, but I think we may be looking at my new Tuesday hamburger. - Script
+but I think we may be looking at my new Tuesday hamburger. - Srt
+208. 00:18:00,890 --> 00:18:03,744
+Leonard
+Your old Tuesday hamburger will be so broken hearted. - Script
+Your old Tuesday hamburger will be so brokenhearted. - Srt
+209. 00:18:05,342 --> 00:18:10,099
+Sheldon
+Way ahead of you. I was thinking of moving Big Boy to Thursdays, and just dropping Soup Plantation. - Script
+Way ahead of you. I was thinking of moving Big Boy to Thursdays, and just dropping Souplantation. - Srt
+210. 00:18:11,547 --> 00:18:12,547
+Leonard
+Really? - Script
+Really? - Srt
+211. 00:18:13,038 --> 00:18:16,064
+Sheldon
+Yeah, the name always confused me anyway, Soup Plantation. You can't grow soup. - Script
+The name always confused me anyway. Souplantation. - Srt
+212. 00:18:21,339 --> 00:18:23,082
+Penny
+So, how's everything. - Script
+So, how's everything? - Srt
+213. 00:18:23,458 --> 00:18:28,346
+Sheldon
+Terrific, you'll be happy to know that I plan to come here every Tuesday night for the foreseeable future. - Script
+Terrific. You'll be happy to know that I plan to come here every Tuesday night for the foreseeable future. - Srt
+214. 00:18:11,547 --> 00:18:12,547
+Penny
+Really, oh yay! - Script
+Really? - Srt
+215. 00:18:32,158 --> 00:18:34,897
+Sheldon
+Who do I speak to about permanently reserving this table? - Script
+Who do I speak to about permanently reserving this table? - Srt
+216. 00:18:35,962 --> 00:18:44,017
+Penny
+Um, I don't know, a psychiatrist? So hey, how are things with you and Lesley? - Script
+I don't know... A psychiatrist? So, hey, how are things with you and Leslie? - Srt
+217. 00:18:45,088 --> 00:18:47,616
+Leonard
+Oh, to be honest, I don't think it's going to work out. - Script
+To be honest, I don't think it's going to work out. - Srt
+218. 00:18:49,223 --> 00:18:55,534
+Penny
+Oh, oh that's too bad. Well hey, don't worry, I'm sure there is someone out there who is just right for you. (Walks away smiling). - Script
+Oh, that's too bad. Hey, don't worry. I'm sure there's someone out there who's just right for you. - Srt
+219. 00:18:58,636 --> 00:19:05,489
+Leonard
+Well what did she mean by that? Was that just a generic platitude or was that a subtle bid for attention? - Script
+What did she mean by that?! Was that just a generic platitude, or was that a subtle bid for attention? - Srt
+220. 00:19:07,680 --> 00:19:17,867
+Sheldon
+You know why this hamburger surpasses the Big Boy? This is a single decker hamburger whereas the Big Boy is a double decker. This has a much more satisfying meat to bun to condiment ratio. - Script
+You know why this hamburger surpasses the Big Boy? This is a single-decker hamburger, whereas the Big Boy is a double-decker. This has a much more satisfying meat-to-bun-to-condiment ratio. - Srt
+221. 00:19:19,404 --> 00:19:20,979
+Leonard
+Are you even listening to me? - Script
+Are you even listening to me? - Srt
+222. 00:19:21,191 --> 00:19:24,806
+Sheldon
+Of course I'm listening. Blah blah, hopeless Penny delusion, blah blah blah. - Script
+Of course, I'm listening. Blah, blah, hopeless Penny delusion... - Srt
+223. 00:19:27,602 --> 00:19:33,865
+Leonard
+Okay then. You know, you can grow the ingredients for soup. (Sheldon nods). - Script
+Okay, then. You know, you can grow the ingredients for soup. - Srt
