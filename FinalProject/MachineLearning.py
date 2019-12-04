@@ -180,8 +180,8 @@ def half_seconds_every_file():
     :return: nothing
     """
     onlyfiles = [f for f in listdir("AfterInitialCuttedAudios/") if isfile(join("AfterInitialCuttedAudios/", f))]
-    if not os.path.exists("FinalAudios"):  # if the dir doesn't exist we create one
-        os.makedirs("FinalAudios")
+    if not os.path.exists("FinalAudiosCopy"):  # if the dir doesn't exist we create one
+        os.makedirs("FinalAudiosCopy")
     for f in onlyfiles:
         input_data = read("AfterInitialCuttedAudios/" + f)  # read the file
         fs = input_data[0]  # sample rate
@@ -194,7 +194,7 @@ def half_seconds_every_file():
         t = fs/2
         j = 0
         while t < len(audio):
-            write("FinalAudios/" + f.split(".")[0] + "_" + str(j) + ".wav", fs, audio[t-fs/2:t-1])
+            write("FinalAudiosCopy/" + f.split(".")[0] + "_" + str(j) + ".wav", fs, audio[t-fs/2:t-1])
             t += fs/2
             j += 1
 
@@ -205,8 +205,8 @@ def less_than_second_every_file():
     :return: nothing
     """
     onlyfiles = [f for f in listdir("AfterInitialCuttedAudios/") if isfile(join("AfterInitialCuttedAudios/", f))]
-    if not os.path.exists("FinalAudios"):  # if the dir doesn't exist we create one
-        os.makedirs("FinalAudios")
+    if not os.path.exists("FinalAudiosCopy"):  # if the dir doesn't exist we create one
+        os.makedirs("FinalAudiosCopy")
     for f in onlyfiles:
         input_data = read("AfterInitialCuttedAudios/" + f)  # read the file
         fs = input_data[0]  # sample rate
@@ -219,7 +219,7 @@ def less_than_second_every_file():
         t = fs/5
         j = 0
         while t < len(audio):
-            write("FinalAudios/" + f.split(".")[0] + "_" + str(j) + ".wav", fs, audio[t-fs/5:t-1])
+            write("FinalAudiosCopy/" + f.split(".")[0] + "_" + str(j) + ".wav", fs, audio[t-fs/5:t-1])
             t += fs/5
             j += 1
 
@@ -230,19 +230,19 @@ def cut_laugh_and_silent():
     move laugh / silents audio file to a specific dir
     :return:
     """
-    onlyfiles = [f for f in listdir("FinalAudios/") if isfile(join("FinalAudios/", f))]
+    onlyfiles = [f for f in listdir("FinalAudiosCopy/") if isfile(join("FinalAudiosCopy/", f))]
     if not os.path.exists("Silent"):  # if the dir doesn't exist we create one
         os.makedirs("Silent")
     if not os.path.exists("Laugh"):  # if the dir doesn't exist we create one
         os.makedirs("Laugh")
     for f in onlyfiles:
-        input_data = read("FinalAudios/" + f)  # read the file
+        input_data = read("FinalAudiosCopy/" + f)  # read the file
         fs = input_data[0]  # sample rate
         audio = input_data[1]  # audio file
         if list(abs(j) < 400 for j in audio[0:len(audio) - 1]).count(True) < 10000:
-            shutil.move("FinalAudios/" + f, "Laugh/" + f)
+            shutil.move("FinalAudiosCopy/" + f, "Laugh/" + f)
         elif list(abs(j) > 400 for j in audio[0:len(audio) - 1]).count(True) < 100:
-            shutil.move("FinalAudios/" + f, "Silent/" + f)
+            shutil.move("FinalAudiosCopy/" + f, "Silent/" + f)
 def plot_graph(name):
     """
     plot the sound file
@@ -250,7 +250,7 @@ def plot_graph(name):
     :return: nothing
     """
     # read audio samples
-    input_data = read("FinalAudios/" + name + ".wav")
+    input_data = read("FinalAudiosCopy/" + name + ".wav")
     fs = input_data[0]
     audio = input_data[1]
     # plot the first 1024 samples
@@ -286,19 +286,20 @@ def main_action():
     by the script and srt files. And remove laugh + silent audios.
     :return:
     """
+    num = str(input("espiode number : "))
     filename = constants.outputfile
     i = 1
     j = 1
     cutted_last = 0  # how much we cut last file
     while True:
-        if not linecache.getline(filename, i):  # end of file
+        if not linecache.getline(filename, i + 4):  # end of file
             break
         time = linecache.getline(filename, i).split(".")[1].lstrip().rstrip()  # time of the specific line
         if not time == "00:00:00,000 --> 00:00:00,000":  # if it's in the srt
             name = linecache.getline(filename, i + 1).lstrip().rstrip()  # name of the speaker
             words = linecache.getline(filename, i + 3).lstrip().rstrip()  # what he said
-            print time
-            print name
+            print(time)
+            print(name)
             t = timeUnion.timeUnion(time)
             start_time = t.getInitialTimeInSec()  # start time
             end_time = t.getEndTimeInSec()  # end time
@@ -307,42 +308,62 @@ def main_action():
                     # speakers in one line
                     nameAfter = linecache.getline(filename, i + 5).lstrip().rstrip()  # name of the speaker
                     wordsAfter = linecache.getline(filename, i + 7).lstrip().rstrip()  # what the second speaker said
-                    clip = mp.VideoFileClip("Movie.mp4").subclip(start_time - cutted_last - 0.5, end_time)  # cutting the
+                    clip = mp.VideoFileClip("Movie_" + num + ".mp4").subclip(start_time - cutted_last - 0.5, end_time)  # cutting the
                     # audio
-                    clip.audio.write_audiofile(name + "_" + str(j) + ".wav")  # write it into new file
+                    clip.audio.write_audiofile(name + "_" + num + "_" + str(j) + ".wav")  # write it into new file
                     if not os.path.exists("Audios"):  # if the dir doesn't exist we create one
                         os.makedirs("Audios")
-                    shutil.move(name + "_" + str(j) + ".wav", "Audios/" + name + "_" + str(j) + ".wav")  # move it to the # dir
+                    shutil.move(name + "_" + num + "_" + str(j) + ".wav", "Audios/" + name + "_" + num + "_" + str(j) + ".wav")  # move it to the # dir
                     # There Are Two Speakers
-                    middle_cut(name + "_" + str(j), nameAfter + "_" + str(j+1))  # 2 speakers; 1 file --> 1 speaker; 2 files
-                    initial_cut(name + "_" + str(j))  # initial cut to the first speaker
+                    middle_cut(name + "_" + num + "_" + str(j), nameAfter + "_" + str(j+1))  # 2 speakers; 1 file --> 1 speaker; 2 files
+                    initial_cut(name + "_" + num + "_" + str(j))  # initial cut to the first speaker
                     cutted_last = end_cut(nameAfter + "_" + str(j+1), wordsAfter)  # end cut to the second speaker
                     initial_cut(nameAfter + "_" + str(j+1), False)
                     i += 4  # next speaker
                     j += 1  # next speaker
                 except Exception as e:
                     # if there is an exception; we move to the next element...
-                    print e.__doc__
-                    print e.message
+                    print(e.__doc__)
+                    print(e.message)
                     i += 4  # next speaker
                     j += 1  # next speaker
             else:
                 try:
-                    clip = mp.VideoFileClip("Movie.mp4").subclip(start_time - cutted_last, end_time)  # cutting the
+                    clip = mp.VideoFileClip("Movie_" + num + ".mp4").subclip(start_time - cutted_last, end_time)  # cutting the
                     # audio
-                    clip.audio.write_audiofile(name + "_" + str(j) + ".wav")  # write it into new file
+                    clip.audio.write_audiofile(name + "_" + num + "_" + str(j) + ".wav")  # write it into new file
                     if not os.path.exists("Audios"):  # if the dir doesn't exist we create one
                         os.makedirs("Audios")
-                    shutil.move(name + "_" + str(j) + ".wav", "Audios/" + name + "_" + str(j) + ".wav")  # move it to the dir
+                    shutil.move(name + "_" + num + "_" + str(j) + ".wav", "Audios/" + name + "_" + num + "_" + str(j) + ".wav")  # move it to the dir
                     # There Are Two Speakers
-                    cutted_last = end_cut(name + "_" + str(j), words)  # end cut to the speaker
-                    initial_cut(name + "_" + str(j))  # initial cut to the first speaker
+                    cutted_last = end_cut(name + "_" + num + "_" + str(j), words)  # end cut to the speaker
+                    initial_cut(name + "_" + num + "_" + str(j))  # initial cut to the first speaker
                 except Exception as e:
                     # if there is an exception; we move to the next element...
-                    print e.__doc__
-                    print e.message
+                    print(e.__doc__)
+                    print(e.message)
         i += 4  # next speaker
         j += 1  # next speaker
     half_seconds_every_file()
     cut_laugh_and_silent()
-    less_than_second_every_file()
+    #less_than_second_every_file()
+    if not os.path.exists("FinalAudios"):  # if the dir doesn't exist we create one
+        os.makedirs("FinalAudios")
+
+    source = 'FinalAudiosCopy\\'
+    dest1 = 'FinalAudios\\'
+
+    files = os.listdir(source)
+
+    for f in files:
+        shutil.move(source + f, dest1)
+    shutil.rmtree('Silent')
+    shutil.rmtree('Audios')
+    shutil.rmtree('Laugh')
+    shutil.rmtree('AfterInitialCuttedAudios')
+    shutil.rmtree('AfterCuttedAudios')
+    shutil.rmtree('FinalAudiosCopy')
+
+
+
+main_action()

@@ -311,4 +311,4 @@ class MannagerZvi:
 d = MannagerZvi("script.txt", r"(.*):(.*)", r"\d\r\n(.*?)\r\n(.*?)\r\n\r\n", "srt.txt",constants.access_token)
 d.download_things(constants.url_script, constants.url_srt)
 d.before_main_action()
-print d.main_action()
+print(d.main_action())

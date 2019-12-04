@@ -1,105 +1,126 @@
-from sklearn.neural_network import MLPClassifier
 import python_speech_features
 import scipy.io.wavfile as wav
 import numpy as np
 from os import listdir
+import os
+import shutil
 from os.path import isfile, join
 from random import shuffle
-import matplotlib.pyplot as plt
+from matplotlib import pyplot
 from tqdm import tqdm
 from random import randint
-import random
-winner = []  # this array count how much Bingo we had when we test the NN
-random_winner = []
+import tensorflow as tf
+from ast import literal_eval as str2arr
+from tempfile import TemporaryFile
 win_len = 0.04  # in seconds
 step = win_len / 2
 nfft = 2048
-for TestNum in tqdm(range(20)):  # in every round we build NN with X,Y that out of them we check 50 after we build the NN
-    X = []
-    Y = []
-    onlyfiles = [f for f in listdir("FinalAudios/") if isfile(join("FinalAudios/", f))]   # Files in dir
-    names = []  # names of the speakers
-    for file in onlyfiles:  # for each wav sound
-        # UNESSECERY TO UNDERSTAND THE CODE
-        if " " not in file.split("_")[0]:
-            names.append(file.split("_")[0])
-        else:
-            names.append(file.split("_")[0].split(" ")[0])
-    only_speakers = [] + names
-    #print only_speakers
-    names = list(dict.fromkeys(names))  # names of speakers
-    print names
-    vector_names = []  # vector for each name
-    i = 0
-    vector_for_each_name = [0] * len(names)
-    for name in names:
-        vector_for_each_name[i] += 1
-        vector_names.append(np.array(vector_for_each_name))
-        vector_for_each_name[i] -= 1
-        i += 1
-    for f in onlyfiles:
-        if " " not in f.split("_")[0]:
-            f_speaker = f.split("_")[0]
-        else:
-            f_speaker = f.split("_")[0].split(" ")[0]
-        fs, audio = wav.read("FinalAudios/" + f)  # read the file
-        try:
-            mfcc_feat = python_speech_features.mfcc(audio, samplerate=fs, winlen=win_len,
-                                               winstep=step, nfft=nfft, appendEnergy=False)
-            flat_list = [item for sublist in mfcc_feat for item in sublist]
-            X.append(np.array(flat_list))
-            Y.append(np.array(vector_names[names.index(f_speaker)]))
-        except IndexError:
-            pass
+results = []
+outfile_x = None
+outfile_y = None
+for TestNum in tqdm(range(40)):  # We check it several times
+    if not outfile_x:  # if path not exist we create it
+        X = []  # inputs
+        Y = []  # outputs
+        onlyfiles = [f for f in listdir("FinalAudios/") if isfile(join("FinalAudios/", f))]   # Files in dir
+        names = []  # names of the speakers
+        for file in onlyfiles:  # for each wav sound
+            # UNESSECERY TO UNDERSTAND THE CODE
+            if " " not in file.split("_")[0]:
+                names.append(file.split("_")[0])
+            else:
+                names.append(file.split("_")[0].split(" ")[0])
+        only_speakers = [] + names
+        namesWithoutDuplicate = list(dict.fromkeys(names))
+        namesWithoutDuplicateCopy = namesWithoutDuplicate[:]
+        for name in namesWithoutDuplicateCopy:  # we remove low samples files
+            if names.count(name) < 60:
+                namesWithoutDuplicate.remove(name)
+        names = namesWithoutDuplicate
+        print(names)  # print it
+        vector_names = []  # output for each name
+        i = 0
+        for name in names:
+            vector_for_each_name = i
+            vector_names.append(np.array(vector_for_each_name))
+            i += 1
+        for f in onlyfiles:  # for all the files
+            if " " not in f.split("_")[0]:
+                f_speaker = f.split("_")[0]
+            else:
+                f_speaker = f.split("_")[0].split(" ")[0]
+            if f_speaker in namesWithoutDuplicate:
+                fs, audio = wav.read("FinalAudios/" + f)  # read the file
+                try:
+                    # compute MFCC
+                    mfcc_feat = python_speech_features.mfcc(audio, samplerate=fs, winlen=win_len,
+                                                       winstep=step, nfft=nfft, appendEnergy=False)
+                    flat_list = [item for sublist in mfcc_feat for item in sublist]
+                    # Create output + inputs
+                    X.append(np.array(flat_list))
+                    Y.append(np.array(vector_names[names.index(f_speaker)]))
+                except IndexError:
+                    pass
+            else:
+                if not os.path.exists("TooLowSamples"):  # if path not exist we create it
+                    os.makedirs("TooLowSamples")
+                shutil.move("FinalAudios\\" + f, "TooLowSamples\\" + f)
+        outfile_x = TemporaryFile()
+        np.save(outfile_x, X)
+        outfile_y = TemporaryFile()
+        np.save(outfile_y, Y)
+
+
+
+    # ------------------- RANDOMIZATION, UNNECESSARY TO UNDERSTAND THE CODE ------------------- #
+    else:
+        outfile_x.seek(0)
+        X = np.load(outfile_x)
+        outfile_y.seek(0)
+        Y = np.load(outfile_y)
     Z = list(zip(X, Y))
-
     shuffle(Z)  # WE SHUFFLE X,Y TO PERFORM RANDOM ON THE TEST LEVEL
-
     X, Y = zip(*Z)
     X = list(X)
     Y = list(Y)
-    X = np.asarray(X)
-    Y = np.asarray(Y)
+    lenX = len(X)
+    # ------------------- RANDOMIZATION, UNNECESSARY TO UNDERSTAND THE CODE ------------------- #
+    y_test = np.asarray(Y[:100])   # CHOOSE 100 FOR TEST, OTHERS FOR TRAIN
+    x_test = np.asarray(X[:100])   # CHOOSE 100 FOR TEST, OTHERS FOR TRAIN
+    x_train = np.asarray(X[100:])  # CHOOSE 100 FOR TEST, OTHERS FOR TRAIN
+    y_train = np.asarray(Y[100:])  # CHOOSE 100 FOR TEST, OTHERS FOR TRAIN
+    x_val = x_train[-100:]         # FROM THE TRAIN CHOOSE 100 FOR VALIDATION
+    y_val = y_train[-100:]         # FROM THE TRAIN CHOOSE 100 FOR VALIDATION
+    x_train = x_train[:-100]       # FROM THE TRAIN CHOOSE 100 FOR VALIDATION
+    y_train = y_train[:-100]       # FROM THE TRAIN CHOOSE 100 FOR VALIDATION
+    x_train = x_train.reshape(np.append(x_train.shape, 1))  # RESHAPE FOR INPUT
+    x_test = x_test.reshape(np.append(x_test.shape, 1))     # RESHAPE FOR INPUT
+    x_val = x_val.reshape(np.append(x_val.shape, 1))        # RESHAPE FOR INPUT
 
-    Y_test = Y[:50]  # CHOOSE 50 FOR TEST, OTHERS FOR TRAIN
-    X_test = X[:50]
-    X = X[50:]
-    Y = Y[50:]
-    print len(X)
-    clf = MLPClassifier(solver='lbfgs', alpha=3e-2, hidden_layer_sizes=(50, 20), random_state=2)  # create the NN
-    clf.fit(X, Y)  # Train it
-    print list(clf.predict_proba([X[0]])[0])
-    print list(Y_test[0])
-    for sample in range(len(X_test)):  # add 1 to winner array if we correct and 0 if not, than in the end it plot it
-        arr = list(clf.predict([X_test[sample]])[0])
-        if arr.index(max(arr)) == list(Y_test[sample]).index(1):
-            winner.append(1)
-        else:
-            winner.append(0)
-        if only_speakers[randint(0, len(only_speakers) - 1)] == only_speakers[randint(0, len(only_speakers) - 1)]:
-            random_winner.append(1)
-        else:
-            random_winner.append(0)
+    # -------------- OUR TENSOR FLOW NEURAL NETWORK MODEL -------------- #
+    model = tf.keras.models.Sequential([
+        tf.keras.layers.Dense(512, activation='relu'),
+        tf.keras.layers.Dropout(0.3),
+        tf.keras.layers.Dense(256, activation='relu'),
+        tf.keras.layers.Dense(128, activation='relu'),
+        tf.keras.layers.Flatten(),
+        tf.keras.layers.Dense(len(names), activation='softmax'),
+    ])
+    model.compile(optimizer='adam',
+                  loss='sparse_categorical_crossentropy',
+                  metrics=['accuracy'])
+    # -------------- OUR TENSOR FLOW NEURAL NETWORK MODEL -------------- #
 
-# plot winner
-plot_x = []
-plot_y = []
-for i in range(1, len(winner)):
-    plot_y.append(sum(winner[0:i])*1.0/len(winner[0:i]))
-    plot_x.append(i)
-plot_random_x = []
-plot_random_y = []
-for i in range(1, len(random_winner)):
-    plot_random_y.append(sum(random_winner[0:i])*1.0/len(random_winner[0:i]))
-    plot_random_x.append(i)
-plt.plot(plot_x, plot_y, 'r', label='machine learning')
-plt.plot(plot_random_x, plot_random_y, 'b', label='random')
-plt.xlabel('Number Of Samples')
-# naming the y axis
-plt.ylabel('Success Rate')
+    print("fitting")
+    history = model.fit(x_train, y_train, epochs=2, validation_data=(x_val, y_val))
+    print("testing")
+    results.append(model.evaluate(x_test, y_test)[1])
+    print(results)
+    print(sum(results)/len(results))
 
-# giving a title to my graph
-plt.title('Success Rate : Random Vs ML!')
-
-# function to show the plot
-plt.show()
+    #]
+    # if onlyfiles[randint(len(onlyfiles) - 1)] == onlyfiles[randint(len(onlyfiles) - 1)]
+    #pyplot.plot(history.history['loss'], label='train')
+    #pyplot.plot(history.history['val_loss'], label='test')                                          Q
+    #pyplot.legend()
+    #pyplot.show()
