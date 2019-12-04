@@ -18,11 +18,13 @@ nfft = 2048
 results = []
 outfile_x = None
 outfile_y = None
+winner = []
+
 for TestNum in tqdm(range(40)):  # We check it several times
     if not outfile_x:  # if path not exist we create it
         X = []  # inputs
         Y = []  # outputs
-        onlyfiles = [f for f in listdir("FinalAudios/") if isfile(join("FinalAudios/", f))]   # Files in dir
+        onlyfiles = [f for f in listdir("C:\\Users\\sassono5\\PycharmProjects\\FinalProjectUniversity\\FinalProject\\FinalAudios/") if isfile(join("C:\\Users\\sassono5\\PycharmProjects\\FinalProjectUniversity\\FinalProject\\FinalAudios/", f))]   # Files in dir
         names = []  # names of the speakers
         for file in onlyfiles:  # for each wav sound
             # UNESSECERY TO UNDERSTAND THE CODE
@@ -34,7 +36,7 @@ for TestNum in tqdm(range(40)):  # We check it several times
         namesWithoutDuplicate = list(dict.fromkeys(names))
         namesWithoutDuplicateCopy = namesWithoutDuplicate[:]
         for name in namesWithoutDuplicateCopy:  # we remove low samples files
-            if names.count(name) < 60:
+            if names.count(name) < 150:
                 namesWithoutDuplicate.remove(name)
         names = namesWithoutDuplicate
         print(names)  # print it
@@ -50,7 +52,7 @@ for TestNum in tqdm(range(40)):  # We check it several times
             else:
                 f_speaker = f.split("_")[0].split(" ")[0]
             if f_speaker in namesWithoutDuplicate:
-                fs, audio = wav.read("FinalAudios/" + f)  # read the file
+                fs, audio = wav.read("C:\\Users\\sassono5\\PycharmProjects\\FinalProjectUniversity\\FinalProject\\FinalAudios/" + f)  # read the file
                 try:
                     # compute MFCC
                     mfcc_feat = python_speech_features.mfcc(audio, samplerate=fs, winlen=win_len,
@@ -64,7 +66,7 @@ for TestNum in tqdm(range(40)):  # We check it several times
             else:
                 if not os.path.exists("TooLowSamples"):  # if path not exist we create it
                     os.makedirs("TooLowSamples")
-                shutil.move("FinalAudios\\" + f, "TooLowSamples\\" + f)
+                shutil.move("C:\\Users\\sassono5\\PycharmProjects\\FinalProjectUniversity\\FinalProject\\FinalAudios\\" + f, "TooLowSamples\\" + f)
         outfile_x = TemporaryFile()
         np.save(outfile_x, X)
         outfile_y = TemporaryFile()
@@ -117,7 +119,22 @@ for TestNum in tqdm(range(40)):  # We check it several times
     results.append(model.evaluate(x_test, y_test)[1])
     print(results)
     print(sum(results)/len(results))
-
+    for i in range(10000):
+        f_1 = only_speakers[randint(0, len(only_speakers) - 1)]
+        f_2 = only_speakers[randint(0, len(only_speakers) - 1)]
+        if " " not in f_1.split("_")[0]:
+            f_speaker_1 = f_1.split("_")[0]
+        else:
+            f_speaker_1 =f_1.split("_")[0].split(" ")[0]
+        if " " not in f_2.split("_")[0]:
+            f_speaker_2 = f_2.split("_")[0]
+        else:
+            f_speaker_2 =f_2.split("_")[0].split(" ")[0]
+        if f_speaker_2 == f_speaker_1:
+            winner.append(1)
+        else:
+            winner.append(0)
+    print(sum(winner)/len(winner))
     #]
     # if onlyfiles[randint(len(onlyfiles) - 1)] == onlyfiles[randint(len(onlyfiles) - 1)]
     #pyplot.plot(history.history['loss'], label='train')
