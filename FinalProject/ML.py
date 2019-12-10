@@ -12,19 +12,22 @@ from random import randint
 import tensorflow as tf
 from ast import literal_eval as str2arr
 from tempfile import TemporaryFile
-win_len = 0.04  # in seconds
+#win_len = 0.04  # in seconds
+#step = win_len / 2
+#nfft = 2048
+win_len = 0.2  # in seconds
 step = win_len / 2
-nfft = 2048
+nfft = 16384
 results = []
 outfile_x = None
 outfile_y = None
 winner = []
 
-for TestNum in tqdm(range(40)):  # We check it several times
+for TestNum in tqdm(range(1)):  # We check it several times
     if not outfile_x:  # if path not exist we create it
         X = []  # inputs
         Y = []  # outputs
-        onlyfiles = [f for f in listdir("C:\\Users\\sassono5\\PycharmProjects\\FinalProjectUniversity\\FinalProject\\FinalAudios/") if isfile(join("C:\\Users\\sassono5\\PycharmProjects\\FinalProjectUniversity\\FinalProject\\FinalAudios/", f))]   # Files in dir
+        onlyfiles = [f for f in listdir("FinalAudios") if isfile(join("FinalAudios", f))]   # Files in dir
         names = []  # names of the speakers
         for file in onlyfiles:  # for each wav sound
             # UNESSECERY TO UNDERSTAND THE CODE
@@ -36,7 +39,7 @@ for TestNum in tqdm(range(40)):  # We check it several times
         namesWithoutDuplicate = list(dict.fromkeys(names))
         namesWithoutDuplicateCopy = namesWithoutDuplicate[:]
         for name in namesWithoutDuplicateCopy:  # we remove low samples files
-            if names.count(name) < 150:
+            if names.count(name) < 2:
                 namesWithoutDuplicate.remove(name)
         names = namesWithoutDuplicate
         print(names)  # print it
@@ -46,27 +49,29 @@ for TestNum in tqdm(range(40)):  # We check it several times
             vector_for_each_name = i
             vector_names.append(np.array(vector_for_each_name))
             i += 1
+        testFiles = onlyfiles[:100]
+        onlyfiles = onlyfiles[101:]
         for f in onlyfiles:  # for all the files
             if " " not in f.split("_")[0]:
                 f_speaker = f.split("_")[0]
             else:
                 f_speaker = f.split("_")[0].split(" ")[0]
             if f_speaker in namesWithoutDuplicate:
-                fs, audio = wav.read("C:\\Users\\sassono5\\PycharmProjects\\FinalProjectUniversity\\FinalProject\\FinalAudios/" + f)  # read the file
+                fs, audio = wav.read("FinalAudios\\" + f)  # read the file
                 try:
                     # compute MFCC
-                    mfcc_feat = python_speech_features.mfcc(audio, samplerate=fs, winlen=win_len,
-                                                       winstep=step, nfft=nfft, appendEnergy=False)
-                    flat_list = [item for sublist in mfcc_feat for item in sublist]
+                    mfcc_feat = python_speech_features.mfcc(audio, samplerate=fs, winlen=win_len, winstep=step, nfft=nfft, appendEnergy=False)
+                    #flat_list = [item for sublist in mfcc_feat for item in sublist]
                     # Create output + inputs
-                    X.append(np.array(flat_list))
-                    Y.append(np.array(vector_names[names.index(f_speaker)]))
+                    for i in mfcc_feat:
+                        X.append(np.array(i))
+                        Y.append(np.array(vector_names[names.index(f_speaker)]))
                 except IndexError:
                     pass
             else:
                 if not os.path.exists("TooLowSamples"):  # if path not exist we create it
                     os.makedirs("TooLowSamples")
-                shutil.move("C:\\Users\\sassono5\\PycharmProjects\\FinalProjectUniversity\\FinalProject\\FinalAudios\\" + f, "TooLowSamples\\" + f)
+                shutil.move("FinalAudios\\" + f, "TooLowSamples\\" + f)
         outfile_x = TemporaryFile()
         np.save(outfile_x, X)
         outfile_y = TemporaryFile()

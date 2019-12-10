@@ -109,7 +109,7 @@ def middle_cut(name, next_name):
     fs = input_data[0]  # sample rate
     audio = input_data[1]  # audio file
     try:
-        audio = audio[:, 0]  # stereo --> mono
+        audioMono = audio[:, 0]  # stereo --> mono
     except IndexError:
         # if it's already mono
         pass
@@ -308,7 +308,7 @@ def main_action():
                     # speakers in one line
                     nameAfter = linecache.getline(filename, i + 5).lstrip().rstrip()  # name of the speaker
                     wordsAfter = linecache.getline(filename, i + 7).lstrip().rstrip()  # what the second speaker said
-                    clip = mp.VideoFileClip("C:\\Users\\sassono5\\PycharmProjects\\FinalProjectUniversity\\FinalProject\\Movie_" + num + ".mp4").subclip(start_time - cutted_last - 0.5, end_time)  # cutting the
+                    clip = mp.VideoFileClip("Movie_" + num + ".mp4").subclip(start_time - cutted_last - 0.5, end_time)  # cutting the
                     # audio
                     clip.audio.write_audiofile(name + "_" + num + "_" + str(j) + ".wav")  # write it into new file
                     if not os.path.exists("Audios"):  # if the dir doesn't exist we create one
@@ -316,7 +316,7 @@ def main_action():
                     shutil.move(name + "_" + num + "_" + str(j) + ".wav", "Audios/" + name + "_" + num + "_" + str(j) + ".wav")  # move it to the # dir
                     # There Are Two Speakers
                     middle_cut(name + "_" + num + "_" + str(j), nameAfter + "_" + str(j+1))  # 2 speakers; 1 file --> 1 speaker; 2 files
-                    initial_cut(name + "_" + num + "_" + str(j))  # initial cut to the first speaker
+                    #initial_cut(name + "_" + num + "_" + str(j))  # initial cut to the first speaker
                     cutted_last = end_cut(nameAfter + "_" + str(j+1), wordsAfter)  # end cut to the second speaker
                     initial_cut(nameAfter + "_" + str(j+1), False)
                     i += 4  # next speaker
@@ -329,7 +329,7 @@ def main_action():
                     j += 1  # next speaker
             else:
                 try:
-                    clip = mp.VideoFileClip("C:\\Users\\sassono5\\PycharmProjects\\FinalProjectUniversity\\FinalProject\\Movie_" + num + ".mp4").subclip(start_time - cutted_last, end_time)  # cutting the
+                    clip = mp.VideoFileClip("Movie_" + num + ".mp4").subclip(start_time - cutted_last, end_time)  # cutting the
                     # audio
                     clip.audio.write_audiofile(name + "_" + num + "_" + str(j) + ".wav")  # write it into new file
                     if not os.path.exists("Audios"):  # if the dir doesn't exist we create one
