@@ -23,7 +23,7 @@ outfile_x = None
 outfile_y = None
 winner = []
 
-for TestNum in tqdm(range(1)):  # We check it several times
+for TestNum in tqdm(range(40)):  # We check it several times
     if not outfile_x:  # if path not exist we create it
         X = []  # inputs
         Y = []  # outputs
@@ -49,8 +49,6 @@ for TestNum in tqdm(range(1)):  # We check it several times
             vector_for_each_name = i
             vector_names.append(np.array(vector_for_each_name))
             i += 1
-        testFiles = onlyfiles[:100]
-        onlyfiles = onlyfiles[101:]
         for f in onlyfiles:  # for all the files
             if " " not in f.split("_")[0]:
                 f_speaker = f.split("_")[0]

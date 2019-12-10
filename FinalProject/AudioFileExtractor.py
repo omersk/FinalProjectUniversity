@@ -112,7 +112,7 @@ def cutLaughSilent(path):
                     for element in laughArrayIndexes:
                         t = t + (element, )
                         if element in splittingLaugh:
-                            if t[len(t) - 1] - t[0] > 10000-:
+                            if t[len(t) - 1] - t[0] > 10000:
                                 series = series + list(range(t[0], t[len(t) - 1]))
                             t = ()
                     if t and t[len(t) - 1] - t[0] > 10000:
@@ -241,13 +241,12 @@ def main_action():
                     # speakers in one line
                     nameAfter = linecache.getline(filename, i + 5).lstrip().rstrip()  # name of the speaker
                     wordsAfter = linecache.getline(filename, i + 7).lstrip().rstrip()  # what the second speaker said
-                    clip = mp.VideoFileClip("Movie_" + num + ".mp4").subclip(start_time - cutted_last - 0.5, end_time)  # cutting the
+                    clip = mp.VideoFileClip("Movie_" + num + ".mp4").subclip(start_time, end_time)  # cutting the
                     # audio
                     clip.audio.write_audiofile(name + "_" + num + "_" + str(j) + ".wav")  # write it into new file
                     shutil.move(name + "_" + num + "_" + str(j) + ".wav", "Audios/" + name + "_" + num + "_" + str(j) + ".wav")  # move it to the # dir
                     # There Are Two Speakers
                     split_speakers(name + "_" + num + "_" + str(j), nameAfter + "_" + num + "_" + str(j+1))
-                    cutted_last = end_cut(nameAfter + "_" + str(num) + "_" + str(j+1), wordsAfter)  # end cut to the second speaker
                     i += 4  # next speaker
                     j += 1  # next speaker
                 except Exception as e:
@@ -264,7 +263,6 @@ def main_action():
                 shutil.move(name + "_" + num + "_" + str(j) + ".wav",
                             "Audios/" + name + "_" + num + "_" + str(j) + ".wav")  # move it to the dir
                 cutLaughSilent("Audios/" + name + "_" + num + "_" + str(j) + ".wav")
-                cutted_last = end_cut(name + "_" + str(num) + "_" + str(j), words)  # end cut to the second speaker
         i += 4  # next speaker
         j += 1  # next speaker
 
