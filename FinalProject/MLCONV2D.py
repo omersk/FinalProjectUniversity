@@ -15,8 +15,8 @@ from tempfile import TemporaryFile
 #win_len = 0.04  # in seconds
 #step = win_len / 2
 #nfft = 2048
-win_len = 0.2  # in seconds
-step = win_len / 2
+win_len = 0.05  # in seconds
+step = win_len
 nfft = 16384
 results = []
 outfile_x = None
