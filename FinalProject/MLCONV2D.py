@@ -39,7 +39,7 @@ for TestNum in tqdm(range(40)):  # We check it several times
         namesWithoutDuplicate = list(dict.fromkeys(names))
         namesWithoutDuplicateCopy = namesWithoutDuplicate[:]
         for name in namesWithoutDuplicateCopy:  # we remove low samples files
-            if names.count(name) < 2:
+            if names.count(name) < 107:
                 namesWithoutDuplicate.remove(name)
         names = namesWithoutDuplicate
         print(names)  # print it
@@ -90,14 +90,14 @@ for TestNum in tqdm(range(40)):  # We check it several times
     Y = list(Y)
     lenX = len(X)
     # ------------------- RANDOMIZATION, UNNECESSARY TO UNDERSTAND THE CODE ------------------- #
-    y_test = np.asarray(Y[:100])   # CHOOSE 100 FOR TEST, OTHERS FOR TRAIN
-    x_test = np.asarray(X[:100])   # CHOOSE 100 FOR TEST, OTHERS FOR TRAIN
-    x_train = np.asarray(X[100:])  # CHOOSE 100 FOR TEST, OTHERS FOR TRAIN
-    y_train = np.asarray(Y[100:])  # CHOOSE 100 FOR TEST, OTHERS FOR TRAIN
-    x_val = x_train[-100:]         # FROM THE TRAIN CHOOSE 100 FOR VALIDATION
-    y_val = y_train[-100:]         # FROM THE TRAIN CHOOSE 100 FOR VALIDATION
-    x_train = x_train[:-100]       # FROM THE TRAIN CHOOSE 100 FOR VALIDATION
-    y_train = y_train[:-100]       # FROM THE TRAIN CHOOSE 100 FOR VALIDATION
+    y_test = np.asarray(Y[:4000])   # CHOOSE 100 FOR TEST, OTHERS FOR TRAIN
+    x_test = np.asarray(X[:4000])   # CHOOSE 100 FOR TEST, OTHERS FOR TRAIN
+    x_train = np.asarray(X[4000:])  # CHOOSE 100 FOR TEST, OTHERS FOR TRAIN
+    y_train = np.asarray(Y[4000:])  # CHOOSE 100 FOR TEST, OTHERS FOR TRAIN
+    x_val = x_train[-4000:]         # FROM THE TRAIN CHOOSE 100 FOR VALIDATION
+    y_val = y_train[-4000:]         # FROM THE TRAIN CHOOSE 100 FOR VALIDATION
+    x_train = x_train[:-4000]       # FROM THE TRAIN CHOOSE 100 FOR VALIDATION
+    y_train = y_train[:-4000]       # FROM THE TRAIN CHOOSE 100 FOR VALIDATION
     x_train = x_train.reshape(np.append(x_train.shape, (1, 1)))  # RESHAPE FOR INPUT
     x_test = x_test.reshape(np.append(x_test.shape, (1, 1)))     # RESHAPE FOR INPUT
     x_val = x_val.reshape(np.append(x_val.shape, (1, 1)))  # RESHAPE FOR INPUT
@@ -119,7 +119,7 @@ for TestNum in tqdm(range(40)):  # We check it several times
         tf.keras.layers.BatchNormalization(name='block3_norm'),
 
         tf.keras.layers.Flatten(),
-        tf.keras.layers.Dense(64, activation='softmax', name='dense'),
+        tf.keras.layers.Dense(64, activation='relu', name='dense'),
         tf.keras.layers.BatchNormalization(name='dense_norm'),
         tf.keras.layers.Dropout(0.2, name='dropout'),
         tf.keras.layers.Dense(10, activation='softmax', name='pred')
@@ -131,7 +131,7 @@ for TestNum in tqdm(range(40)):  # We check it several times
     # -------------- OUR TENSOR FLOW NEURAL NETWORK MODEL -------------- #
 
     print("fitting")
-    history = model.fit(x_train, y_train, epochs=6, validation_data=(x_val, y_val))
+    history = model.fit(x_train, y_train, epochs=15, validation_data=(x_val, y_val))
     print("testing")
     results.append(model.evaluate(x_test, y_test)[1])
     print(results)
