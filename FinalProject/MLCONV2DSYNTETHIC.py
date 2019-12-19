@@ -129,13 +129,13 @@ def modelCreator(onlyfiles, name1, name2):
     results.append(model.evaluate(x_test, y_test)[1])
     print(results)
     print(sum(results)/len(results))
-    return model
+    return model, names
 
 onlyfiles = [f for f in listdir("FinalAudios2") if (isfile(join("FinalAudios2", f)))]   # Files in dir
 shuffle(onlyfiles)
 testFiles = onlyfiles[:70]
 onlyfiles = onlyfiles[71:]
-model1 = modelCreator(onlyfiles, 'Leonard', 'Sheldon')
+model1, names = modelCreator(onlyfiles, 'Leonard', 'Sheldon')
 num = []
 for id in tqdm(range(len(testFiles))):
     fs, audio = wav.read("FinalAudios2\\" + testFiles[id])  # read the file
@@ -159,11 +159,11 @@ for id in tqdm(range(len(testFiles))):
             elif predict[2] == np.max(predict):
                 c = c + 1
         if max([a, b, c]) == a:
-            decide = 'Sheldon'
+            decide = names[0]
         elif max([a, b, c]) == b:
-            decide = 'Leonard'
+            decide = names[1]
         elif max([a, b, c]) == c:
-            decide = 'Penny'
+            decide = names[2]
         if testFiles[id].split("_")[0] == decide:
             num = num + [1]
         else:
