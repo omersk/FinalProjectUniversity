@@ -1,4 +1,5 @@
 import constants
+from os import listdir
 import DropBoxDownloader
 import RegexMakerZvi
 from difflib import SequenceMatcher
@@ -8,7 +9,9 @@ from tqdm import tqdm
 import numpy
 import operator
 import math
-
+import sys
+from os.path import isfile, join
+import shutil
 
 def normal_dis_for_results(t):
     sigma = 8
@@ -41,15 +44,17 @@ class MannagerZvi:
         self.word_to_srt_line_match = {
         }
 
-    def download_things(self, url_script, url_srt):
+    def download_things(self, url_script, url_srt, usedropbox=True):
         """
         :param url_script: the url to the script
         :param url_srt: the url to the srt
+        :param usedropbox: does use dropbox to download srt, script?
         :return: download from dropbox to the script_file_path and srt_file_path
         """
-        d = DropBoxDownloader.DropBoxDownloader(self.access_token)
-        d.download_file(url_script, self.script_file_path)
-        d.download_file(url_srt, self.srt_file_path)
+        if usedropbox:
+            d = DropBoxDownloader.DropBoxDownloader(self.access_token)
+            d.download_file(url_script, self.script_file_path)
+            d.download_file(url_srt, self.srt_file_path)
         self.rm = RegexMakerZvi.RegexMakerZvi(self.script_file_path, self.regex_script, self.regex_srt, self.srt_file_path)
         self.rm.find_matches_script()
         self.rm.find_matches_srt()
@@ -76,11 +81,11 @@ class MannagerZvi:
                                     sumSrt) * float((sumScript - 5*self.rm.dict_words_script[word])) / float(sumScript*len(lineScript.split(' ')))
                     self.word_to_srt_line_match[word] = line_word_matrix
 
-    def main_action(self):
+    def main_action(self, outputfilename):
         """
         :return: text file with the union of the script and the srt
         """
-        file_new = open(constants.outputfile, 'w')  # the file path that will be the union between the srt and script
+        file_new = open(outputfilename, 'w')  # the file path that will be the union between the srt and script
         normal_dis = scipy.stats.norm(0.5, 1.5).pdf  # normal distribution pdf
         cutoff_ratio = 0.05  # cutoff that ratio below that will not be written in the union file
         dict_lines = {
@@ -308,7 +313,35 @@ class MannagerZvi:
 
         return sum(ArrayRatios)/len(ArrayRatios)  # our confidence in repentance
 
-d = MannagerZvi("script.txt", r"(.*):(.*)", r"\d\r\n(.*?)\r\n(.*?)\r\n\r\n", "srt.txt",constants.access_token)
-d.download_things(constants.url_script, constants.url_srt)
-d.before_main_action()
-print(d.main_action())
+if len(sys.argv) == 1:
+    d = MannagerZvi("script.txt", r"(.*):(.*)", r"\d\r\n(.*?)\r\n(.*?)\r\n\r\n", "srt.txt",constants.access_token)
+    d.download_things(constants.url_script, constants.url_srt)
+    d.before_main_action()
+    print(d.main_action(constants.outputfile))
+else:
+    srtFilesPath = 'C:\\Users\\omer\\PycharmProjects\\MainProject\\FinalProject\\srt-scrip\\srt-all\\The_Big_Bang_Theory - season 1.en'
+    srtFiles = [f for f in listdir(srtFilesPath) if isfile(join(srtFilesPath, f))]  # Files in dir
+    scriptFilesPath = 'C:\\Users\\omer\\PycharmProjects\\MainProject\\FinalProject\\srt-scrip\\scripts'
+    scriptFiles = [f for f in listdir(scriptFilesPath) if isfile(join(scriptFilesPath, f))]  # Files in dir
+    for i in range(0, len(srtFiles)):
+        d = MannagerZvi("script.txt", r"(.*):(.*)", r"\d\n\n(.*?)\n\n(.*?)\n\n\n\n", "srt.txt", constants.access_token)
+        srtFiles = [x for x in srtFiles if " HDTV.CTU.en.srt" in x or " HDTV.YesTV.en.srt" in x]
+        scriptFiles.sort(key=lambda f: int(filter(str.isdigit, f)))
+        srtFiles.sort(key=lambda f: int(filter(str.isdigit, f)))
+        print(srtFiles[i])
+        print(scriptFiles[i])
+        fsrtdrop = open(srtFilesPath + "\\" + srtFiles[int(i)], 'r')#, encoding="utf8")
+        fsrt = open('srt.txt', 'w')
+        for line in fsrtdrop.readlines():
+            fsrt.write(line)
+            fsrt.write("\n")
+        fscriptdrop = open(scriptFilesPath + "\\" + scriptFiles[i], 'r')#, encoding="utf8")
+        fscript = open('script.txt', 'w')
+        lines = fscriptdrop.readlines()
+        for line in lines:
+            fscript.write(line)
+            fscript.write("\n")
+        d.download_things(constants.url_script, constants.url_srt, False)
+        d.before_main_action()
+        print(d.main_action('outputfilenew_' + str(i+1) + '.txt'))
+
