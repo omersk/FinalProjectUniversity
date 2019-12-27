@@ -19,9 +19,9 @@ import librosa
 #win_len = 0.04  # in seconds
 #step = win_len / 2
 #nfft = 2048
-win_len = 0.15 # in seconds
-step = win_len
-nfft = 2**14
+win_len = 0.15# in seconds
+step = win_len/2
+nfft = 2**13
 results = []
 outfile_x = None
 outfile_y = None
@@ -84,14 +84,14 @@ def modelCreator(onlyfiles, name1, name2):
     Y = list(Y)
     lenX = len(X)
     # ------------------- RANDOMIZATION, UNNECESSARY TO UNDERSTAND THE CODE ------------------- #
-    y_test = np.asarray(Y[:50])   # CHOOSE 100 FOR TEST, OTHERS FOR TRAIN
-    x_test = np.asarray(X[:50])   # CHOOSE 100 FOR TEST, OTHERS FOR TRAIN
-    x_train = np.asarray(X[50:])  # CHOOSE 100 FOR TEST, OTHERS FOR TRAIN
-    y_train = np.asarray(Y[50:])  # CHOOSE 100 FOR TEST, OTHERS FOR TRAIN
-    x_val = x_train[-50:]         # FROM THE TRAIN CHOOSE 100 FOR VALIDATION
-    y_val = y_train[-50:]         # FROM THE TRAIN CHOOSE 100 FOR VALIDATION
-    x_train = x_train[:-50]       # FROM THE TRAIN CHOOSE 100 FOR VALIDATION
-    y_train = y_train[:-50]       # FROM THE TRAIN CHOOSE 100 FOR VALIDATION
+    y_test = np.asarray(Y[:1])   # CHOOSE 100 FOR TEST, OTHERS FOR TRAIN
+    x_test = np.asarray(X[:1])   # CHOOSE 100 FOR TEST, OTHERS FOR TRAIN
+    x_train = np.asarray(X[1:])  # CHOOSE 100 FOR TEST, OTHERS FOR TRAIN
+    y_train = np.asarray(Y[1:])  # CHOOSE 100 FOR TEST, OTHERS FOR TRAIN
+    x_val = x_train[-1:]         # FROM THE TRAIN CHOOSE 100 FOR VALIDATION
+    y_val = y_train[-1:]         # FROM THE TRAIN CHOOSE 100 FOR VALIDATION
+    x_train = x_train[:-1]       # FROM THE TRAIN CHOOSE 100 FOR VALIDATION
+    y_train = y_train[:-1]       # FROM THE TRAIN CHOOSE 100 FOR VALIDATION
     x_train = x_train.reshape(np.append(x_train.shape, (1, 1)))  # RESHAPE FOR INPUT
     x_test = x_test.reshape(np.append(x_test.shape, (1, 1)))     # RESHAPE FOR INPUT
     x_val = x_val.reshape(np.append(x_val.shape, (1, 1)))  # RESHAPE FOR INPUT
@@ -129,43 +129,52 @@ def modelCreator(onlyfiles, name1, name2):
     results.append(model.evaluate(x_test, y_test)[1])
     print(results)
     print(sum(results)/len(results))
-    return model, names
+    return model, names, vector_names
 
 onlyfiles = [f for f in listdir("FinalAudios2") if (isfile(join("FinalAudios2", f)))]   # Files in dir
 shuffle(onlyfiles)
-testFiles = onlyfiles[:70]
-onlyfiles = onlyfiles[71:]
-model1, names = modelCreator(onlyfiles, 'Leonard', 'Sheldon')
+testFiles = onlyfiles[:100]
+onlyfiles = onlyfiles[100:]
+model1, names, vector_names = modelCreator(onlyfiles, 'Leonard', 'Sheldon')
 num = []
+
+testFilesCopy = [] + testFiles
 for id in tqdm(range(len(testFiles))):
     fs, audio = wav.read("FinalAudios2\\" + testFiles[id])  # read the file
-    if len(audio) > fs:
-        mfcc_feat = python_speech_features.mfcc(audio, samplerate=fs, winlen=win_len, winstep=step, nfft=nfft,
-                                                appendEnergy=False)
-        X_now = []
-        for i in mfcc_feat:
-            X_now.append(np.array(i))
-        X_now = np.asarray(X_now)
-        X_now = X_now.reshape(X_now.shape + (1, 1))
-        a = 0
-        b = 0
-        c = 0
-        for i in range(len(X_now) - 1):
-            predict = model1.predict_proba(X_now[i:i + 1])[0]
-            if predict[0] == np.max(predict):
-                a = a + 1
-            elif predict[1] == np.max(predict):
-                b = b + 1
-            elif predict[2] == np.max(predict):
-                c = c + 1
-        if max([a, b, c]) == a:
-            decide = names[0]
-        elif max([a, b, c]) == b:
-            decide = names[1]
-        elif max([a, b, c]) == c:
-            decide = names[2]
-        if testFiles[id].split("_")[0] == decide:
-            num = num + [1]
-        else:
-            num = num + [0]
+    if len(audio) < fs:
+        testFilesCopy.remove(testFiles[id])
 
+testFiles = [] + testFilesCopy
+xTest = []
+yTest = []
+for id in tqdm(range(len(testFiles))):
+    fs, audio = wav.read("FinalAudios2\\" + testFiles[id])  # read the file
+    mfcc_feat = python_speech_features.mfcc(audio, samplerate=fs, winlen=win_len, winstep=step, nfft=nfft,
+                                            appendEnergy=False)
+    X_now = []
+    for i in mfcc_feat:
+        X_now.append(np.array(i))
+    X_now = np.asarray(X_now)
+    X_now = X_now.reshape(X_now.shape + (1, 1))
+    a = 0
+    b = 0
+    c = 0
+    for i in range(len(X_now) - 1):
+        predict = model1.predict_proba(X_now[i:i + 1])[0]
+        if predict[0] == np.max(predict):
+            a = a + 1
+        elif predict[1] == np.max(predict):
+            b = b + 1
+        elif predict[2] == np.max(predict):
+            c = c + 1
+    if max([a, b, c]) == a:
+        decide = names[0]
+    elif max([a, b, c]) == b:
+        decide = names[1]
+    elif max([a, b, c]) == c:
+        decide = names[2]
+    if testFiles[id].split("_")[0] == decide:
+        num = num + [1]
+    else:
+        num = num + [0]
+    print(sum(num) / len(num))
