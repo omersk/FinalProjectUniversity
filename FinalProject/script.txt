@@ -1,592 +1,308 @@
-Big Bang Theory Transcripts  
-
-All the episodes, right here.    
-
-
-
- 
-
- 
-
-    
-
- 
-
- 
-
- 
-
-  Series 01 Episode 09 – The Cooper-Hofstadter Polarization  
-
- 
-
-Scene: The apartment, Leonard is attaching something to a lamp.  
-
-Leonard: Okay, the X10s are online.  
-
-Howard: Gentlemen, I am now about to send a signal from this laptop through our local ISP, racing down fibre-optic cable at the speed of light to San Francisco, bouncing off a satellite in geosynchronous orbit to Lisbon, Portugal, where the data packets will be handed off to submerged transatlantic cables terminating in Halifax, Nova-Scotia, and transferred across the continent via microwave relays back to our ISP and the X10 receiver attached to this (clicks mouse, lamp switches on) lamp. (The others cheer and clap).  
-
-Sheldon: Look at me, look at me, I’ve got goosebumps.  
-
-Howard: Are we ready on the stereo?  
-
-Raj: Go for stereo.  
-
-(Howard clicks mouse again. Also Sprach Zarathustra begins to play. At the climactic notes, the four jump in the air and begin pretend conducting or jumping about in time to the music.)  
-
-Penny (entering) : Hey guys.  
-
-All (calming down, embarrassed) : Hello.  
-
-Penny: It’s a little loud.  
-
-Howard: No problem, turning it down. (Using mouse again) San Francisco, Lisbon, Halifax (the music gets quieter) et voila.  
-
-Penny: Okay, thanks.  
-
-Leonard: Hang on, hang on, do you not realise what we just did.  
-
-Penny: Yeah, you turned your stereo down with your laptop.  
-
-Sheldon: No, we turned our stereo down by sending a signal around the world via the internet.  
-
-Penny: Oh. You know you can just get one of those universal remotes at Radio Shack, they’re really cheap.  
-
-Leonard: No, no, no, you don’t get it, um, Howard, enable public access.  
-
-Howard: Public access enabled. (They all stare around for a moment in silence.)  
-
-Penny: Boy, that’s brilliant, but I’ll see you.  
-
-Leonard: No, hang on, hang on. (The lamp goes off and on again.) See!  
-
-Penny: No.  
-
-Sheldon: Someone in Sezchuan province, China is using his computer to turn our lights on and off.  
-
-Penny: Huh, well that’s handy. Um, here’s a question, why?  
-
-All together: Because we can. (There is a loud noise)  
-
-Sheldon: They found the remote controlled cars.  
-
-Penny: Well, wait, wait, what’s on top of them.  
-
-Leonard: Wireless webcams, wave hello.  
-
-Howard: The monster truck is out of Austin, Texas, and the blue Viper is being operated from suburban Tel Aviv.  
-
-Sheldon: You may want to put on slacks.  
-
-Penny: What? (Seeing red car is trying to get between her legs) Ew, stop it, no, leave me alone.  
-
-Leonard: Who’s running the red Corvette?  
-
-Howard: That would be me.  
-
-Credits sequence  
-
-Scene: The same, clearing up.  
-
-Sheldon: You know, in the future, when we’re disembodied brains in jars, we’re going to look back on this as eight hours well wasted.  
-
-Raj: I don’t want to be in a jar. I want my brain in an android body. Eight feet tall and ripped.  
-
-Howard: I’m with you. I just have to make sure if I’m a synthetic human I’d still be Jewish. I promised my mother.  
-
-Raj: I suppose you could have your android penis circumcised. But that’s something your Rabbi would have to discuss with the manufacturers.  
-
-Sheldon: Not to mention you’d have to power down on Saturdays.  
-
-Leonard: Sheldon, why is this letter in the trash?  
-
-Sheldon: Well, there’s always the possibility that a trash can spontaneously formed around the letter, but Occam’s Razor would suggest that someone threw it out.  
-
-Leonard: It’s from the Institute for Experimental Physics. They want us to present our paper on the properties of super solids at the topical conference on Bowes-Einstein condensates.  
-
-Sheldon: I know. I read it before I threw it out.  
-
-Leonard: Okay… if I may drill down to the bedrock of my question, why did you throw it out.  
-
-Sheldon: Because I have no interest in standing in the Rose Room of the Pasadena Marriott in front of a group of judgemental strangers, who wouldn’t recognise true genius if it were standing in front of them giving a speech. Which, if I were there, it would be.  
-
-Howard: I don’t know, Sheldon, those topical conferences on Bowes-Einstein condensates parties are legendary.  
-
-Leonard: Forget the parties.  
-
-Howard: Forget the parties? What a nerd.  
-
-Leonard: Are there any other honours I’ve gotten that I don’t know about? Did UPS drop off a Nobel Prize with my name on it?  
-
-Sheldon: Leonard, please don’t take this the wrong way, but the day you win a Nobel Prize, is the day I begin my research on the drag co-efficient of tassles on flying carpets.  
-
-Raj: Hoo-hoo-hoo. The only thing missing from that insult was “yo mamma.”  
-
-Howard: I’ve got one, hey Leonard, your mamma’s research methodology is so flawed….  
-
-Leonard: Shut up, Howard. Sheldon, we have to do this.  
-
-Sheldon: No we don’t. We have to take in nourishment, expel waste, and inhale enough oxygen to keep ourselves from dying, everything else is optional.  
-
-Leonard: Okay, let me put it this way, I’m doing it.  
-
-Sheldon: You can’t. I’m the lead author.  
-
-Leonard: Oh, come on. The only reason you’re the lead author is because we went alphabetically.  
-
-Sheldon: I let you think we went alphabetically to spare you the humiliation of dealing with the fact that it was my idea. Not to put too fine a point on it, but I was throwing you a bone. You’re welcome.  
-
-Leonard: Excuse me, I designed the experiment that proved the hypothesis.  
-
-Sheldon: It doesn’t need proving.  
-
-Leonard: So the entire scientific community is just supposed to take your word?  
-
-Sheldon: They’re not supposed to, but they should.  
-
-Leonard: Alright, I don’t care what you say, I’m going to the conference and I’m presenting our findings.  
-
-Sheldon: And I forbid it.  
-
-Leonard: You forbid it?  
-
-Sheldon: If I’m not taking credit for our work then nobody is.  
-
-Leonard: Oh, you admit that it’s our work.  
-
-Sheldon: No, once again, I’m throwing you a bone. And once again, you are welcome.  
-
-Leonard: Ah!  
-
-Howard: Oh no he dit’nt!  
-
-Scene: Leonard’s bedroom. Penny is looking through his closet.  
-
-Penny: So, how’s it going with Sheldon, are you guys still not talking to each other?  
-
-Leonard: Not only is he still not talking to me, but there’s this thing he does where he stares at you and tries to get your brain to explode. You know, like in the classic sci-fi movie Scanners? (Put’s fingers to head) You know, bzzz-pchew! Never mind. How about this one. It says, “I know my physics, but I’m still a fun guy!”  
-
-Penny: Oh, hey, I didn’t know they still made corduroy suits!  
-
-Leonard: They don’t, that’s why I saved this one.  
-
-Penny: Okay, well, let’s just see what else you have. Okay, here, take this, and this, and this, and these.  
-
-Leonard: Is this all stuff you want me to try on?  
-
-Penny: No, this is stuff I want you to throw out.  
-
-Leonard: Oh.  
-
-Penny: Seriously, don’t even give it to charity, you won’t be helping anyone. What’s this.  
-
-Leonard: Oh, that’s the bottled city of Kandor.  
-
-Penny: Uh-huh.  
-
-Leonard: You see, Kandor was the capital city of the planet Krypton, it was miniaturised by Brainiac before Krypton exploded and then rescued by Superman.  
-
-Penny: Oh, nice.  
-
-Leonard: It’s a lot cooler when girls aren’t looking at it.  
-
-Penny: Here, why don’t you put these on while I find a shirt and sport-coat to match.  
-
-Leonard: Great, be right back.  
-
-Penny: Well, where you going, just put them on.  
-
-Leonard: Here?  
-
-Penny: Oh, are you shy?  
-
-Leonard: No, I’m not shy.  
-
-Penny: Don’t worry, I won’t look.  
-
-Leonard: I know you won’t look, why would you look, there’s nothing to see, well, not nothing….  
-
-Penny: Sweetie, put the pants on.  
-
-Leonard: Putting them on.  
-
-Penny: So, you know, isn’t there maybe some way you and Sheldon could compromise on this whole presentation thing.  
-
-Leonard: No. No. Scientists do not compromise. Our minds are trained to synthesise facts and come to inarguable conclusions. Not to mention, Sheldon is batcrap crazy.  
-
-Penny: What is this?  
-
-Leonard: Oh, careful. That’s my original series Battlestar Galactica flight suit.  
-
-Penny: Oh, why didn’t you wear it at Halloween?  
-
-Leonard: Because it’s not a costume, it’s a flight suit.  
-
-Penny: Okay, alright, moving on, oh, wow, a paisley shirt.  
-
-Leonard: Uh-huh, it goes with my corduroy suit.  
-
-Penny: If you mean it should end up in the same place then, I agree. Is this your… your only tie?  
-
-Leonard: Ah. Technically yes, but, if you’ll notice, it’s reversible. So it works as two.  
-
-Penny: Oh, sweetie, I don’t think it even works as one. Is this all your clothes?  
-
-Leonard: Yeah. Everything since the eighth grade.  
-
-Penny: The… the eighth grade?  
-
-Leonard: My last growth spurt.  
-
-Penny: Okay, well, I guess we’re back to the corduroy suit.  
-
-Leonard: Great.  
-
-Penny: Yup. (Leonard picks up paisley shirt) I said no, put it down.  
-
-Scene: The ground floor hallway.  
-
-Penny: Hey Sheldon!  
-
-Sheldon (unlocking his mailbox) : Hello Penny.  
-
-Penny: Get anything good?  
-
-Sheldon: Uh, just the latest copy of Applied Particle Physics Quarterly.  
-
-Penny: Oh, you know, that is so weird that yours came and mine didn’t. (Sheldon looks confused). It was a joke. (Sheldon gives a fake laugh.) Yup, tip your waitresses, I’m here all week.  
-
-Sheldon: Penny, just to save you from further awkwardness know that I’m perfectly comfortable with the two of us climbing the stairs in silence.  
-
-Penny: Oh yeah, me too. Zip it, lock it. (The begin to climb) Put it in your pocket. So you and Leonard…  
-
-Sheldon: Oh dear God!  
-
-Penny: Little misunderstanding, huh.  
-
-Sheldon: A little misunder…. Galileo and the Pope had a little misunderstanding.  
-
-Penny: Anyway, I was talking to Leonard this morning and I think he feels really bad about it.  
-
-Sheldon: Huh.  
-
-Penny: Well how do you feel?  
-
-Sheldon: I don’t understand the question.  
-
-Penny: Well I’m just asking if it’s difficult to be fighting with your best friend.  
-
-Sheldon: Oh. I hadn’t thought about it like that. I wonder if I’ve been experiencing physiological manifestations of some sort of unconscious emotional turmoil.  
-
-Penny: Wait… what?  
-
-Sheldon: I couldn’t poop this morning.  
-
-Penny: You should just talk to him, I’m sure you guys can work this out.  
-
-Sheldon: It’s certainly preferable to my plan.  
-
-Penny: Which was?  
-
-Sheldon: A powerful laxative.  
-
-Penny: Okay, so you absolutely should talk to him, look, I know Leonard values you as a friend, and he told me himself that without your little idea there’s no way he could have come up with this whole experiment thing.  
-
-Sheldon: Excuse me, little idea?  
-
-Penny: Yeah, I mean he tried to explain it to me, I didn’t really understand it but…  
-
-Sheldon: Of course you didn’t, he said little idea?  
-
-Penny: Uh, well no, no, not in… not in those words.  
-
-Sheldon: In what words then, exactly  
-
-Penny: Um, gee, the exact words aren’t written… it’s more the spirit in which it’s  
-
-Sheldon: What did he say?  
-
-Penny: You had a lucky hunch.  
-
-Leonard (coming out of apartment) : Hey, Sheldon, I’ve been thinking, instead of arguing about this why don’t….  
-
-Sheldon: Don’t you ever speak to me again.  
-
-Leonard: What… (Sheldon goes into apartment and slams the door).  
-
-Penny: Uh, he… (makes “he’s screwy” hand movements, turns to go).  
-
-Scene: The apartment. Leonard is dressed in the corduroy suit.  
-
-Leonard: Okay, I’m leaving for the conference.  
-
-Sheldon: Have fun presenting my lucky hunch.  
-
-Leonard: Sheldon I didn’t mean it like that.  
-
-Sheldon: Then why did you say it.  
-
-Leonard: I don’t know, I wasn’t choosing my…  
-
-Sheldon: Were you trying to impress Penny?  
-
-Leonard: No, no not at all. A little bit.  
-
-Sheldon: How’d that work out for you?  
-
-Penny (entering) : Leonard, ready to go?  
-
-Sheldon: Libido 1, truth zero.  
-
-Leonard: Okay, I’m going to ask you one more time, we did the work together, lets present the paper together.  
-
-Sheldon: And I’m telling you for the last time it’s pandering, it’s undignified and bite me.  
-
-Leonard: Let’s go.  
-
-Penny: Bye Sheldon.  
-
-Sheldon: Goodbye Penny. (Places fingers to head to try to make Leonard’s brain explode. Leonard leaves.) Oooh, one of these days, Pkshhhh!  
-
-S cene: A corridor at the conference. Penny is attaching Leonard’s name tag.  
-
-Penny: There you go.  
-
-Leonard: You’re right, this side does look better.  
-
-Penny: No, no, I didn’t say better, I said less stained.  
-
-Howard: I just checked the house, there’s probably twenty, twenty-five people in there.  
-
-Leonard: You’re kidding.  
-
-Penny: Is that all?  
-
-Leonard: All? In particle physics, twenty five is Woodstock.  
-
-Penny: Oh, well, then good!  
-
-Leonard: I wasn’t expecting such a crowd, I’m a little nervous.  
-
-Howard: It’s okay, just open with a joke, you’ll be fine.  
-
-Leonard: A joke. Okay. How about this, um, okay, uh there’s this farmer, and he has these chickens, but they won’t lay any eggs. So, he calls a physicist to help. The physicist then does some calculations, and he says, um, I have a solution, but it only works with spherical chickens in a vacuum. (Raj and Howard laugh.) Right?  
-
-Penny: Oh, sorry, I’ve just, I’ve heard it before.  
-
-Howard: Let’s roll. Hey, nice suit.  
-
-Leonard: It’s a classic, right?  
-
-Penny: I really should have brought my own car.  
-
-Scene: Leonard is presenting.  
-
-Leonard: So, in conclusion, the data show that at temperatures approaching absolute zero, the moment of inertia changes, and the solid becomes a super-solid, which clearly appears to be a previously unknown state of matter. (Applause) Thank you. (Penny is asleep on Howard’s shoulder. Howard is taking a photograph with his camera phone.) Are there any questions?  
-
-Voice: Yeah. What the hell was that?  
-
-Leonard: Any other questions?  
-
-Sheldon (who previously spoke, now removing his hood and dark glasses) : Doctor Sheldon Cooper here, I am the lead author of this particular paper. (No reaction.) Thank you. And you, sir, you have completely skipped over the part where I was walking through the park, and I saw these children on a merry-go-round, which started me thinking about the moment of inertia in gasses like helium at temperatures approaching absolute zero.  
-
-Leonard: I didn’t skip it, it’s just an anecdote. It’s not science.  
-
-Sheldon: Oh, I see, was the apple falling on Newton’s head, was that just an anecdote?  
-
-Leonard: You are not Isaac Newton.  
-
-Sheldon: No, no that’s true, gravity would have been apparent to me without the apple.  
-
-Leonard: You cannot possibly be that arrogant.  
-
-Sheldon: You continue to underestimate me, my good man.  
-
-Leonard: Look, if you weren’t happy with my presentation then maybe you should have given it with me.  
-
-Sheldon: As I have explained repeatedly, unlike you, I don’t need validation from lesser minds. No offence.  
-
-Leonard: Really, so why did you come?  
-
-Sheldon: Because I knew you’d screw this up.  
-
-Leonard: I didn’t screw it up.  
-
-Sheldon: Oh, please. I admit, that spherical chicken joke, that was hilarious. But it was straight downhill from there.  
-
-Leonard: I’ve had enough of your condescension. Maybe I didn’t go to college when I was eleven like you, maybe I got my doctorate at 24 instead of 16, but you are not the only person who is smarter than everyone else in this room. No offense. And I am clearly not the only person who is tormented by insecurity and has an ego in need of constant validation.  
-
-Sheldon: So you admit that you’re an egotist?  
-
-Leonard: Yes. (To audience) My name is Dr Leonard Hofstadter, and I could never please my parents so I need to get all my self-esteem from strangers like you. But he’s worse.  
-
-Sheldon: Okay, that is it. (Tries to explode brain again.)  
-
-Leonard: You cannot blow up my head with your mind.  
-
-Sheldon: Then I’ll settle for an aneurysm.  
-
-Leonard (knocking his hands down) : Stop it.  
-
-Sheldon: You hit me. You saw him, he hit me.  
-
-Leonard: You were trying to blow up my head.  
-
-Sheldon: So it was working.  
-
-Leonard: It wasn’t, it was not, you are a nutcase.  
-
-Sheldon: Oh we’ll see about that (tries again), heads up you people in the front row, this is a splash zone.  
-
-Leonard: Stop, stop it, quit it. (The start to fight.)  
-
-Penny: Is this usually how these physics things go?  
-
-Howard: More often than you’d think.  
-
-Leonard (getting Sheldon on floor) : Vulcan nerve pinch!  
-
-Scene: The apartment.  
-
-Sheldon: You could have offered me a ride home.  
-
-Leonard: You’re lucky I didn’t run you over.  
-
-Sheldon: I really don’t understand what you’re so unhappy about, you begged me to come, I came, there’s just no pleasing you.  
-
-Leonard: You’re right, I’m the problem, I’m the one that needs help.  
-
-Sheldon: Well that’s not much of an apology, but I’ll take it.  
-
-Leonard: Excuse me. Is there anything you’d like to apologise for?  
-
-Sheldon: Yes. I’m sorry I tried to blow up your head. It was uncalled for.  
-
-Howard (entering with Raj) : You won’t believe this.  
-
-Raj: Somebody got the whole thing on a cell phone and put it on youtube.  
-
-Leonard: What?  
-
-Sheldon: Now, who would do that?  
-
-Howard: That would be me. Hey, check it out, it’s a featured video. (The watch).  
-
-Leonard: Oh jeez. Is this suit really look that bad?  
-
-Sheldon: Forget your suit, look at my arms waving, I’m like a flamingo on Ritalin.  
-
-Penny (entering) : Howard, would you like to explain to me why your facebook page has a picture of me sleeping on your shoulder captioned “Me and my Girlfriend?”  
-
-Howard: Uh-oh, here comes “the talk.”  
-
-Penny tries to make Howard’s brain explode.  
-
-Scene: Captioned “Somewhere in China”, two Chinese students watch the video on their computer.  
-
-Student one (in captions) : What losers.  
-
-Student two: Yeah. Gigantic American geeks. (The lights flicker)  
-
-Student one: Who’s doing that?  
-
-Student two: Someone from Pasadena, California named… “Wolowizard.”  
-
-Together: Awesome!  
-
-     
-
- 
-
-  Advertisements  
-
- 
-
- 
-
-     
-
- 
-
-       
-
-
-
-Like this:
-
-Like Loading...  
-
-       
-
- 
-
- 
-
-
-
-This page takes a lot of time and effort to keep up to date. Perhaps if you get some use out of it, you could chuck me a few pennies towards keeping it going.
-
-      
-
-     
-
-Pages  
-
-About Series 01 Episode 01 – Pilot Episode Series 01 Episode 02 – The Big Bran Hypothesis Series 01 Episode 03 – The Fuzzy Boots Corollary Series 01 Episode 04 – The Luminous Fish Effect Series 01 Episode 05 – The Hamburger Postulate Series 01 Episode 06 – The Middle Earth Paradigm Series 01 Episode 07 – The Dumpling Paradox Series 01 Episode 08 – The Grasshopper Experiment Series 01 Episode 09 – The Cooper-Hofstadter Polarization Series 01 Episode 10 – The Loobenfeld Decay Series 01 Episode 11 – The Pancake Batter Anomaly Series 01 Episode 12 – The Jerusalem Duality Series 01 Episode 13 – The Bat Jar Conjecture Series 01 Episode 14 – The Nerdvana Annihilation Series 01 Episode 15 – The Porkchop Indeterminacy Series 01 Episode 16 – The Peanut Reaction Series 01 Episode 17 – The Tangerine Factor Series 02 Episode 01 – The Bad Fish Paradigm Series 02 Episode 02 – The Codpiece Topology Series 02 Episode 03 – The Barbarian Sublimation Series 02 Episode 04 – The Griffin Equivalency Series 02 Episode 05 – The Euclid Alternative Series 02 Episode 06 – The Cooper-Nowitzki Theorem Series 02 Episode 07 – The Panty Pinata Polarization Series 02 Episode 08 – The Lizard-Spock Expansion Series 02 Episode 09 – The White Asparagus Triangulation Series 02 Episode 10 – The Vartabedian Conundrum Series 02 Episode 11 – The Bath Item Gift Hypothesis Series 02 Episode 12 – The Killer Robot Instability Series 02 Episode 13 – The Friendship Algorithm Series 02 Episode 14 – The Financial Permeability Series 02 Episode 15 – The Maternal Capacitance Series 02 Episode 16 – The Cushion Saturation Series 02 Episode 17 – The Terminator Decoupling Series 02 Episode 18 – The Work Song Nanocluster Series 02 Episode 19 – The Dead Hooker Juxtaposition Series 02 Episode 20 – The Hofstadter Isotope Series 02 Episode 21 – The Vegas Renormalization Series 02 Episode 22 – The Classified Materials Turbulence Series 02 Episode 23 – The Monopolar Expedition Series 03 Episode 01 – The Electric Can Opener Fluctuation Series 03 Episode 02 – The Jiminy Conjecture Series 03 Episode 03 – The Gothowitz Deviation Series 03 Episode 04 – The Pirate Solution Series 03 Episode 05 – The Creepy Candy Coating Corollary Series 03 Episode 06 – The Cornhusker Vortex Series 03 Episode 07 – The Guitarist Amplification Series 03 Episode 08 – The Adhesive Duck Deficiency Series 03 Episode 09 – The Vengeance Formulation Series 03 Episode 10 – The Gorilla Experiment Series 03 Episode 11 – The Maternal Congruence Series 03 Episode 12 – The Psychic Vortex Series 03 Episode 13 – The Bozeman Reaction Series 03 Episode 14 – The Einstein Approximation Series 03 Episode 15 – The Large Hadron Collision Series 03 Episode 16 – The Excelsior Acquisition Series 03 Episode 17 – The Precious Fragmentation Series 03 Episode 18 – The Pants Alternative Series 03 Episode 19 – The Wheaton Recurrence Series 03 Episode 20 – The Spaghetti Catalyst Series 03 Episode 21 – The Plimpton Stimulation Series 03 Episode 22 – The Staircase Implementation Series 03 Episode 23 – The Lunar Excitation Series 04 Episode 01 – The Robotic Manipulation Series 04 Episode 02 – The Cruciferous Vegetable Amplification Series 04 Episode 03 – The Zazzy Substitution Series 04 Episode 04 – The Hot Troll Deviation Series 04 Episode 05 – The Desperation Emanation Series 04 Episode 06 – The Irish Pub Formulation Series 04 Episode 07 – The Apology Insufficiency Series 04 Episode 08 – The 21 Second Excitation Series 04 Episode 09 – The Boyfriend Complexity Series 04 Episode 10 – The Alien Parasite Hypothesis Series 04 Episode 11 – The Justice League Recombination Series 04 Episode 12 – The Bus Pants Utilization Series 04 Episode 13 – The Love Car Displacement Series 04 Episode 14 – The Thespian Catalyst Series 04 Episode 15 – The Benefactor Factor Series 04 Episode 16 – The Cohabitation Formulation Series 04 Episode 17 – The Toast Derivation Series 04 Episode 18 – The Prestidigitation Approximation Series 04 Episode 19 – The Zarnecki Incursion Series 04 Episode 20 – The Herb Garden Germination Series 04 Episode 21 – The Agreement Dissection Series 04 Episode 22 – The Wildebeest Implementation Series 04 Episode 23 – The Engagement Reaction Series 04 Episode 24 – The Roommate Transmogrification Series 05 Episode 01 – The Skank Reflex Analysis Series 05 Episode 02 – The Infestation Hypothesis Series 05 Episode 03 – The Pulled Groin Extrapolation Series 05 Episode 04 – The Wiggly Finger Catalyst Series 05 Episode 05 – The Russian Rocket Reaction Series 05 Episode 06 – The Rhinitis Revelation Series 05 Episode 07 – The Good Guy Fluctuation Series 05 Episode 08 – The Isolation Permutation Series 05 Episode 09 – The Ornithophobia Diffusion Series 05 Episode 10 – The Flaming Spittoon Acquisition Series 05 Episode 11 – The Speckerman Recurrence Series 05 Episode 12 – The Shiny Trinket Maneouvre Series 05 Episode 13 – The Recombination Hypothesis Series 05 Episode 14 – The Beta Test Initiation Series 05 Episode 15 – The Friendship Contraction Series 05 Episode 16 – The Vacation Solution Series 05 Episode 17 – The Rothman Disintegration Series 05 Episode 18 – The Werewolf Transformation Series 05 Episode 19 – The Weekend Vortex Series 05 Episode 20 – The Transporter Malfunction Series 05 Episode 21 – The Hawking Excitation Series 05 Episode 22 – The Stag Convergence Series 05 Episode 23 – The Launch Acceleration Series 05 Episode 24 – The Countdown Reflection Series 06 Episode 01 – The Date Night Variable Series 06 Episode 02 – The Decoupling Fluctuation Series 06 Episode 03 – The Higgs Boson Observation Series 06 Episode 04 – The Re-Entry Minimization Series 06 Episode 05 – The Holographic Excitation Series 06 Episode 06 – The Extract Obliteration Series 06 Episode 07 – The Habitation Configuration Series 06 Episode 08 – The 43 Peculiarity Series 06 Episode 09 – The Parking Spot Escalation Series 06 Episode 10 – The Fish Guts Displacement Series 06 Episode 11 – The Santa Simulation Series 06 Episode 12 – The Egg Salad Equivalency Series 06 Episode 13 – The Bakersfield Expedition Series 06 Episode 14 – The Cooper/Kripke Inversion Series 06 Episode 15 – The Spoiler Alert Segmentation Series 06 Episode 16 – The Tangible Affection Proof Series 06 Episode 17 – The Monster Isolation Series 06 Episode 18 – The Contractual Obligation Implementation Series 06 Episode 19 – The Closet Reconfiguration Series 06 Episode 20 – The Tenure Turbulence Series 06 Episode 21 – The Closure Alternative Series 06 Episode 22 – The Proton Resurgence Series 06 Episode 23 – The Love Spell Potential Series 06 Episode 24 – The Bon Voyage Reaction Series 07 Episode 01 – The Hofstadter Insufficiency Series 07 Episode 02 – The Deception Verification Series 07 Episode 03 – The Scavenger Vortex Series 07 Episode 04 – The Raiders Minimization Series 07 Episode 05 – The Workplace Proximity Series 07 Episode 06 – The Romance Resonance Series 07 Episode 07 – The Proton Displacement Series 07 Episode 08 – The Itchy Brain Simulation Series 07 Episode 09 – The Thanksgiving Decoupling Series 07 Episode 10 – The Discovery Dissipation Series 07 Episode 11 – The Cooper Extraction Series 07 Episode 12 – The Hesitation Ramification Series 07 Episode 13 – The Occupation Recalibration Series 07 Episode 14 – The Convention Conundrum Series 07 Episode 15 – The Locomotive Manipulation Series 07 Episode 16 – The Table Polarisation Series 07 Episode 17 – The Friendship Turbulence Series 07 Episode 18 – The Mommy Observation Series 07 Episode 19 – The Indecision Amalgamation Series 07 Episode 20 – The Relationship Diremption Series 07 Episode 21 – The Anything Can Happen Recurrence Series 07 Episode 22 – The Proton Transmogrification Series 07 Episode 23 – The Gorilla Dissolution Series 07 Episode 24 – The Status Quo Combustion Series 08 Episode 01 – The Locomotion Interruption Series 08 Episode 02 – The Junior Professor Solution Series 08 Episode 03 – The First Pitch Insufficiency Series 08 Episode 04 – The Hook-Up Reverbration Series 08 Episode 05 – The Focus Attenuation Series 08 Episode 06 – The Expedition Approximation Series 08 Episode 07 – The Misinterpretation Agitation Series 08 Episode 08 – The Prom Equivalency Series 08 Episode 09 – The Septum Deviation Series 08 Episode 10 – The Champagne Reflection Series 08 Episode 11 – The Clean Room Infiltration Series 08 Episode 12 – The Space Probe Disintegration Series 08 Episode 13 – The Anxiety Optimisation Series 08 Episode 14 – The Troll Manifestation Series 08 Episode 15 – The Comic Book Store Regeneration Series 08 Episode 16 – The Intimacy Acceleration Series 08 Episode 17 – The Colonization Application Series 08 Episode 18 – The Leftover Thermalization Series 08 Episode 19 – The Skywalker Incursion Series 08 Episode 20 – The Fortification Implementation Series 08 Episode 21 – The Communication Deterioration Series 08 Episode 22 – The Graduation Transmission Series 08 Episode 23 – The Maternal Combustion Series 08 Episode 24 – The Commitment Determination Series 09 Episode 01 – The Matrimonial Momentum Series 09 Episode 02 – The Separation Oscillation Series 09 Episode 03 – The Batchelor Party Corrosion Series 09 Episode 04 – The 2003 Approximation Series 09 Episode 05 – The Perspiration Implementation Series 09 Episode 06 – The Helium Insufficiency Series 09 Episode 07 – The Spock Resonance Series 09 Episode 08 – The Mystery Date Observation Series 09 Episode 09 – The Platonic Permutation Series 09 Episode 10 – The Earworm Reverberation Series 09 Episode 11 – The Opening Night Excitation Series 09 Episode 12 – The Sales Call Sublimation Series 09 Episode 13 – The Empathy Optimisation Series 09 Episode 14 – The Meemaw Materialisation Series 09 Episode 15 – The Valentino Submergence Series 09 Episode 16 – The Positive Negative Reaction Series 09 Episode 17 – The Celebration Experimentation Series 09 Episode 18 – The Application Deterioration Series 09 Episode 19 – The Solder Excursion Diversion Series 09 Episode 20 – The Big Bear Precipitation Series 09 Episode 21 – The Viewing Party Combustion Series 09 Episode 22 – The Fermentation Bifurcation Series 09 Episode 23 – The Line Substitution Solution Series 09 Episode 24 – The Convergence Convergence Series 10 Episode 01 – The Conjugal Conjecture Series 10 Episode 02 – The Military Miniturization Series 10 Episode 03 -The Dependence Transcendence Series 10 Episode 04 – The Cohabitation Experimentation Series 10 Episode 05 – The Hot Tub Contamination Series 10 Episode 06 – The Foetal Kick Catalyst Series 10 Episode 07 – The Veracity Elasticity Series 10 Episode 08 – The Brain Bowl Incubation Series 10 Episode 09 – The Geology Elevation Series 10 Episode 10 – The Property Division Collision Series 10 Episode 11 – The Birthday Synchronicity Series 10 Episode 12 – The Holiday Summation Series 10 Episode 13 – The Romance Recalibration Series 10 Episode 14 – The Emotion Detection Automation Series 10 Episode 15 – The Locomotion Reverberation Series 10 Episode 16 – The Allowance Evaporation Series 10 Episode 17 – The Comic-Con Conundrum Series 10 Episode 18 – The Escape Hatch Identification Series 10 Episode 19 – The Collaboration Fluctuation Series 10 Episode 20 – The Recollection Dissipation Series 10 Episode 21 – The Separation Agitation Series 10 Episode 22 – The Cognition Regeneration Series 10 Episode 23 – The Gyroscopic Collapse Series 10 Episode 24 – The Long Distance Dissonance    
-
- 
-
-  Advertisements  
-
- 
-
- 
-
-               
-
- 
-
- 
-
-Blog at WordPress.com.              
-
-   
-
-
-
-     Privacy & Cookies: This site uses cookies. By continuing to use this website, you agree to their use.
-
- To find out more, including how to control cookies, see here:   Cookie Policy               
-
-
-
-%d bloggers like this:
-eries 10 Episode 19 – The Collaboration Fluctuation Series 10 Episode 20 – The Recollection Dissipation Series 10 Episode 21 – The Separation Agitation Series 10 Episode 22 – The Cognition Regeneration Series 10 Episode 23 – The Gyroscopic Collapse Series 10 Episode 24 – The Long Distance Dissonance    
-
- 
-
-  Advertisements  
-
- 
-
- 
-
-               
-
- 
-
- 
-
-Blog at WordPress.com.              
-
-   
-
-
-
-     Privacy & Cookies: This site uses cookies. By continuing to use this website, you agree to their use.
-
- To find out more, including how to control cookies, see here:   Cookie Policy               
-
-
-
+Big Bang Theory Transcripts  
+All the episodes, right here.    
+
+ 
+ 
+    
+ 
+ 
+ 
+  Series 01 Episode 03 – The Fuzzy Boots Corollary  
+ 
+Scene: Sheldon and Leonard’s apartment. Sheldon, Leonard, Howard and Raj are using laptops. All are wearing microphone headsets.  
+Howard: Alright, just a few more feet, and…. here we are gentlemen, the Gates of Elzebub.  
+Sheldon: Good lord!  
+Raj: Oooh.  
+Leonard: Don’t panic, this is what the last 97 hours have been about.  
+Howard: Stay frosty, there’s a horde of armed goblins on the other side of that gate guarding the Sword of Azeroth.  
+Leonard: Warriors, unsheathe your weapons, magic wielders raise your wands.  
+Sheldon: Lock and load.  
+Howard: Raj, blow up the gates.  
+Raj: Blowing the gates. Control, shift, B! Oh, my God, so many goblins!  
+Howard: Don’t just stand there, slash and move, slash and move.  
+Leonard: Stay in formation.  
+Howard: Leonard, you’ve got one on your tail.  
+Leonard: That’s alright, my tail’s prehensile, I’ll swat him off.  
+Raj: I’ve got him Leonard. Tonight I spice my meat with goblin blood!  
+Leonard: Raj, no, it’s a trap, they’re flanking us!  
+Raj: Oooh, he’s got me.  
+Howard: Sheldon, he’s got Raj, use your sleath spell. Sheldon! Sheldon!  
+Sheldon: I’ve got the Sword of Azeroth!  
+Leonard: Forget the sword, Sheldon, help Raj.  
+Sheldon: There is no more Sheldon, I am the Swordmaster!  
+Howard: Leonard look out!  
+Leonard: Dammit man, we’re dying here.  
+Sheldon: Goodbye, peasants.  
+Leonard: The bastard teleported.  
+Raj: He’s selling the Sword of Azeroth on ebay.  
+Leonard: You betrayed us for money, who are you?  
+Sheldon: I’m a rogue knight elf, don’t you people read character descriptions? Wait, wait, wait, somebody just clicked “buy it now.”  
+Howard: I am the Swordmaster!  
+Credits sequence  
+Scene: The same.  
+Sheldon: Wooh, I’m all sweaty, anybody want to log on to second life and go swimming, I just built a virtual pool.  
+Leonard: No, I can’t look at you or your avatar right now.  
+(Sound of female laughter from out in the hall).  
+Howard: Sounds like your neighbour’s home.  
+Leonard: Excuse me.  
+Sheldon: Don’t forget the mail you took accidentally on purpose so you’d have an excuse to talk to her.  
+Leonard: Oh, right, right right right right.  
+Howard: Stealing snail mail, very old school, I like it.  
+Leonard (exiting to hallway) : Penny, the mailman did it again, he… (looks up to see Penny kissing a hunky man) Oh! Sorry.  
+Penny: Um, no, hi Leonard, this is Doug, Doug, this is my neighbour Leonard.  
+Doug: What’s up bro.  
+Leonard: Not much. Bro.  
+Penny: Is, is everything okay.  
+Leonard: Uh, yeah, uh, I just, I got your mail again, here.  
+Penny: Thank you, I’ve got to talk to that mailman.  
+Leonard: Oh no, that’s probably not such a good idea. Civil servants have a documented propensity to, you know, snap.  
+Penny: Okay, well, thank you, again.  
+Leonard: No problem. Bye. Oh, and, bye, bro! (Returns to apartment) .  
+Sheldon: Penny for your thoughts.  
+Raj: What’s the matter.  
+Leonard: No, I’m fine. Penny’s fine, the guy she’s kissing is really fine and…  
+Howard: Kissing, what kind of kissing? Cheeks? Lips? Chaste? French?  
+Leonard: What is wrong with you?  
+Howard: I’m a romantic.  
+Sheldon: Please don’t tell me that your hopeless infatuation is devolving into pointless jealousy.  
+Leonard: No, I’m not jealous, I’m just a little concerned for her. I didn’t like the look of the guy that she was with.  
+Howard: Because he looked better than you?  
+Leonard: Yeah. He was kinda dreamy.  
+Sheldon: Well, at least now you can retrieve the black box from the twisted smouldering wreckage that was once your fantasy of dating her, and analyse the data so that you don’t crash into geek mountain again.  
+Howard: I disagree, love is not a sprint, it’s a marathon. A relentless pursuit that only ends when she falls into your arms. Or hits you with the pepper spray.  
+Leonard: Well, I’m done with Penny. I’m going to be more realistic and go after someone my own speed.  
+Raj: Like who?  
+Leonard: I don’t know. Olivia Geiger?  
+Sheldon: The dietician at the cafeteria with the limp and the lazy eye?  
+Leonard: Yeah.  
+Sheldon: Well, I don’t think you have a shot there. I have noticed that Lesley Winkle recently started shaving her legs. Now, given that winter is coming one can only assume that she is signalling sexual availability.  
+Howard: I don’t know, you guys work in the same lab.  
+Leonard: So?  
+Howard: There are pitfalls, trust me, I know. When it comes to sexual harassment law I’m… a bit of a self-taught expert.  
+Leonard: Look, Howard, if I were to ask Lesley Winkle out it would just be for dinner, I’m not going to walk into the lab, ask her to strip naked and dance for me.  
+Howard: Oh, then you’re probably okay.  
+Scene: Howard and Lesley’s lab.  
+Leonard: Hello Lesley.  
+Lesley: Hi Leonard.  
+Leonard: Lesley I would like to propose an experiment.  
+Lesley: Goggles, Leonard.  
+Leonard: Right. Lesley, I would like to propose an experiment.  
+Lesley: Hang on. I’m trying to see how long it takes a five hundred kilowatt oxygen iodine laser to heat up my cup o’ noodles.  
+Leonard: Pfff, I’ve done it, about two seconds, 2.6 for minestrone. Anyway, I was thinking more of a bio-social exploration with a neuro-chemical overlay.  
+Lesley: Wait, are you asking me out?  
+Leonard: I was going to characterise it as the modification of our colleague/friendship paradigm, with the addition of a date-like component. But we don’t need to quibble over terminology.  
+Lesley: What sort of experiment would you propose?  
+Leonard: There is a generally accepted pattern in this area, I would pick you up, take you to a restaurant, then we would see a movie, probably a romantic comedy featuring the talents of Hugh Grant or Sandra Bullock.  
+Lesley: Interesting. And would you agree that the primary way we would evaluate either the success or failure of the date would be based on the bio-chemical reaction during the goodnight kiss.  
+Leonard: Heartrate, pheromones, etc, yes.  
+Lesley: Well, why don’t we just stipulate that the date goes well and move to the key variable.  
+Leonard: You mean, kiss you now?  
+Lesley: Yes.  
+Leonard: Can you define the parameters of the kiss?  
+Lesley: Closed mouth but romantic. Mint?  
+Leonard: Thank you. (Takes mint) . Shall I count down from three?  
+Lesley: No, I think it needs to be spontaneous.  
+(They kiss.)  
+Lesley: What do you think.  
+Leonard: You proposed the experiment, I think you should present your findings first.  
+Lesley: Fair enough. On the plus side, it was a good kiss, reasonable technique, no extraneous spittle. On the other hand, no arousal.  
+Leonard: None?  
+Lesley: None.  
+Leonard: Ah. Well, thank you for your time.  
+Lesley: Thank you.  
+(They shake hands. Leonard leaves. Then returns.)  
+Leonard: None at all?  
+S cene: Sheldon and Leonard’s flat. Sheldon, Raj and Howard are playing Jenga.  
+Howard: Sheldon, if you were a robot, and I knew and you didn’t, would you want me to tell you?  
+Sheldon: That depends. When I learn that I’m a robot, will I be able to handle it?  
+Howard: Maybe, although the history of science-fiction is not on your side.  
+Sheldon: Uh, let me ask you this. When I learn that I’m a robot, would I be bound by Asimov’s three laws of robotics?  
+Raj: You might be bound by them right now.  
+Howard: That’s true. Have you ever harmed a human being, or through inaction allowed a human being to come to harm?  
+Sheldon: Of course not.  
+Howard: Have you ever harmed yourself, or allowed yourself to be harmed except in cases where a human being would have been endangered?  
+Sheldon: Well, no.  
+Howard: I smell robot.  
+Leonard (entering) : Hey, what’s going on.  
+Sheldon: The internet’s been down for half an hour.  
+Raj: Also, Sheldon may be a robot.  
+Howard: So, how did it go with Lesley?  
+Leonard: Oh, we tried kissing, but the earth didn’t move. I mean any more than the 383 miles that it was going to move anyway.  
+Sheldon: Oh, I’ve seen that look before. This is just going to be two weeks of moping and tedious emo songs, and calling me to come down to pet stores to look at cats. I don’t know if I can take it.  
+Raj: You could power down.  
+Howard: Well, as usual, Wolowitz has the solution. I happen to know a place where there are plenty of eligible women, and Leonard could have his pick.  
+Scene: A salsa class. The four guys and a random fat bloke salsa opposite five middle-aged women.  
+Class instructor: Remember the Latin hips. Shoulders stay still, and we sway. One two three. Five six seven.  
+Howard (to Leonard) : I think Mrs Tishman’s got her eye on you. I’ve been there, you’re in for a treat.  
+Scene: The flat, Leonard is entering, singing to himself a depressing emo song.  
+Sheldon: Oh, good lord.  
+Leonard (singing) : You don’t know me, you don’t wear my chains… God, that’s a good song.  
+Sheldon: If you’re compiling a mix CD for a double suicide. (Leonard is taking supplies out of a bag) Oh, I hope that scratching post is for you.  
+Leonard: I know what you’re thinking, I’ve taken your asthma into account. There’s a feline geneticist in San Diego who has developed the cutest little hypo-allergenic calicos.  
+Sheldon: Leonard, listen to me…  
+Leonard: I’ve been thinking about names, I’m kind of torn between Einstein, Newton and Sergeant Fuzzyboots.  
+Sheldon: Leonard, do you really think you can satisfy your need for a relationship with a genetically altered cat?  
+Leonard: Maybe, if it’s a cute little cuddly cat.  
+Sheldon: Oh, come on, Leonard! This is obviously about Penny.  
+Leonard: It doesn’t matter. The woman’s not interested in me, the woman rejected me.  
+Sheldon: Okay, look, I think that you have as much of a chance of having a sexual relationship with Penny as the Hubble Telescope does of discovering at the centre of every black hole is a little man with a flashlight searching for a circuit breaker. Nevertheless, I do feel obligated to point out to you that she did no reject you. You did not ask her out.  
+Leonard: You’re right. I didn’t ask her out, I should ask her out.  
+Sheldon: No. No, now that was not my point. My point was, don’t buy a cat.  
+Leonard: No, but you’re right. I should march over there and ask her out.  
+Sheldon: Oh, goody, we’re getting a cat.  
+Scene: The hallway. Leonard knocks on Penny’s door.  
+Penny (opening door) : Ah, hey Leonard.  
+Leonard: Good afternoon Penny, so hi, hey. Uh… I was wondering if you had plans for dinner.  
+Penny: Uh, do you mean dinner tonight?  
+Leonard: There is an inherent ambiguity in the word dinner. Technically it refers to the largest meal of the day whenever it is consumed, so, to clarify here, by dinner I mean supper.  
+Penny: Supper?  
+Leonard: Or dinner. I was thinking six thirty, if you can go, or a different time.  
+Penny: Uh, six thirty’s great.  
+Leonard: Really? Great!  
+Penny: Yeah, I like hanging out with you guys.  
+Leonard: Us guys?  
+Penny: You know, Sheldon, Howard, Raj, who all’s coming?  
+Leonard: They…. might all be there. Or a subset of them might be there, uh, algebraically speaking there are too many unknowns, for example Sheldon had Quizznos for lunch, sometimes he finds that filling, other times he doesn’t, it’s no fault of Quizznos, they have a varied menu.  
+Penny: Okay, whatever, it sounds like fun.  
+Leonard: Great. Did we say a time?  
+Penny: Six thirty.  
+Leonard: And that’s still good for you.  
+Penny: It’s fine.  
+Leonard: Cos it’s not carved in stone.  
+Penny: No, six thirty’s great.  
+Leonard: I’ll get my chisel.  
+Penny: Why?  
+Leonard: To… carve the… okay, I’ll see you six thirty.  
+Scene: Sheldon and Leonard’s apartment. Leonard enters from bedrooms, dressed in a smart shirt and trousers. They are covered in sweat stains.  
+Leonard: How do I look?  
+Sheldon: Could you be more specific?  
+Leonard: Can you tell I’m perspiring a little?  
+Sheldon: No. The dark crescent-shaped patterns under your arms conceal it nicely. What time is your date?  
+Leonard: Six thirty.  
+Sheldon: Perfect, that gives you two hours and fifteen minutes for that dense molecular cloud of Aramis to dissipate.  
+Leonard: Is it too much?  
+Sheldon: Not if you’re a rugby team.  
+Leonard: By the way, if it should ever come up, you didn’t join us because you stuffed yourself with a chicken carbonara sub at Quizznos.  
+Sheldon: Why would I join you?  
+Leonard: No reason. Oh, you know what, maybe this isn’t such a good idea.  
+Sheldon: Oh, no, no, no, well now, there’s always the possibility that alcohol and poor judgement on her part might lead to a nice romantic evening.  
+Leonard: You’re right, alcohol, poor judgement, it could go well.  
+Sheldon: Of course, there’s the other possibility that this date kicks off a rather unpleasant six months of the two of you passing awkwardly in the hall until one of you breaks down and moves to another zip code.  
+Leonard: You could have stopped at “it could go well.”  
+Sheldon: If I could of, I would of.  
+Leonard: I mean, I’m a perfectly nice guy. There’s no reason we couldn’t go to the restaurant and have a lovely dinner. Maybe take a walk afterwards, talk about things we have in common, “you love pottery? I love pottery!” You know, there’s a pause, we both know what’s happening, I lean in, we kiss, it’s a little tentative at first but then I realise, she’s kissing me back, and she’s biting my lower lip, you know, she wants me, this thing is going the distance, we’re going to have sex! Oh God! Oh, my God!  
+Sheldon: Is the sex starting now?  
+Leonard: I’m having a panic attack.  
+Sheldon: Oh, okay, well then, calm down.  
+Leonard: If I could calm down I wouldn’t be having a panic attack, that’s why they call it a panic attack.  
+Sheldon: Alright, alright, well, just, sit down, yes, sit down, now close your eyes.  
+Leonard: Why?  
+Sheldon: Just do it.  
+Leonard: Okay.  
+Sheldon: Now try to increase your alpha-wave activity.  
+Leonard: What?  
+Sheldon: It’s a bio-feedback technique, it’s relaxation through brain-wave manipulation, I read a paper about it in the Journal of American Neuroscience, it was a little sparsely sourced but I think the basic science is valid, I probably have it here somewhere.  
+Leonard: Oh, who am I kidding, I can’t go through with this, you need to call her and cancel.  
+Sheldon: Me?  
+Leonard: Yes.  
+Sheldon: What should I tell her.  
+Leonard: I don’t know. Tell her I’m sick.  
+Sheldon: Okay.  
+Leonard: Not the kind of illness that will make her want to come over and take care of me, but nothing so critical that she’ll feel uncomfortable going out with me in the future if I want to try this again.  
+Sheldon: Got it. So I’m assuming nothing venereal. I’ll just tell her that you had a routine colonoscopy and haven’t quite bounced back.  
+Leonard: Give me the phone.  
+Sheldon: But I thought you wanted to cancel?  
+Leonard: I can’t because if I don’t show up she’ll still be expecting you.  
+Sheldon: Why would she be expecting me?  
+Leonard: Stop asking me all these questions, I need to take another shower.  
+Scene: A restaurant.  
+Penny: So are the rest of the guys meeting us here?  
+Leonard: Oh, yeah, no. Turns out that Raj and Howard had to work, and Sheldon had a colonoscopy and he hasn’t quite bounced back yet.  
+Penny: Ooh, my uncle just had a colonoscopy.  
+Leonard: You’re kidding, well, then, that’s something we have in common.  
+Penny: How?  
+Leonard: We both have people in our lives who… want to nip intestinal polyps in the bud.  
+Penny: So, what’s new in the world of physics?  
+Leonard: Nothing.  
+Penny: Really, nothing?  
+Leonard: Well, with the exception of string theory, not much has happened since the 1930’s, and you can’t prove string theory, at best you can say “hey, look, my idea has an internal logical consistency.”  
+Penny: Ah. Well I’m sure things will pick up.  
+Leonard: What’s new at the Cheesecake Factory?  
+Penny: Oh, uh, not much. We do have a chocolate key lime that’s moving pretty well.  
+Leonard: Good. Good. And what about your, uh, hallway friend.  
+Penny: Doug? Oh, yeah, I dunno, I mean, he’s nice and funny, but…  
+Waitress: Can I get you started with some drinks?  
+Leonard: No, (waves her away) You were saying, but…  
+Penny: I’d like a drink.  
+Leonard: Just say the but thing about Doug and then I’ll get her back.  
+Penny: Okay, well, you know, it’s just me. I’m still getting over this break-up with Kurt, and this thing with Doug would be just rebound sex.  
+Leonard: Ugh, don’t get me started on rebound sex.  
+Penny: It’s just, it’s my pattern. I break up, then I find some cute guy, and then it’s just thirty six meaningless of… well, you know.  
+Leonard: I’m not sure that I do. Um, is that one thirty-six hour experience, or is it thirty six hours spread out over say, one… glorious summer.  
+Penny: No, it’s usually over a weekend, and trust me, you do not feel good after it.  
+Leonard: Well, chafing, right?  
+Penny: Emotionally.  
+Leonard: Of course, yeah, emotional chafing. Hey, do you want to see something cool? (Penny nods.) I can make this olive go into this glass without touching it.  
+Penny: How?  
+Leonard: Physics. (He places the glass over the olive and spins it until the olive gets caught up on the side).  
+Penny: Wow, centrifugal force!  
+Leonard: Actually, it’s centripetal force, which is an inward force generated by the glass acting on the olive. (The olive drops.) Excuse me. (Leonard disappears under table.) Now, if you were riding on the olive, you’d be in a non-inertial reference frame, and would (he bangs his head on the underside of the table.)  
+Penny: Are you okay?  
+Leonard: Yeah, I’m okay. Did you spill ketchup?  
+Penny: No.  
+Leonard: I’m not okay.  
+Scene: The stairwell of the apartment building.  
+Penny: Are you sure you don’t want to go to the emergency room?  
+Leonard: No, no, I’m okay, it’s stopped bleeding.  
+Penny: I know, but you did throw up. Isn’t that a sign of a concussion?  
+Leonard: Yes, but I get car sick too, so…  
+Penny: Okay.  
+Leonard: Sorry about your car, by the way.  
+Penny: Oh, no, it’s fine, you got most of it out the window.  
+Leonard: The poor guy on the bike. I had a nice time.  
+Penny: Yeah, me too. Um, good night. (Leonard turns across hallway.) Leonard?  
+Leonard: Yeah.  
+Penny: Was this supposed to be a date?  
+Leonard: This? No. No, of course not, this was just you and me hanging out with a bunch of guys who didn’t show up, because of work and a colonoscopy.  
+Penny: Okay, I was just checking.  
+Leonard: When I take a girl out on a date, and I do, she knows she’s been dated. Capital D. Bold face, underline, like Day-ted. I think I might have a little concussion, I’m going to go lay down for a while, good night.  
+Scene: The apartment, Leonard enters.  
+Sheldon: So, how was your date?  
+Leonard: Awesome!  
+Sheldon: Score one for liquor and poor judgement.  
+Teleplay: Bill Prady & Steven Molaro  
+Story: Chuck Lorre  
+     
+ 
+  Advertisements  
+ 
+ 
+     
+ 
+       
+
+Like this:
+Like Loading...  
+       
+ 
+ 
+
+This page takes a lot of time and effort to keep up to date. Perhaps if you get some use out of it, you could chuck me a few pennies towards keeping it going.
+      
+     
+Pages  
+About Series 01 Episode 01 – Pilot Episode Series 01 Episode 02 – The Big Bran Hypothesis Series 01 Episode 03 – The Fuzzy Boots Corollary Series 01 Episode 04 – The Luminous Fish Effect Series 01 Episode 05 – The Hamburger Postulate Series 01 Episode 06 – The Middle Earth Paradigm Series 01 Episode 07 – The Dumpling Paradox Series 01 Episode 08 – The Grasshopper Experiment Series 01 Episode 09 – The Cooper-Hofstadter Polarization Series 01 Episode 10 – The Loobenfeld Decay Series 01 Episode 11 – The Pancake Batter Anomaly Series 01 Episode 12 – The Jerusalem Duality Series 01 Episode 13 – The Bat Jar Conjecture Series 01 Episode 14 – The Nerdvana Annihilation Series 01 Episode 15 – The Porkchop Indeterminacy Series 01 Episode 16 – The Peanut Reaction Series 01 Episode 17 – The Tangerine Factor Series 02 Episode 01 – The Bad Fish Paradigm Series 02 Episode 02 – The Codpiece Topology Series 02 Episode 03 – The Barbarian Sublimation Series 02 Episode 04 – The Griffin Equivalency Series 02 Episode 05 – The Euclid Alternative Series 02 Episode 06 – The Cooper-Nowitzki Theorem Series 02 Episode 07 – The Panty Pinata Polarization Series 02 Episode 08 – The Lizard-Spock Expansion Series 02 Episode 09 – The White Asparagus Triangulation Series 02 Episode 10 – The Vartabedian Conundrum Series 02 Episode 11 – The Bath Item Gift Hypothesis Series 02 Episode 12 – The Killer Robot Instability Series 02 Episode 13 – The Friendship Algorithm Series 02 Episode 14 – The Financial Permeability Series 02 Episode 15 – The Maternal Capacitance Series 02 Episode 16 – The Cushion Saturation Series 02 Episode 17 – The Terminator Decoupling Series 02 Episode 18 – The Work Song Nanocluster Series 02 Episode 19 – The Dead Hooker Juxtaposition Series 02 Episode 20 – The Hofstadter Isotope Series 02 Episode 21 – The Vegas Renormalization Series 02 Episode 22 – The Classified Materials Turbulence Series 02 Episode 23 – The Monopolar Expedition Series 03 Episode 01 – The Electric Can Opener Fluctuation Series 03 Episode 02 – The Jiminy Conjecture Series 03 Episode 03 – The Gothowitz Deviation Series 03 Episode 04 – The Pirate Solution Series 03 Episode 05 – The Creepy Candy Coating Corollary Series 03 Episode 06 – The Cornhusker Vortex Series 03 Episode 07 – The Guitarist Amplification Series 03 Episode 08 – The Adhesive Duck Deficiency Series 03 Episode 09 – The Vengeance Formulation Series 03 Episode 10 – The Gorilla Experiment Series 03 Episode 11 – The Maternal Congruence Series 03 Episode 12 – The Psychic Vortex Series 03 Episode 13 – The Bozeman Reaction Series 03 Episode 14 – The Einstein Approximation Series 03 Episode 15 – The Large Hadron Collision Series 03 Episode 16 – The Excelsior Acquisition Series 03 Episode 17 – The Precious Fragmentation Series 03 Episode 18 – The Pants Alternative Series 03 Episode 19 – The Wheaton Recurrence Series 03 Episode 20 – The Spaghetti Catalyst Series 03 Episode 21 – The Plimpton Stimulation Series 03 Episode 22 – The Staircase Implementation Series 03 Episode 23 – The Lunar Excitation Series 04 Episode 01 – The Robotic Manipulation Series 04 Episode 02 – The Cruciferous Vegetable Amplification Series 04 Episode 03 – The Zazzy Substitution Series 04 Episode 04 – The Hot Troll Deviation Series 04 Episode 05 – The Desperation Emanation Series 04 Episode 06 – The Irish Pub Formulation Series 04 Episode 07 – The Apology Insufficiency Series 04 Episode 08 – The 21 Second Excitation Series 04 Episode 09 – The Boyfriend Complexity Series 04 Episode 10 – The Alien Parasite Hypothesis Series 04 Episode 11 – The Justice League Recombination Series 04 Episode 12 – The Bus Pants Utilization Series 04 Episode 13 – The Love Car Displacement Series 04 Episode 14 – The Thespian Catalyst Series 04 Episode 15 – The Benefactor Factor Series 04 Episode 16 – The Cohabitation Formulation Series 04 Episode 17 – The Toast Derivation Series 04 Episode 18 – The Prestidigitation Approximation Series 04 Episode 19 – The Zarnecki Incursion Series 04 Episode 20 – The Herb Garden Germination Series 04 Episode 21 – The Agreement Dissection Series 04 Episode 22 – The Wildebeest Implementation Series 04 Episode 23 – The Engagement Reaction Series 04 Episode 24 – The Roommate Transmogrification Series 05 Episode 01 – The Skank Reflex Analysis Series 05 Episode 02 – The Infestation Hypothesis Series 05 Episode 03 – The Pulled Groin Extrapolation Series 05 Episode 04 – The Wiggly Finger Catalyst Series 05 Episode 05 – The Russian Rocket Reaction Series 05 Episode 06 – The Rhinitis Revelation Series 05 Episode 07 – The Good Guy Fluctuation Series 05 Episode 08 – The Isolation Permutation Series 05 Episode 09 – The Ornithophobia Diffusion Series 05 Episode 10 – The Flaming Spittoon Acquisition Series 05 Episode 11 – The Speckerman Recurrence Series 05 Episode 12 – The Shiny Trinket Maneouvre Series 05 Episode 13 – The Recombination Hypothesis Series 05 Episode 14 – The Beta Test Initiation Series 05 Episode 15 – The Friendship Contraction Series 05 Episode 16 – The Vacation Solution Series 05 Episode 17 – The Rothman Disintegration Series 05 Episode 18 – The Werewolf Transformation Series 05 Episode 19 – The Weekend Vortex Series 05 Episode 20 – The Transporter Malfunction Series 05 Episode 21 – The Hawking Excitation Series 05 Episode 22 – The Stag Convergence Series 05 Episode 23 – The Launch Acceleration Series 05 Episode 24 – The Countdown Reflection Series 06 Episode 01 – The Date Night Variable Series 06 Episode 02 – The Decoupling Fluctuation Series 06 Episode 03 – The Higgs Boson Observation Series 06 Episode 04 – The Re-Entry Minimization Series 06 Episode 05 – The Holographic Excitation Series 06 Episode 06 – The Extract Obliteration Series 06 Episode 07 – The Habitation Configuration Series 06 Episode 08 – The 43 Peculiarity Series 06 Episode 09 – The Parking Spot Escalation Series 06 Episode 10 – The Fish Guts Displacement Series 06 Episode 11 – The Santa Simulation Series 06 Episode 12 – The Egg Salad Equivalency Series 06 Episode 13 – The Bakersfield Expedition Series 06 Episode 14 – The Cooper/Kripke Inversion Series 06 Episode 15 – The Spoiler Alert Segmentation Series 06 Episode 16 – The Tangible Affection Proof Series 06 Episode 17 – The Monster Isolation Series 06 Episode 18 – The Contractual Obligation Implementation Series 06 Episode 19 – The Closet Reconfiguration Series 06 Episode 20 – The Tenure Turbulence Series 06 Episode 21 – The Closure Alternative Series 06 Episode 22 – The Proton Resurgence Series 06 Episode 23 – The Love Spell Potential Series 06 Episode 24 – The Bon Voyage Reaction Series 07 Episode 01 – The Hofstadter Insufficiency Series 07 Episode 02 – The Deception Verification Series 07 Episode 03 – The Scavenger Vortex Series 07 Episode 04 – The Raiders Minimization Series 07 Episode 05 – The Workplace Proximity Series 07 Episode 06 – The Romance Resonance Series 07 Episode 07 – The Proton Displacement Series 07 Episode 08 – The Itchy Brain Simulation Series 07 Episode 09 – The Thanksgiving Decoupling Series 07 Episode 10 – The Discovery Dissipation Series 07 Episode 11 – The Cooper Extraction Series 07 Episode 12 – The Hesitation Ramification Series 07 Episode 13 – The Occupation Recalibration Series 07 Episode 14 – The Convention Conundrum Series 07 Episode 15 – The Locomotive Manipulation Series 07 Episode 16 – The Table Polarisation Series 07 Episode 17 – The Friendship Turbulence Series 07 Episode 18 – The Mommy Observation Series 07 Episode 19 – The Indecision Amalgamation Series 07 Episode 20 – The Relationship Diremption Series 07 Episode 21 – The Anything Can Happen Recurrence Series 07 Episode 22 – The Proton Transmogrification Series 07 Episode 23 – The Gorilla Dissolution Series 07 Episode 24 – The Status Quo Combustion Series 08 Episode 01 – The Locomotion Interruption Series 08 Episode 02 – The Junior Professor Solution Series 08 Episode 03 – The First Pitch Insufficiency Series 08 Episode 04 – The Hook-Up Reverbration Series 08 Episode 05 – The Focus Attenuation Series 08 Episode 06 – The Expedition Approximation Series 08 Episode 07 – The Misinterpretation Agitation Series 08 Episode 08 – The Prom Equivalency Series 08 Episode 09 – The Septum Deviation Series 08 Episode 10 – The Champagne Reflection Series 08 Episode 11 – The Clean Room Infiltration Series 08 Episode 12 – The Space Probe Disintegration Series 08 Episode 13 – The Anxiety Optimisation Series 08 Episode 14 – The Troll Manifestation Series 08 Episode 15 – The Comic Book Store Regeneration Series 08 Episode 16 – The Intimacy Acceleration Series 08 Episode 17 – The Colonization Application Series 08 Episode 18 – The Leftover Thermalization Series 08 Episode 19 – The Skywalker Incursion Series 08 Episode 20 – The Fortification Implementation Series 08 Episode 21 – The Communication Deterioration Series 08 Episode 22 – The Graduation Transmission Series 08 Episode 23 – The Maternal Combustion Series 08 Episode 24 – The Commitment Determination Series 09 Episode 01 – The Matrimonial Momentum Series 09 Episode 02 – The Separation Oscillation Series 09 Episode 03 – The Batchelor Party Corrosion Series 09 Episode 04 – The 2003 Approximation Series 09 Episode 05 – The Perspiration Implementation Series 09 Episode 06 – The Helium Insufficiency Series 09 Episode 07 – The Spock Resonance Series 09 Episode 08 – The Mystery Date Observation Series 09 Episode 09 – The Platonic Permutation Series 09 Episode 10 – The Earworm Reverberation Series 09 Episode 11 – The Opening Night Excitation Series 09 Episode 12 – The Sales Call Sublimation Series 09 Episode 13 – The Empathy Optimisation Series 09 Episode 14 – The Meemaw Materialisation Series 09 Episode 15 – The Valentino Submergence Series 09 Episode 16 – The Positive Negative Reaction Series 09 Episode 17 – The Celebration Experimentation Series 09 Episode 18 – The Application Deterioration Series 09 Episode 19 – The Solder Excursion Diversion Series 09 Episode 20 – The Big Bear Precipitation Series 09 Episode 21 – The Viewing Party Combustion Series 09 Episode 22 – The Fermentation Bifurcation Series 09 Episode 23 – The Line Substitution Solution Series 09 Episode 24 – The Convergence Convergence Series 10 Episode 01 – The Conjugal Conjecture Series 10 Episode 02 – The Military Miniturization Series 10 Episode 03 -The Dependence Transcendence Series 10 Episode 04 – The Cohabitation Experimentation Series 10 Episode 05 – The Hot Tub Contamination Series 10 Episode 06 – The Foetal Kick Catalyst Series 10 Episode 07 – The Veracity Elasticity Series 10 Episode 08 – The Brain Bowl Incubation Series 10 Episode 09 – The Geology Elevation Series 10 Episode 10 – The Property Division Collision Series 10 Episode 11 – The Birthday Synchronicity Series 10 Episode 12 – The Holiday Summation Series 10 Episode 13 – The Romance Recalibration Series 10 Episode 14 – The Emotion Detection Automation Series 10 Episode 15 – The Locomotion Reverberation Series 10 Episode 16 – The Allowance Evaporation Series 10 Episode 17 – The Comic-Con Conundrum Series 10 Episode 18 – The Escape Hatch Identification Series 10 Episode 19 – The Collaboration Fluctuation Series 10 Episode 20 – The Recollection Dissipation Series 10 Episode 21 – The Separation Agitation Series 10 Episode 22 – The Cognition Regeneration Series 10 Episode 23 – The Gyroscopic Collapse Series 10 Episode 24 – The Long Distance Dissonance    
+ 
+  Advertisements  
+ 
+ 
+               
+ 
+ 
+Blog at WordPress.com.              
+   
+
+     Privacy & Cookies: This site uses cookies. By continuing to use this website, you agree to their use.
+ To find out more, including how to control cookies, see here:   Cookie Policy               
+
 %d bloggers like this:

@@ -4,92 +4,8 @@ import linecache
 import timeUnion
 import shutil
 from scipy.io.wavfile import read, write
-import matplotlib.pyplot as plt
 import os
-import sys
-from os import listdir
-from os.path import isfile, join
 import numpy as np
-
-
-def partition(alist, indices):
-    return [alist[i:j] for i, j in zip([0]+indices, indices+[None])]
-
-
-def cut_audio(name, start_time, end_time, folder_in="Audios", folder_out="SoloCutted"):
-    """
-    this is a function that came up to the world in order to cut audio into specific time
-    :param name: name of file
-    :param start_time: start time to cut
-    :param end_time: end time to cut
-    :param folder_in: folder we read the name ( folder + name == path )
-    :param folder_out: folder we write the final version
-    :return: nothing
-    """
-    try:
-        input_data = read(folder_in + "/" + name + ".wav")  # input
-    except IOError:
-        # If the file is not in the folder in... than we take the file in audio
-        # this is because we do -
-        # endcut(file) : from Audios --> folder in
-        # initialcut(file) : from folder in --> folder out
-        # but sometimes we don't cut in the first function so we need to go to audios to find the file
-        input_data = read("Audios" + "/" + name + ".wav")
-    fs = input_data[0]  # the sample rate
-    audio = input_data[1]  # the audio file
-    try:
-        audio = audio[:, 0]  # no mono audio file --> mono audio file
-    except IndexError:
-        # if it's already mono
-        pass
-    if not os.path.exists(folder_out):  # if path not exist we create it
-        os.makedirs(folder_out)
-    write(folder_out + "/" + name + ".wav", fs, audio[int(start_time*fs):int(end_time*fs)])  # we write the new file
-
-
-
-def end_cut(name, words):
-    """
-    cut audio file in the end of them ( from silent + laugh )
-    :param name: name of file
-    :param words: what the talker said
-    :return: how much seconds we cutted
-    """
-    # -------- SAME IDEA OF FUNCTION LIKE THE INITIAL CUT --------
-    input_data = read("FinalAudios/" + name + ".wav")
-    fs = input_data[0]
-    audio = input_data[1]
-    try:
-        audio = audio[:, 0]
-    except IndexError:
-        pass
-    minimum_cut_time = len(words.split(" ")) * 0.18 * fs
-    if len(audio) > 2*fs:
-        i = len(audio) - int(len(audio) * 0.3)
-        if len(audio) / fs > 8:
-            i = len(audio) - int(2 * fs)
-        while i + 6000 < len(audio):
-            if i > minimum_cut_time:
-                if list(abs(j) > 200 for j in audio[i:i+10000]).count(True) < 500:
-                    if i < fs:
-                        i = float(i)
-                    cut_audio(name, 0, i / fs, "FinalAudios", "FinalAudios")
-
-                    return float(len(audio))/fs - float(i)/fs
-            i = i + 1000
-        return 0
-    else:
-        i = len(audio) - int(len(audio) * 0.6)
-        while i + 6000 < len(audio):
-            if list(abs(j) > 200 for j in audio[i:i+10000]).count(True) < 500:
-                if i < fs:
-                    i = float(i)
-                cut_audio(name, 0, i / fs, "FinalAudios", "FinalAudios")
-
-                return float(len(audio))/fs - float(i)/fs
-            i = i + 1000
-        return 0
-
 
 
 def cutLaughSilent(path):
@@ -220,7 +136,7 @@ def main_action():
     if not os.path.exists("FinalAudios"):  # if the dir doesn't exist we create one
         os.makedirs("FinalAudios")
     num = str(input("espiode number : "))
-    filename = constants.outputfile
+    filename = constants.outputfile.split(".txt")[0] + "_" + num + ".txt"
     i = 1
     j = 1
     cutted_last = 0  # how much we cut last file
