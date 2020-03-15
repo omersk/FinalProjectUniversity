@@ -11,7 +11,7 @@ import operator
 import math
 import sys
 from os.path import isfile, join
-import shutil
+
 
 def normal_dis_for_results(t):
     sigma = 8
