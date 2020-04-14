@@ -1,3 +1,8 @@
+"""
+This is an python 2 written code to union srt file and script file ( which are being used in the movie industry )
+the code was created by Omer Sassoni and Ofek Poraz at April-2020 for the final project
+on Bar-Ilan University.
+"""
 import constants
 from os import listdir
 import DropBoxDownloader
@@ -21,8 +26,8 @@ def normal_dis_for_results(t):
     :param t: the value which we will input to the function
     :return: the value of normal distribution when t is the parameter.
     """
-    sigma = 8
-    mean = 2
+    sigma = constants.sigma
+    mean = constants.mean
     normal_distribution_value = 1.0 / math.sqrt(2.0 * numpy.pi * sigma * sigma) * math.exp(-((t - mean) * (t - mean)) /
                                                                                            (2.0 * sigma * sigma))
     factorized_normal_distribution_value = 0.9 * normal_distribution_value
@@ -128,12 +133,12 @@ class UnionScriptSrt:
         """
         file_new = open(outputfilename, 'w')  # the file path that will be the union between the srt and script
         normal_dis = scipy.stats.norm(0.5, 1.5).pdf  # normal distribution pdf
-        cutoff_ratio = 0.05  # cutoff that ratio below that will not be written in the union file
+        cutoff_ratio = constants.cutoff_ratio  # cutoff that ratio below that will not be written in the union file
         dict_lines = {
 
         }  # dict of the matches between the lines
-        cut_off_almost_surely = 0.85
-        cut_off_not_sure = 0.4
+        cut_off_almost_surely = constants.cut_off_almost_surely
+        cut_off_not_sure = constants.cut_off_not_sure
         best_time_arr = []  # the time array
         last_result = -1  # the last index of the script line that the srt line was customized
         matching_probs_of_each_line = []  # array with the matching ratios

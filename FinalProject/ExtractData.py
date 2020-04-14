@@ -1,3 +1,8 @@
+"""
+This is an python 2 written code to extract data from a srt file and a script file
+the code was created by Omer Sassoni and Ofek Poraz at April-2020 for the final project
+on Bar-Ilan University.
+"""
 import constants
 import re
 import string
@@ -33,20 +38,26 @@ class DataExtractor:
         self.regex_script = regex_script  # the regex structure of the script file
         self.index_to_speaker_script = {}  # take an index of line and say who talked in the line
         self.word_to_number_appearances_script = {}  # dict that take word and count how much time the word appeared
+        self.array_of_script_lines = []  # array that contains the lines of the script
+        self.dict_without_punctuation_script = {}  # line without punctuation to punctuated line for script
         self.line_index_to_line_time_srt = {}  # take line index of srt file and give line time
         self.word_to_number_appearances_srt = {}  # dict that take word and count how much time the word appeared
         self.line_to_appearances_srt = {}  # take a line and give the indexes that the line appeared
-        self.array_of_script_lines = []
-        self.array_of_srt_lines = []
+        self.array_of_srt_lines = []  # array that contains the lines of the srt
         self.initial_time = []  # array that contains the initial time of every line in srt
         self.regex_srt = regex_srt  # the regex structure of srt file
         self.f_srt = open(srt_file_path, "r+")  # the srt file
-        self.dict_without_punctuation_script = {}  # line without punctuation to punctuated line for script
         self.dict_without_punctuation_srt = {}  # line without punctuation to punctuated line for srt
 
     def find_matches_script(self):
         """
-        Extract data from the script file
+        Extract data from the script file and fill it to the following instances:
+            self.index_to_speaker_script           : Dictionary that take an index of line and say who talked in
+                                                     the line
+            self.word_to_number_appearances_script : Dictionary that take word and count how much time the word appeared
+            self.array_of_script_lines             : Array that contains each line of the script
+            self.dict_without_punctuation_script   : Dictionary that convert line without punctuation to punctuated line
+                                                     for script
         """
         test_script = self.f_script.read()
         if 'Advertisements' in test_script[:int(len(test_script)/16)]:
@@ -74,7 +85,15 @@ class DataExtractor:
 
     def find_matches_srt(self):
         """
-        Extract data from the srt file
+        Extract the following data from the srt file:
+            self.line_index_to_line_time_srt     : Dictionary that take line index of srt file and give line time
+            self.word_to_number_appearances_srt  : Dictionary that take word and count how much time the word appeared
+            self.line_to_appearances_srt         : Dictionary that take a line and give the indexes that the
+                                                   line appeared
+            self.array_of_srt_lines              : Array that contains the lines of the srt
+            self.initial_time                    : Array that contains the initial time of every line in srt
+            self.dict_without_punctuation_script : Dictionary that convert line without punctuation to punctuated line
+                                                   for srt
         """
         test_srt = self.f_srt.read()
         matches_srt = re.finditer(self.regex_srt, test_srt, re.MULTILINE | re.DOTALL)
@@ -107,7 +126,7 @@ class DataExtractor:
                         else:
                             self.word_to_number_appearances_srt[word] = 1
                 if a:  # if there is more than one speaker
-                    for line_enter in a:  # for every speaker line
+                    for line_enter in a:  # for every speaker line do what we did before...
                         line_with_all = line_enter
                         self.line_index_to_line_time_srt[i] = match.group(1)
                         self.initial_time.append(match.group(1).split(' --> ')[0])
